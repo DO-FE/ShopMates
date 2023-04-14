@@ -12,8 +12,8 @@ using ShopMates.Data.EF;
 namespace ShopMates.Data.Migrations
 {
     [DbContext(typeof(ShopMatesDbContext))]
-    [Migration("20230414034140_Initial")]
-    partial class Initial
+    [Migration("20230414062050_SeedData")]
+    partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,6 +36,23 @@ namespace ShopMates.Data.Migrations
                     b.HasKey("Key");
 
                     b.ToTable("AppConfigs", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Key = "HomeTitle",
+                            Value = "This is home page of ShopMates"
+                        },
+                        new
+                        {
+                            Key = "HomeKeyword",
+                            Value = "This is Keyword of ShopMates"
+                        },
+                        new
+                        {
+                            Key = "HomeDescription",
+                            Value = "This is Description of ShopMates"
+                        });
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.AppRole", b =>
@@ -137,9 +154,6 @@ namespace ShopMates.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<Guid?>("AppUserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
@@ -157,11 +171,11 @@ namespace ShopMates.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AppUserId");
-
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Carts");
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Carts", (string)null);
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.Category", b =>
@@ -189,6 +203,22 @@ namespace ShopMates.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsShowOnHome = true,
+                            SortOrder = 1,
+                            Status = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IsShowOnHome = true,
+                            SortOrder = 2,
+                            Status = 1
+                        });
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.CategoryTranslation", b =>
@@ -202,10 +232,11 @@ namespace ShopMates.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("LanguageId")
+                    b.Property<string>("LanguageId")
+                        .IsRequired()
                         .HasMaxLength(5)
                         .IsUnicode(false)
-                        .HasColumnType("int");
+                        .HasColumnType("varchar(5)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -232,6 +263,48 @@ namespace ShopMates.Data.Migrations
                     b.HasIndex("LanguageId");
 
                     b.ToTable("CategoryTranslations", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            LanguageId = "vi-VN",
+                            Name = "Áo Nam",
+                            SeoAlias = "ao-nam",
+                            SeoDescription = "Sản phẩm áo thời trang Nam",
+                            SeoTitle = "Sản phẩm áo thời trang Nam"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            LanguageId = "en-US",
+                            Name = "Men Shirt",
+                            SeoAlias = "men-shirt",
+                            SeoDescription = "This Shirt product for man",
+                            SeoTitle = "This Shirt product for man"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 2,
+                            LanguageId = "vi-VN",
+                            Name = "Quần Nam",
+                            SeoAlias = "quan-nam",
+                            SeoDescription = "Sản phẩm Quần thời trang Nam",
+                            SeoTitle = "Sản phẩm Quần thời trang Nam"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 2,
+                            LanguageId = "en-US",
+                            Name = "Men Trousers",
+                            SeoAlias = "men-trousers",
+                            SeoDescription = "This Trousers product for man",
+                            SeoTitle = "This Trousers product for man"
+                        });
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.Contact", b =>
@@ -271,13 +344,10 @@ namespace ShopMates.Data.Migrations
 
             modelBuilder.Entity("ShopMates.Data.Entities.Language", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<string>("Id")
                         .HasMaxLength(5)
                         .IsUnicode(false)
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("varchar(5)");
 
                     b.Property<bool>("IsDefault")
                         .HasColumnType("bit");
@@ -290,6 +360,20 @@ namespace ShopMates.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Languages", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "vi-VN",
+                            IsDefault = true,
+                            Name = "Tiếng Việt"
+                        },
+                        new
+                        {
+                            Id = "en-US",
+                            IsDefault = false,
+                            Name = "English"
+                        });
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.Order", b =>
@@ -388,6 +472,26 @@ namespace ShopMates.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DateCreated = new DateTime(2023, 4, 14, 13, 20, 50, 78, DateTimeKind.Local).AddTicks(5466),
+                            OriginalPrice = 150000m,
+                            Price = 2000000m,
+                            Stock = 15,
+                            ViewCount = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DateCreated = new DateTime(2023, 4, 14, 13, 20, 50, 78, DateTimeKind.Local).AddTicks(5479),
+                            OriginalPrice = 150000m,
+                            Price = 2000000m,
+                            Stock = 15,
+                            ViewCount = 0
+                        });
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.ProductImage", b =>
@@ -442,6 +546,18 @@ namespace ShopMates.Data.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductInCategories", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 1
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            ProductId = 2
+                        });
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.ProductTranslation", b =>
@@ -459,10 +575,11 @@ namespace ShopMates.Data.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<int>("LanguageId")
+                    b.Property<string>("LanguageId")
+                        .IsRequired()
                         .HasMaxLength(5)
                         .IsUnicode(false)
-                        .HasColumnType("int");
+                        .HasColumnType("varchar(5)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -490,6 +607,56 @@ namespace ShopMates.Data.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductTranslations", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Áo Sơ Mi Nam Màu Đen",
+                            Details = "error-error-Tiến Đẹp Trai-Error-Error",
+                            LanguageId = "vi-VN",
+                            Name = "Áo Sơ Mi Nam Đen",
+                            ProductId = 1,
+                            SeoAlias = "ao-so-mi-nam-den",
+                            SeoDescription = "Áo Sơ Mi Nam Đen",
+                            SeoTitle = "Áo Sơ Mi Nam Đen"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Black Men T-Shirt",
+                            Details = "error-error-Tiến Đẹp Trai-Error-Error",
+                            LanguageId = "en-US",
+                            Name = "Black Men T-Shirt",
+                            ProductId = 1,
+                            SeoAlias = "black-men-t-shirt",
+                            SeoDescription = "Black Men T-Shirt",
+                            SeoTitle = "Black Men T-Shirt"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Quần jean Nam Màu Đen",
+                            Details = "error-error-Tiến Đẹp Trai-Error-Error",
+                            LanguageId = "vi-VN",
+                            Name = "Quần jean Nam Đen",
+                            ProductId = 2,
+                            SeoAlias = "quan-jean-nam-den",
+                            SeoDescription = "Quần jean Nam Đen",
+                            SeoTitle = "Quần jean Nam Đen"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Black Men Jeans",
+                            Details = "error-error-Tiến Đẹp Trai-Error-Error",
+                            LanguageId = "en-US",
+                            Name = "Black Men Jeans",
+                            ProductId = 2,
+                            SeoAlias = "black-men-jeans",
+                            SeoDescription = "Black Men Jeans",
+                            SeoTitle = "Black Men Jeans"
+                        });
                 });
 
             modelBuilder.Entity("ShopMates.Data.Entities.Promotion", b =>
@@ -616,13 +783,15 @@ namespace ShopMates.Data.Migrations
 
             modelBuilder.Entity("ShopMates.Data.Entities.Cart", b =>
                 {
-                    b.HasOne("ShopMates.Data.Entities.AppUser", "AppUser")
-                        .WithMany("Carts")
-                        .HasForeignKey("AppUserId");
-
                     b.HasOne("ShopMates.Data.Entities.Product", "Product")
                         .WithMany("Carts")
                         .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ShopMates.Data.Entities.AppUser", "AppUser")
+                        .WithMany("Carts")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
