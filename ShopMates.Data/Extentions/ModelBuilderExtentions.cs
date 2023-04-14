@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using ShopMates.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -77,6 +78,41 @@ namespace ShopMates.Data.Extentions
                 new ProductInCategory() { ProductId = 1, CategoryId = 1 },
                 new ProductInCategory() { ProductId = 2 , CategoryId = 2 }
             );
+
+            // any guid
+            var ADMIN_ID = new Guid("8F81B6C3-9468-4B62-B178-18AE55DAAD62");
+            var ROLE_ID = new Guid("410CD1A8-43A2-42F2-88BE-BCD3727D0F27");
+
+            modelBuilder.Entity<AppRole>().HasData(new AppRole
+            {
+                Id = ROLE_ID,
+                Name = "Admin",
+                NormalizedName = "Adminitrator",
+                Description = "Adminitrator Role Powerful, Can hack this"
+            });
+
+            var hasder = new PasswordHasher<AppUser>();
+
+            modelBuilder.Entity<AppUser>().HasData(new AppUser
+            {
+                Id = ADMIN_ID,
+                UserName = "Admin",
+                NormalizedUserName = "Adminitrator",
+                Email = "admin@gmail.com",
+                NormalizedEmail = "admin@gmail.com",
+                EmailConfirmed = true,
+                PasswordHash = hasder.HashPassword(null, "Test123"),
+                SecurityStamp = string.Empty,
+                FirstName = "Tien",
+                LastName = "Lam",
+                Dob = new DateTime(1999,08,23)
+            });
+
+            modelBuilder.Entity<IdentityUserRole<Guid>>().HasData(new IdentityUserRole<Guid>
+            {
+                RoleId = ROLE_ID,
+                UserId = ADMIN_ID,
+            });
         }
     }
 }
