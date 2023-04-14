@@ -1,0 +1,12 @@
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\bin\Debug\net6.0\ShopMates.Application.deps.json
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\bin\Debug\net6.0\ShopMates.Application.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\bin\Debug\net6.0\ShopMates.Application.pdb
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ShopMates.Application.csproj.AssemblyReference.cache
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ShopMates.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ShopMates.Application.AssemblyInfoInputs.cache
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ShopMates.Application.AssemblyInfo.cs
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ShopMates.Application.csproj.CoreCompileInputs.cache
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ShopMates.Application.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\refint\ShopMates.Application.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ShopMates.Application.pdb
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\FirstWebShop\ShopMates.WebApp\ShopMates.Application\obj\Debug\net6.0\ref\ShopMates.Application.dll
