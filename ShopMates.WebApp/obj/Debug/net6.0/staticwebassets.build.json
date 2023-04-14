@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gryN8LepN1E4iCwO+Nu/7wbtoYP0qk8h+emxriPuxbo=",
+  "Hash": "jBXrdhMF1SaB6WFZZfBQB1gI8LCzM/ic/s5SJejijg4=",
   "Source": "ShopMates.WebApp",
   "BasePath": "_content/ShopMates.WebApp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.WebApp\\wwwroot\\images\\favicon.png",
+      "SourceId": "ShopMates.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.WebApp\\wwwroot\\",
+      "BasePath": "_content/ShopMates.WebApp",
+      "RelativePath": "images/favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\favicon.png"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.WebApp\\wwwroot\\js\\site.js",

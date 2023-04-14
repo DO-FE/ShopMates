@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ShopMates.Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class ShopMates : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -101,8 +101,7 @@ namespace ShopMates.Data.Migrations
                 name: "Languages",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", unicode: false, maxLength: 5, nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "varchar(5)", unicode: false, maxLength: 5, nullable: false),
                     Name = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     IsDefault = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -230,7 +229,7 @@ namespace ShopMates.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     SeoDescription = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     SeoTitle = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    LanguageId = table.Column<int>(type: "int", unicode: false, maxLength: 5, nullable: false),
+                    LanguageId = table.Column<string>(type: "varchar(5)", unicode: false, maxLength: 5, nullable: false),
                     SeoAlias = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
                 },
                 constraints: table =>
@@ -260,17 +259,17 @@ namespace ShopMates.Data.Migrations
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    AppUserId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Carts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Carts_AppUsers_AppUserId",
-                        column: x => x.AppUserId,
+                        name: "FK_Carts_AppUsers_UserId",
+                        column: x => x.UserId,
                         principalTable: "AppUsers",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Carts_Products_ProductId",
                         column: x => x.ProductId,
@@ -341,7 +340,7 @@ namespace ShopMates.Data.Migrations
                     SeoDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SeoTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SeoAlias = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    LanguageId = table.Column<int>(type: "int", unicode: false, maxLength: 5, nullable: false)
+                    LanguageId = table.Column<string>(type: "varchar(5)", unicode: false, maxLength: 5, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -386,15 +385,30 @@ namespace ShopMates.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Carts_AppUserId",
-                table: "Carts",
-                column: "AppUserId");
+            migrationBuilder.InsertData(
+                table: "AppConfigs",
+                columns: new[] { "Key", "Value" },
+                values: new object[] { "HomeDescription", "This is Description of ShopMates" });
+
+            migrationBuilder.InsertData(
+                table: "AppConfigs",
+                columns: new[] { "Key", "Value" },
+                values: new object[] { "HomeKeyword", "This is Keyword of ShopMates" });
+
+            migrationBuilder.InsertData(
+                table: "AppConfigs",
+                columns: new[] { "Key", "Value" },
+                values: new object[] { "HomeTitle", "This is home page of ShopMates" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Carts_ProductId",
                 table: "Carts",
                 column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Carts_UserId",
+                table: "Carts",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CategoryTranslations_CategoryId",

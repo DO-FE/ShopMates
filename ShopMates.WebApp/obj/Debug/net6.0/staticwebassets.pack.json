@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.WebApp\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.WebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
