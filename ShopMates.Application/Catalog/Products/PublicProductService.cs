@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ShopMates.Application.Catalog.Products.DTOS;
-using ShopMates.Application.Catalog.Products.DTOS.Public;
-using ShopMates.Application.DTOS;
+using ShopMates.ViewModels.Catalog.Products;
+using ShopMates.ViewModels.Catalog.Products.Public;
+using ShopMates.ViewModels.Common;
 using ShopMates.Data.EF;
 using ShopMates.Data.Entities;
 using System;
@@ -19,7 +19,7 @@ namespace ShopMates.Application.Catalog.Products
         {
             _context = context;
         }
-        public async Task<PagedResult<ProductViewModel>> GetAllByCategoryId(DTOS.Public.GetProductPagingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingRequest request)
         {
             // 1. Select join
             var query = from p in _context.Products

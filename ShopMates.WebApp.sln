@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Data", "ShopMates
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Application", "ShopMates.Application\ShopMates.Application.csproj", "{E5E74CE6-2487-4A16-B830-CCB5D521EBBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMates.Utilities", "ShopMates.Utilities\ShopMates.Utilities.csproj", "{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Utilities", "ShopMates.Utilities\ShopMates.Utilities.csproj", "{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMates.ViewModels", "ShopMates.ViewModels\ShopMates.ViewModels.csproj", "{5227775C-B229-4F00-920A-FD2EF9BF067A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

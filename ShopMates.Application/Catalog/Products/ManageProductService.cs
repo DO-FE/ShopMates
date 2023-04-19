@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ShopMates.Application.Catalog.Products.DTOS;
-using ShopMates.Application.Catalog.Products.DTOS.Manage;
-using ShopMates.Application.DTOS;
+using ShopMates.ViewModels.Catalog.Products;
+using ShopMates.ViewModels.Catalog.Products.Manage;
+using ShopMates.ViewModels.Common;
 using ShopMates.Data.EF;
 using ShopMates.Data.Entities;
 using ShopMates.Utilities.Exceptions;
@@ -12,15 +12,25 @@ using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using System.IO.Enumeration;
+using System.Net.Http.Headers;
+using System.IO;
+using System.Data;
+using ShopMates.Application.Common;
+using Microsoft.AspNetCore.Server.IISIntegration;
+using Microsoft.Data.SqlClient;
 
 namespace ShopMates.Application.Catalog.Products
 {
     public class ManageProductService : IManageProductService
     {
         private readonly ShopMatesDbContext _context;
-        public ManageProductService(ShopMatesDbContext context) 
+        private readonly IStorageService _storageService;
+        public ManageProductService(ShopMatesDbContext context, IStorageService storageService) 
         {
             _context = context;
+            _storageService = storageService;
         }
 
         public async Task AddViewCount(int productId)
@@ -53,6 +63,23 @@ namespace ShopMates.Application.Catalog.Products
                     }
                 }
             };
+
+            //Save Image
+            if(request.ThumbnailImage != null)
+            {
+                product.ProductImages = new List<ProductImage>()
+                {
+                    new ProductImage()
+                    {
+                        Caption = "Thumbnail Image",
+                        DateCreated = DateTime.Now,
+                        FileSize = request.ThumbnailImage.Length,
+                        ImagePath = await this.SaveFile(request.ThumbnailImage),
+                        IsDefault = true,
+                        SortOrder = 1
+                    }
+                };
+            }
             _context.Products.Add(product);
             return await _context.SaveChangesAsync();
         }
@@ -62,11 +89,18 @@ namespace ShopMates.Application.Catalog.Products
             var product = await _context.Products.FindAsync(productId);
             if (product == null) throw new ShopMatesException($"Không tìm thấy sản phẩm: {productId}");
 
+            var images = _context.ProductImages.Where(i => i.ProductId == productId);
+            foreach(var image in images)
+            {
+                await _storageService.DeleteFileAsync(image.ImagePath);
+            }
+
             _context.Products.Remove(product);
+
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<PagedResult<ProductViewModel>> GetAllPaging(DTOS.Manage.GetProductPagingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request)
         {
             // 1. Select join
             var query = from p in _context.Products
@@ -125,6 +159,18 @@ namespace ShopMates.Application.Catalog.Products
             productTranslations.Description = request.Description;
             productTranslations.Details = request.Details;
 
+            //Save Image
+            if (request.ThumbnailImage != null)
+            {
+                var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.ProductId == request.Id);
+                if (thumbnailImage != null)
+                {
+                    thumbnailImage.FileSize = request.ThumbnailImage.Length;
+                    thumbnailImage.ImagePath = await this.SaveFile(request.ThumbnailImage);
+                    _context.ProductImages.Update(thumbnailImage);
+                }
+            }
+
             return await _context.SaveChangesAsync();
         }
 
@@ -142,6 +188,14 @@ namespace ShopMates.Application.Catalog.Products
             if (product == null) throw new ShopMatesException($"Không tìm thấy sản phẩm: {productId}");
             product.Stock += addQuantity;
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        private async Task<string> SaveFile(IFormFile file)
+        {
+            var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+            var filename = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
+            await _storageService.SaveFileAsync(file.OpenReadStream(), filename);
+            return filename;
         }
     }
 }

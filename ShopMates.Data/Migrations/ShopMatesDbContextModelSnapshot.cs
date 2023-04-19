@@ -383,7 +383,7 @@ namespace ShopMates.Data.Migrations
                         new
                         {
                             Id = new Guid("410cd1a8-43a2-42f2-88be-bcd3727d0f27"),
-                            ConcurrencyStamp = "d1776718-6df8-4052-a943-4b437c0e06cb",
+                            ConcurrencyStamp = "2c9420c7-5d91-41db-bd3f-8e43ee2e71f2",
                             Description = "Adminitrator Role Powerful, Can hack this",
                             Name = "Admin",
                             NormalizedName = "Adminitrator"
@@ -460,7 +460,7 @@ namespace ShopMates.Data.Migrations
                         {
                             Id = new Guid("8f81b6c3-9468-4b62-b178-18ae55daad62"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ea9ac7f7-78fa-4774-b9e8-bedbf08cec5f",
+                            ConcurrencyStamp = "bfc834b4-7a6d-4c99-9240-893b63bba8b6",
                             Dob = new DateTime(1999, 8, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -469,7 +469,7 @@ namespace ShopMates.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "Adminitrator",
-                            PasswordHash = "AQAAAAEAACcQAAAAELHSB7xwhMWW6l28WSkgkJ9Yao77VpfaldcnrwVogywIIfmAh23AlfFIMTAeVaaHbA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEASqjuMAwhXLnEPNOB6+1fstyZT7zpZrArwkiwofcLCpXJ8Z9HnuYt5nhtE1MTtUgw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -811,7 +811,7 @@ namespace ShopMates.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2023, 4, 14, 14, 38, 54, 796, DateTimeKind.Local).AddTicks(6810),
+                            DateCreated = new DateTime(2023, 4, 19, 11, 55, 41, 933, DateTimeKind.Local).AddTicks(6660),
                             OriginalPrice = 150000m,
                             Price = 2000000m,
                             Stock = 15,
@@ -820,7 +820,7 @@ namespace ShopMates.Data.Migrations
                         new
                         {
                             Id = 2,
-                            DateCreated = new DateTime(2023, 4, 14, 14, 38, 54, 796, DateTimeKind.Local).AddTicks(6847),
+                            DateCreated = new DateTime(2023, 4, 19, 11, 55, 41, 933, DateTimeKind.Local).AddTicks(6735),
                             OriginalPrice = 150000m,
                             Price = 2000000m,
                             Stock = 15,

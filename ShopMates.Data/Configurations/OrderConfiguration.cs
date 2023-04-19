@@ -19,6 +19,8 @@ namespace ShopMates.Data.Configurations
 
             builder.Property(x => x.Id).UseIdentityColumn();
 
+            builder.Property(x => x.OrderDate);
+
             builder.Property(x => x.ShipEmail).IsRequired().IsUnicode(false).HasMaxLength(50);
 
             builder.Property(x => x.ShipAddress).IsRequired().HasMaxLength(50);
