@@ -1,5 +1,4 @@
 ﻿using ShopMates.Application.Catalog.Products;
-using ShopMates.ViewModels.Catalog.Products.Public;
 using ShopMates.ViewModels.Catalog.Products;
 using ShopMates.ViewModels.Catalog;
 using ShopMates.ViewModels.Common;
@@ -13,7 +12,8 @@ namespace ShopMates.Application.Catalog.Products
 {
     public interface IPublicProductService
     {
+        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request);
 
-        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingRequest request);
+        Task<List<ProductViewModel>> GetAll(string languageId);
     }
 }
