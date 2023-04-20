@@ -1,0 +1,21 @@
+version: "2.0"
+services:
+  webapp-app:
+    build: ShopMates.WebApp/.
+    image: shopmates-webapp
+    container_name: s-webapp
+    ports:
+      - "37525:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - web-api
+      
+  web-api:
+    build: ShopMates.BEAPI/.
+    image: shopmates-api
+    container_name: s-webapi
+    ports:
+      - "37372:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

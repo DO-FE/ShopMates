@@ -15,6 +15,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using ShopMates.Data.Entities;
 using Microsoft.AspNetCore.Identity;
+using ShopMates.Application.System.Users;
+using ShopMates.Application.Common;
 
 namespace ShopMates.BEAPI
 {
@@ -29,14 +31,15 @@ namespace ShopMates.BEAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ShopMatesDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainConnectionString)));
-
+            //services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<ShopMatesDbContext>().AddDefaultTokenProviders();
             //Declare DI
+            services.AddTransient<IStorageService, FileStorageService>();
             services.AddTransient<IPublicProductService, PublicProductService>();
             services.AddTransient<IManageProductService, ManageProductService>();
-
-            services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
-            services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
-            services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
+           // services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
+            //services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
+            //services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
+           // services.AddTransient<IUserService, UserService>();
 
             services.AddControllersWithViews();
 

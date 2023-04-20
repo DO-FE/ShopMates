@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H51DF9EnTUFOrkqEluQvdg0MPYpvUP+KY497iNOadOBGMLOMoQ+2FovENovy7RAR8jdGKh1yLcRrE6c5Z7y+lA==",
+  "dgSpecHash": "rGuUj/gKzrUO300r1c8hx4dzMziN0wrF9IZuZPq+KEhN8yVzrkA5IUhZI4GdxxCCnFO+BvWqRiEEueEAe4NvtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
+  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

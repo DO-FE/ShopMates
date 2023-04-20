@@ -12,6 +12,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ShopMates.Application.System.Users
 {
     public class UserService : IUserService
@@ -56,9 +57,23 @@ namespace ShopMates.Application.System.Users
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public Task<bool> Register(RegisterRequest request)
+        public async Task<bool> Register(RegisterRequest request)
         {
-            throw new NotImplementedException();
+            var user = new AppUser()
+            {
+                Dob = request.Dob,
+                Email = request.Email,
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                UserName = request.UserName,
+                PhoneNumber = request.PhoneNumber
+            };
+            var result = await _userManager.CreateAsync(user, request.Password);
+            if (result.Succeeded)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6+S/BxFQMK6Jrn+NWGxMfNwSWTVEdckUgCGbfVcs3qUH9x8P+uHCNAJWzsp8mnBYUXcWb7zhAzaVWmpob6iNuA==",
+  "dgSpecHash": "dsZcyGg+nN2x0fau2+0MyyJGLrCVwxyEbVSJ6jFu0z1aGEd2uE/LggRFsIEvJ6iTMNHUrB+yQ5P9aXdcBb2EIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.WebApp\\ShopMates.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WebApp\\ShopMates.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AxyRes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\AxyRes\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.16\\microsoft.entityframeworkcore.6.0.16.nupkg.sha512",
