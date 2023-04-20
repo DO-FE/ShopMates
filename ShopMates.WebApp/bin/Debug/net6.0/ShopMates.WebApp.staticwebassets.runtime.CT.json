@@ -1,7 +1,7 @@
 {
   "ContentRoots": [
-    "/src/ShopMates.WebApp/wwwroot/",
-    "/src/ShopMates.WebApp/obj/Debug/net6.0/scopedcss/bundle/"
+    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WebApp\\wwwroot\\",
+    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WebApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\"
   ],
   "Root": {
     "Children": {

@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["ShopMates.WebApp/ShopMates.WebApp.csproj", "ShopMates.WebApp/"]
+COPY ["ShopMates.WebApp.csproj", "ShopMates.WebApp/"]
 RUN dotnet restore "ShopMates.WebApp/ShopMates.WebApp.csproj"
 COPY . .
 WORKDIR "/src/ShopMates.WebApp"

@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["ShopMates.BEAPI/ShopMates.BEAPI.csproj", "ShopMates.BEAPI/"]
+COPY ["ShopMates.BEAPI.csproj", "ShopMates.BEAPI/"]
 RUN dotnet restore "ShopMates.BEAPI/ShopMates.BEAPI.csproj"
 COPY . .
 WORKDIR "/src/ShopMates.BEAPI"
