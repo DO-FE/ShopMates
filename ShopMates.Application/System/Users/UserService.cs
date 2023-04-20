@@ -33,9 +33,13 @@ namespace ShopMates.Application.System.Users
         public async Task<string> Authenticate(LoginRequest request)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
-            if (user == null) throw new ShopMatesException("Lỗi rồi dkm bấm quài");
+            if (user == null) return null;//throw new ShopMatesException("Lỗi rồi dkm bấm quài");
+
             var result = await _signInManager.PasswordSignInAsync(user, request.Password, request.RememberMe, true);
-            if (!result.Succeeded) throw new ShopMatesException("Lỗi rồi dkm bấm quài");
+            if (!result.Succeeded) 
+            {
+                return null;
+            }//throw new ShopMatesException("Lỗi rồi dkm bấm quài");
 
             var roles = await _userManager.GetRolesAsync(user);
             var claims = new[]

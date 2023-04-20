@@ -13,7 +13,7 @@ using System.Text;
 
 namespace ShopMates.Data.EF
 {
-    public class ShopMatesDbContext : IdentityDbContext
+    public class ShopMatesDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
         public ShopMatesDbContext(DbContextOptions options) : base(options)
         {
