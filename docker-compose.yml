@@ -10,7 +10,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - web-api
-      
+
   web-api:
     build: ShopMates.BEAPI/.
     image: shopmates-api
@@ -19,3 +19,6 @@ services:
       - "37372:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - 
