@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopMates.Application.System.Users;
-using ShopMates.ViewModels.System;
+using ShopMates.ViewModels.System.Users;
 
 namespace ShopMates.BEAPI.Controllers
 {
@@ -19,7 +19,7 @@ namespace ShopMates.BEAPI.Controllers
 
         [HttpPost("authenticate")]
         [AllowAnonymous]
-        public async Task<IActionResult> Authenticate([FromForm]LoginRequest request)
+        public async Task<IActionResult> Authenticate([FromBody]LoginRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -34,7 +34,7 @@ namespace ShopMates.BEAPI.Controllers
 
         [HttpPost("register")]
         [AllowAnonymous]
-        public async Task<IActionResult> Register([FromForm]RegisterRequest request)
+        public async Task<IActionResult> Register([FromBody]RegisterRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

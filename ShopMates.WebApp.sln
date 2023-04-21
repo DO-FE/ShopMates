@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.ViewModels", "Sho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.BEAPI", "ShopMates.BEAPI\ShopMates.BEAPI.csproj", "{877229FD-3929-491F-824C-EAA4F6E15045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMates.WepApp", "ShopMates.WepApp\ShopMates.WepApp.csproj", "{8A76EDC6-E6CE-4EDD-A1F9-4864836A5233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.WebApp", "ShopMates.WepApp\ShopMates.WebApp.csproj", "{8A76EDC6-E6CE-4EDD-A1F9-4864836A5233}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿using ShopMates.ViewModels.System;
+﻿using ShopMates.ViewModels.System.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;

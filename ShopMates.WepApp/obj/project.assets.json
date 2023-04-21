@@ -106,9 +106,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\ShopMates.WepApp.csproj",
-      "projectName": "ShopMates.WepApp",
-      "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\ShopMates.WepApp.csproj",
+      "projectUniqueName": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\ShopMates.WebApp.csproj",
+      "projectName": "ShopMates.WebApp",
+      "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\ShopMates.WebApp.csproj",
       "packagesPath": "C:\\Users\\AxyRes\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\obj\\",
       "projectStyle": "PackageReference",
