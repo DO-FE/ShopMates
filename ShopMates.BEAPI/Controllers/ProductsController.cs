@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopMates.Application.Catalog.Products;
 using ShopMates.Data.Entities;
@@ -21,6 +22,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpGet("{languageId}")]
+        [Authorize]
         public async Task<IActionResult> GetAllPaging(string languageId, [FromQuery] GetPublicProductPagingRequest request)
         {
             var products = await _publicProductService.GetAllByCategoryId(languageId, request);
@@ -28,6 +30,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpGet("get-all/{languageId}")]
+        [AllowAnonymous]
         public async Task<IActionResult> Get(string languageId)
         {
             var products = await _publicProductService.GetAll(languageId);
@@ -44,7 +47,8 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm]ProductCreateRequest request)
+        [Authorize]
+        public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -59,6 +63,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {
             var affectedResult = await _manageProductService.Update(request);
@@ -68,6 +73,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpDelete("{productId}")]
+        [Authorize]
         public async Task<IActionResult> Delete(int productId)
         {
             var affectedResult = await _manageProductService.Delete(productId);
@@ -77,6 +83,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPatch("{productId}/{newPrice}")]
+        [Authorize]
         public async Task<IActionResult> UpdatePrice(int productId, decimal newPrice)
         {
             var isSuccessful = await _manageProductService.UpdatePrice(productId, newPrice);
@@ -89,6 +96,7 @@ namespace ShopMates.BEAPI.Controllers
         //Image
 
         [HttpPost("{productId}/images")]
+        [Authorize]
         public async Task<IActionResult> CreateImage(int productId, [FromForm] ProductImageCreateRequest request)
         {
             if (!ModelState.IsValid)
@@ -105,6 +113,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPut("{productId}/images/{imageId}")]
+        [Authorize]
         public async Task<IActionResult> UpdateImage(int imageId, [FromForm] ProductImageUpdateRequest request)
         {
             if (!ModelState.IsValid)
@@ -119,6 +128,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpGet("{productId}/images/{imageId}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetImageById(int productId, int imageId)
         {
             var image = await _manageProductService.GetImageById(imageId);
@@ -128,6 +138,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpDelete("{productId}/images/{imageId}")]
+        [Authorize]
         public async Task<IActionResult> DeleteImage(int imageId)
         {
             if (!ModelState.IsValid)

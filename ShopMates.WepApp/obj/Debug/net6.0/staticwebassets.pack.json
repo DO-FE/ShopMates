@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.WepApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ShopMates.WepApp.bundle.scp.css"
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ShopMates.WebApp.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\wwwroot\\css\\site.css",
@@ -249,20 +249,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ShopMates.WepApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ShopMates.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ShopMates.WepApp.props",
-      "PackagePath": "build\\ShopMates.WepApp.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ShopMates.WebApp.props",
+      "PackagePath": "build\\ShopMates.WebApp.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopMates.WepApp.props",
-      "PackagePath": "buildMultiTargeting\\ShopMates.WepApp.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopMates.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\ShopMates.WebApp.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ShopMates.WepApp.props",
-      "PackagePath": "buildTransitive\\ShopMates.WepApp.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ShopMates.WebApp.props",
+      "PackagePath": "buildTransitive\\ShopMates.WebApp.props"
     }
   ],
   "ElementsToRemove": []
