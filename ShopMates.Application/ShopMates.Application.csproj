@@ -1,12 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+	</ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\ShopMates.Data\ShopMates.Data.csproj" />
     <ProjectReference Include="..\ShopMates.Utilities\ShopMates.Utilities.csproj" />
+    <ProjectReference Include="..\ShopMates.ViewModels\ShopMates.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

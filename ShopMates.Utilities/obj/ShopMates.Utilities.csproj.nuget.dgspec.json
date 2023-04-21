@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {}
+    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
         "projectName": "ShopMates.Utilities",
-        "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
+        "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
         "packagesPath": "C:\\Users\\AxyRes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates.WebApp\\ShopMates.Utilities\\obj\\",
+        "outputPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

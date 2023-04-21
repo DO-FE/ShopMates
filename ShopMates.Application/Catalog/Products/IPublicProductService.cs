@@ -1,6 +1,7 @@
-﻿using ShopMates.Application.Catalog.Products.DTOS;
-using ShopMates.Application.Catalog.Products.DTOS.Public;
-using ShopMates.Application.DTOS;
+﻿using ShopMates.Application.Catalog.Products;
+using ShopMates.ViewModels.Catalog.Products;
+using ShopMates.ViewModels.Catalog;
+using ShopMates.ViewModels.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace ShopMates.Application.Catalog.Products
 {
     public interface IPublicProductService
     {
+        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request);
 
-        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(DTOS.Public.GetProductPagingRequest request);
+        Task<List<ProductViewModel>> GetAll(string languageId);
     }
 }

@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.WebApp", "ShopMates.WebApp\ShopMates.WebApp.csproj", "{2405CF41-5DAB-4164-87AA-2B6CA224E1AB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Data", "ShopMates.Data\ShopMates.Data.csproj", "{92B70711-3A51-48E0-A141-4C910F063FDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Application", "ShopMates.Application\ShopMates.Application.csproj", "{E5E74CE6-2487-4A16-B830-CCB5D521EBBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMates.Utilities", "ShopMates.Utilities\ShopMates.Utilities.csproj", "{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Utilities", "ShopMates.Utilities\ShopMates.Utilities.csproj", "{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.ViewModels", "ShopMates.ViewModels\ShopMates.ViewModels.csproj", "{5227775C-B229-4F00-920A-FD2EF9BF067A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.WebApp", "ShopMates.WepApp\ShopMates.WebApp.csproj", "{8A76EDC6-E6CE-4EDD-A1F9-4864836A5233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMates.BEAPI", "ShopMates.BEAPI\ShopMates.BEAPI.csproj", "{6F155F2E-D63D-4203-AC14-2908BC9D88FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2405CF41-5DAB-4164-87AA-2B6CA224E1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2405CF41-5DAB-4164-87AA-2B6CA224E1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2405CF41-5DAB-4164-87AA-2B6CA224E1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2405CF41-5DAB-4164-87AA-2B6CA224E1AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{92B70711-3A51-48E0-A141-4C910F063FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{92B70711-3A51-48E0-A141-4C910F063FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92B70711-3A51-48E0-A141-4C910F063FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +33,18 @@ Global
 		{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B99C93A-6F52-41AA-8D38-2363A9E76C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5227775C-B229-4F00-920A-FD2EF9BF067A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A76EDC6-E6CE-4EDD-A1F9-4864836A5233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A76EDC6-E6CE-4EDD-A1F9-4864836A5233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A76EDC6-E6CE-4EDD-A1F9-4864836A5233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A76EDC6-E6CE-4EDD-A1F9-4864836A5233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F155F2E-D63D-4203-AC14-2908BC9D88FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F155F2E-D63D-4203-AC14-2908BC9D88FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F155F2E-D63D-4203-AC14-2908BC9D88FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F155F2E-D63D-4203-AC14-2908BC9D88FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

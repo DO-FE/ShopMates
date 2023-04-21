@@ -1,11 +1,13 @@
-﻿using ShopMates.Application.Catalog.Products.DTOS;
-using ShopMates.Application.Catalog.Products.DTOS.Manage;
-using ShopMates.Application.DTOS;
+﻿using ShopMates.Application.Catalog.Products;
+using ShopMates.ViewModels.Catalog.Products;
+using ShopMates.ViewModels.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using ShopMates.ViewModels.Catalog.ProductImages;
 
 namespace ShopMates.Application.Catalog.Products
 {
@@ -23,6 +25,19 @@ namespace ShopMates.Application.Catalog.Products
 
         Task AddViewCount(int productId);
 
-        Task<PagedResult<ProductViewModel>> GetAllPaging(DTOS.Manage.GetProductPagingRequest request);
+        Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request);
+
+        Task<int> AddImages(int productId, ProductImageCreateRequest request);
+
+        Task<int> RemoveImages(int imageId);
+
+        Task<int> UpdateImages(int imageId, ProductImageUpdateRequest request);
+
+        Task<List<ProductImageViewModel>> GetListImage(int productId);
+
+        Task<ProductViewModel> GetById(int productId, string languageId);
+
+        Task<ProductImageViewModel> GetImageById(int imageId);
+
     }
 }
