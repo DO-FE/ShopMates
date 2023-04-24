@@ -3,7 +3,7 @@ services:
   webapp-app:
     build: 
       context: .
-      dockerfile: ShopMates.WebApp/.
+      dockerfile: ShopMates.WebApp/Dockerfile
     image: shopmates-webapp
     container_name: s-webapp
     ports:
@@ -16,7 +16,7 @@ services:
   web-api:
     build: 
       context: .
-      dockerfile: ShopMates.BEAPI/.
+      dockerfile: ShopMates.BEAPI/Dockerfile
     image: shopmates-api
     container_name: s-webapi
     ports:
