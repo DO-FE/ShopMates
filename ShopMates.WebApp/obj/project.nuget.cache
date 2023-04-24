@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PdpPI9SlI5tG1eIymiRWoJQkXvTiPh4DisJfVQ1QvXWEyHp/c4YmwubY/54r42ReWo9UHU6gN6BfR3cIz3xjSg==",
+  "dgSpecHash": "cMqx+wGfoMA/W+U4gckiyOfosB8novEPoTobzZbCoXOZBpl5CvBAJCMQC5HKrLKaZ3R44U4mLnJhPgsGFRJ6wA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WepApp\\ShopMates.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.WebApp\\ShopMates.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AxyRes\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
   ],
