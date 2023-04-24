@@ -1,5 +1,18 @@
 version: "2.0"
 services:
+  web-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile-web
+    image: shopmates-web
+    container_name: s-web
+    ports:
+      - "37580:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - web-api
+      
   web-api:
     build: 
       context: .
@@ -8,16 +21,5 @@ services:
     container_name: s-webapi
     ports:
       - "37372:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-
-  webapp-app:
-    build: 
-      context: .
-      dockerfile: Dockerfile-webapp
-    image: shopmates-webapp
-    container_name: s-webapp
-    ports:
-      - "37525:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
