@@ -20,6 +20,8 @@ using ShopMates.Application.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using FluentValidation.AspNetCore;
+using ShopMates.ViewModels.System.Users;
+using FluentValidation;
 
 namespace ShopMates.BEAPI
 {
@@ -46,7 +48,9 @@ namespace ShopMates.BEAPI
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
 
-            services.AddControllers().AddFluentValidation();
+            services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
+
+            services.AddControllers().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
 
             services.AddSwaggerGen(c =>
             {

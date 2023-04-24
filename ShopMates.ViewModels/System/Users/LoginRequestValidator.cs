@@ -12,7 +12,7 @@ namespace ShopMates.ViewModels.System.Users
         public LoginRequestValidator() 
         { 
             RuleFor(x => x.UserName).NotEmpty().WithMessage("Chỗ này đòi hỏi tên nè");
-            RuleFor(x => x.Password).NotEmpty().WithMessage("Chỗ này đòi mật khẩu nè ba má");
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Chỗ này đòi mật khẩu nè ba má").MinimumLength(6).WithMessage("Muốn 6 kí tự lận, Nhập cho đúng vào");
         }
     }
 }

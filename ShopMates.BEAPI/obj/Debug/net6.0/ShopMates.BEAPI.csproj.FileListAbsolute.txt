@@ -76,3 +76,6 @@ C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.BEAPI
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.BEAPI\obj\Debug\net6.0\ShopMates.BEAPI.pdb
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.BEAPI\obj\Debug\net6.0\ShopMates.BEAPI.genruntimeconfig.cache
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.BEAPI\obj\Debug\net6.0\ref\ShopMates.BEAPI.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.BEAPI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.BEAPI\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.BEAPI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
