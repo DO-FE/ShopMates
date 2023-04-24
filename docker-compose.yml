@@ -19,5 +19,3 @@ services:
       - "37372:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - DOTNET_USE_POLLING_FILE_WATCHER=1
