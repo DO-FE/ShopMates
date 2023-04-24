@@ -1,23 +1,25 @@
 version: "2.0"
 services:
-  webapp-app:
-    build: ShopMates.WebApp/.
-    image: shopmates-webapp
-    container_name: s-webapp
+  web-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile-web
+    image: shopmates-web
+    container_name: s-web
     ports:
-      - "37525:80"
+      - "37580:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - web-api
-
+      
   web-api:
-    build: ShopMates.BEAPI/.
+    build: 
+      context: .
+      dockerfile: Dockerfile-API
     image: shopmates-api
     container_name: s-webapi
     ports:
       - "37372:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - DOTNET_USE_POLLING_FILE_WATCHER=1

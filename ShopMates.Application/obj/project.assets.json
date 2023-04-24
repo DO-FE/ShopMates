@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FluentValidation/11.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.0": {
         "type": "package",
         "compile": {
@@ -1035,6 +1048,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "FluentValidation": "11.5.1",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "ShopMates.Data": "1.0.0",
           "ShopMates.Utilities": "1.0.0"
@@ -1049,6 +1063,29 @@
     }
   },
   "libraries": {
+    "FluentValidation/11.5.1": {
+      "sha512": "0h1Q5lNOLLyYTWMJmyNoMqhY4CBRvvUWvJP1R4F2CnmmzuWwvB0A8aVmw5+lOuwYnwUwCRrdeMLbc81F38ahNQ==",
+      "type": "package",
+      "path": "fluentvalidation/11.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.5.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.0": {
       "sha512": "ZWFBiHwkmipr+7t3MEPa7oB/iE8Kf5wvUptn9AXj7P7l/tGHEmRb1606Mlh/e2zkYwfjNGDH4Z5dUUlcnyccIw==",
       "type": "package",
@@ -2595,11 +2632,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
+      "projectUniqueName": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
       "projectName": "ShopMates.Application",
-      "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
+      "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
       "packagesPath": "C:\\Users\\AxyRes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Application\\obj\\",
+      "outputPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2620,14 +2657,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
-              "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
+            "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
+              "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
             },
-            "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
-              "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
+            "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+              "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
             },
-            "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
-              "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
+            "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
             }
           }
         }

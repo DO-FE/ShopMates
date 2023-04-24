@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "62Cstm5xp4njmq8faT30Vh1RxMVlx5qguM6bFkv+0UAsw8+tsUmYt9RPC/9LAihHmtv200FgTtDbHh4ja8eG8A==",
+  "dgSpecHash": "F/64XdT54OrKLBFkNRaoRk75zrX/agY6eg4Pkw6G29rv+35sWyWchuZs9npUQYoR8LG6fuEWB+vRWySvnzjgww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\FirstWebShop\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj",
+  "projectFilePath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AxyRes\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\AxyRes\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\AxyRes\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\AxyRes\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\AxyRes\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "C:\\Users\\AxyRes\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.0\\microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
