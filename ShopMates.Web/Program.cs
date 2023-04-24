@@ -10,7 +10,7 @@ namespace ShopMates.Web
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
-
+            app.UsePathBase("/ShopMates");
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
