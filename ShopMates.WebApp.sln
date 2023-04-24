@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Dockerfile-webapp = Dockerfile-webapp
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMates.TestWebApp", "ShopMates.TestWebApp\ShopMates.TestWebApp.csproj", "{602C779B-BAD7-4163-BC97-7A25CA159880}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E3C6C190-565C-4544-A8A0-F8BBD9976F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3C6C190-565C-4544-A8A0-F8BBD9976F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3C6C190-565C-4544-A8A0-F8BBD9976F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602C779B-BAD7-4163-BC97-7A25CA159880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602C779B-BAD7-4163-BC97-7A25CA159880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602C779B-BAD7-4163-BC97-7A25CA159880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602C779B-BAD7-4163-BC97-7A25CA159880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
