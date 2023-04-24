@@ -1,4 +1,4 @@
-namespace ShopMates.WepApp.Models
+namespace ShopMates.WebApp.Models
 {
     public class ErrorViewModel
     {

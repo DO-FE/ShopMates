@@ -21,15 +21,3 @@ services:
       - "37525:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-
-  webapp-test:
-    build: 
-      context: .
-      dockerfile: Dockerfile-Test
-    image: shopmates-test
-    container_name: s-test
-    ports:
-      - "37527:80"
-      - "37528:443"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development

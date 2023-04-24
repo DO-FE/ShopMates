@@ -1,13 +1,13 @@
 {
   "profiles": {
-    "ShopMates.WepApp": {
+    "ShopMates.WebApp": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5119/ShopMates"
+      "applicationUrl": "http://localhost:5193"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -27,7 +27,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:12732",
+      "applicationUrl": "http://localhost:27640",
       "sslPort": 0
     }
   }

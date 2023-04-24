@@ -1,4 +1,4 @@
-namespace ShopMates.WepApp
+namespace ShopMates.WebApp
 {
     public class Program
     {

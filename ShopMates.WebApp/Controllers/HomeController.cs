@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShopMates.WepApp.Models;
+using ShopMates.WebApp.Models;
 using System.Diagnostics;
 
-namespace ShopMates.WepApp.Controllers
+namespace ShopMates.WebApp.Controllers
 {
     public class HomeController : Controller
     {
