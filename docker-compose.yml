@@ -1,7 +1,9 @@
 version: "2.0"
 services:
   webapp-app:
-    build: ShopMates.WebApp/.
+    build: 
+      context: .
+      dockerfile: ShopMates.WebApp/.
     image: shopmates-webapp
     container_name: s-webapp
     ports:
@@ -12,7 +14,9 @@ services:
       - web-api
 
   web-api:
-    build: ShopMates.BEAPI/.
+    build: 
+      context: .
+      dockerfile: ShopMates.BEAPI/.
     image: shopmates-api
     container_name: s-webapi
     ports:
