@@ -19,6 +19,7 @@ using ShopMates.Application.System.Users;
 using ShopMates.Application.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using FluentValidation.AspNetCore;
 
 namespace ShopMates.BEAPI
 {
@@ -45,7 +46,7 @@ namespace ShopMates.BEAPI
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation();
 
             services.AddSwaggerGen(c =>
             {
@@ -81,7 +82,7 @@ namespace ShopMates.BEAPI
                     });
             });
 
-            string issuer = Configuration.GetValue<string>("Tokens.Issuer");
+            string issuer = Configuration.GetValue<string>("Tokens:Issuer");
             string singingKey = Configuration.GetValue<string>("Tokens:Key");
             byte[] singingKeyBytes = System.Text.Encoding.UTF8.GetBytes(singingKey);
 
@@ -133,7 +134,7 @@ namespace ShopMates.BEAPI
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger ShopMaate V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger ShopMate V1");
             });
 
             app.UseEndpoints(endpoints =>
