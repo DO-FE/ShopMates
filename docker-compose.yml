@@ -12,6 +12,19 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - web-api
+  
+  web-admin:
+    build: 
+      context: .
+      dockerfile: Dockerfile-Admin
+    image: shopmates-webadmin
+    container_name: s-webadmin
+    ports:
+      - "37362:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - web-api
       
   web-api:
     build: 
