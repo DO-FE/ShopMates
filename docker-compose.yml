@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile-web
     image: shopmates-web
     container_name: s-web
+    restart: always
     ports:
       - "37580:80"
     environment:
@@ -19,6 +20,7 @@ services:
       dockerfile: Dockerfile-Admin
     image: shopmates-webadmin
     container_name: s-webadmin
+    restart: always
     ports:
       - "37362:80"
     environment:
@@ -32,6 +34,7 @@ services:
       dockerfile: Dockerfile-API
     image: shopmates-api
     container_name: s-webapi
+    restart: always
     ports:
       - "37372:80"
     environment:
