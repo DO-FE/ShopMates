@@ -8,6 +8,9 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["ShopMates.Admin/ShopMates.Admin.csproj", "ShopMates.Admin/"]
 COPY ["ShopMates.ViewModels/ShopMates.ViewModels.csproj", "ShopMates.ViewModels/"]
+COPY ["ShopMates.Integration/ShopMates.Integration.csproj", "ShopMates.Integration/"]
+COPY ["ShopMates.Utilities/ShopMates.Utilities.csproj", "ShopMates.Utilities/"]
+COPY ["ShopMates.Data/ShopMates.Data.csproj", "ShopMates.Data/"]
 
 RUN dotnet restore "ShopMates.Admin/ShopMates.Admin.csproj"
 COPY . .
