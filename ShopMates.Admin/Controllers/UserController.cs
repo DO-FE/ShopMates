@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ShopMates.Integration;
 using ShopMates.ViewModels.System.Users;
-using System.IdentityModel.Tokens.Jwt;
+using Microsoft.Extensions.Configuration;
 using System.Security.Claims;
 using System.Security.Permissions;
 using System.Text;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace ShopMates.Admin.Controllers
 {
@@ -37,19 +37,20 @@ namespace ShopMates.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequest request)
         {
-            if(!ModelState.IsValid)
-            {
+            if (!ModelState.IsValid)
                 return View(ModelState);
-            }
+
             var token = await _userApiClient.Authenticate(request);
+
             var userPrincipal = this.ValidateToken(token);
             var authProperties = new AuthenticationProperties
             {
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
-                IsPersistent = true
+                IsPersistent = false
             };
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,userPrincipal,authProperties);
-            return RedirectToAction("Index","Home");
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, userPrincipal, authProperties);
+
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]
@@ -68,8 +69,9 @@ namespace ShopMates.Admin.Controllers
         private ClaimsPrincipal ValidateToken(string jwtToken)
         {
             IdentityModelEventSource.ShowPII = true;
-            SecurityToken validateToken;
-            TokenValidationParameters validationParameters= new TokenValidationParameters();
+
+            SecurityToken validatedToken;
+            TokenValidationParameters validationParameters = new TokenValidationParameters();
 
             validationParameters.ValidateLifetime = true;
 
@@ -77,7 +79,7 @@ namespace ShopMates.Admin.Controllers
             validationParameters.ValidIssuer = _configuration["Tokens:Issuer"];
             validationParameters.IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Tokens:Key"]));
 
-            ClaimsPrincipal principal = new JwtSecurityTokenHandler().ValidateToken(jwtToken, validationParameters, out validateToken);
+            ClaimsPrincipal principal = new JwtSecurityTokenHandler().ValidateToken(jwtToken, validationParameters, out validatedToken);
 
             return principal;
         }

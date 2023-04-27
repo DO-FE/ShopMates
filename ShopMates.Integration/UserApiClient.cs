@@ -23,8 +23,8 @@ namespace ShopMates.Integration
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("http://axyres.devops-nhattien.asia");
-            var response = await client.PostAsync("/api/Users/authenticate", httpContent);
+            client.BaseAddress = new Uri("http://axyres.devops-nhattien.asia:37372/");
+            var response = await client.PostAsync("/api/users/authenticate", httpContent);
             var token = await response.Content.ReadAsStringAsync();
 
             return token;
