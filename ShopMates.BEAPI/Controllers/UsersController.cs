@@ -50,7 +50,7 @@ namespace ShopMates.BEAPI.Controllers
 
         [HttpGet("paging")]
         [Authorize]
-        public async Task<IActionResult> GetAllPaging([FromQuery] GetUserPagingRequest request)
+        public async Task<IActionResult> GetAllPaging([FromQuery] PagingRequestBase request)
         {
             var users = await _userService.GetUsersPaging(request);
             return Ok(users);
