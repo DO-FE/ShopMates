@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using ShopMates.ViewModels.System.Users;
 using System;
 using System.Collections.Generic;
@@ -13,8 +14,10 @@ namespace ShopMates.Integration
     public class UserApiClient : IUserApiClient
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        public UserApiClient(IHttpClientFactory httpClientFactory) 
-        { 
+        private readonly IConfiguration _configuration;
+        public UserApiClient(IHttpClientFactory httpClientFactory, IConfiguration configuration) 
+        {
+            _configuration = configuration;
             _httpClientFactory = httpClientFactory;
         }
         public async Task<string> Authenticate(LoginRequest request)
@@ -23,7 +26,7 @@ namespace ShopMates.Integration
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("http://axyres.devops-nhattien.asia:37372/");
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
             var response = await client.PostAsync("/api/users/authenticate", httpContent);
             var token = await response.Content.ReadAsStringAsync();
 

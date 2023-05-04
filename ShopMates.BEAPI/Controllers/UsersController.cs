@@ -29,7 +29,7 @@ namespace ShopMates.BEAPI.Controllers
             {
                 return BadRequest("Có nhập tài khoản password cũng sai thì làm gì cho đời hả?");
             }
-            return Ok(new { token = resultToken });
+            return Ok(resultToken);
         }
 
         [HttpPost("register")]
