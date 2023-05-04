@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopMates.Application.System.Users;
 using ShopMates.ViewModels.Catalog.Products;
+using ShopMates.ViewModels.Common;
 using ShopMates.ViewModels.System.Users;
 
 namespace ShopMates.BEAPI.Controllers
