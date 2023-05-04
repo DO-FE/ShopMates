@@ -63,7 +63,7 @@ namespace ShopMates.Application.System.Users
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public async Task<PagedResult<UserViewModels>> GetUsersPaging(GetUserPagingRequest request)
+        public async Task<PagedResult<UserViewModels>> GetUsersPaging(PagingRequestBase request)
         {
             var query = _userManager.Users;
             /*if (!string.IsNullOrEmpty(request.Keyword))

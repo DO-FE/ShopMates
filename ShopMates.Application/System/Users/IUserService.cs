@@ -14,6 +14,6 @@ namespace ShopMates.Application.System.Users
 
         Task<bool> Register(RegisterRequest request);
 
-        Task<PagedResult<UserViewModels>> GetUsersPaging(GetUserPagingRequest request);
+        Task<PagedResult<UserViewModels>> GetUsersPaging(PagingRequestBase request);
     }
 }
