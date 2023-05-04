@@ -1,4 +1,5 @@
-﻿using ShopMates.ViewModels.System.Users;
+﻿using ShopMates.ViewModels.Common;
+using ShopMates.ViewModels.System.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,7 @@ namespace ShopMates.Integration
     public interface IUserApiClient
     {
         Task<string> Authenticate(LoginRequest request);
+
+        Task<PagedResult<UserViewModels>> GetUsersPagaing(GetUserPagingRequest request);
     }
 }

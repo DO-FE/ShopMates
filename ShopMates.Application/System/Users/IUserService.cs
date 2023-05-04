@@ -1,4 +1,5 @@
 ﻿using ShopMates.ViewModels.System.Users;
+using ShopMates.ViewModels.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,7 @@ namespace ShopMates.Application.System.Users
         Task<string> Authenticate(LoginRequest request);
 
         Task<bool> Register(RegisterRequest request);
+
+        Task<PagedResult<UserViewModels>> GetUsersPaging(GetUserPagingRequest request);
     }
 }

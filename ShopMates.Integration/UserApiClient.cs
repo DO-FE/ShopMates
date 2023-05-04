@@ -1,10 +1,13 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using ShopMates.ViewModels.Common;
 using ShopMates.ViewModels.System.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
@@ -15,6 +18,7 @@ namespace ShopMates.Integration
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
+        private readonly IHttpContextAccessor _httpContextAccessor;
         public UserApiClient(IHttpClientFactory httpClientFactory, IConfiguration configuration) 
         {
             _configuration = configuration;
@@ -31,6 +35,18 @@ namespace ShopMates.Integration
             var token = await response.Content.ReadAsStringAsync();
 
             return token;
+        }
+
+        public async Task<PagedResult<UserViewModels>> GetUsersPagaing(GetUserPagingRequest request)
+        {
+            var client = _httpClientFactory.CreateClient();
+
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", request.BearerToken);
+            var response = await client.GetAsync($"/api/Users/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&keyword={request.Keyword}");
+            var body = await response.Content.ReadAsStringAsync();
+            var users = JsonConvert.DeserializeObject<PagedResult<UserViewModels>>(body);
+            return users;
         }
     }
 }

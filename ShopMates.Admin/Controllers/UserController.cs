@@ -10,6 +10,7 @@ using System.Security.Claims;
 using System.Security.Permissions;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
+using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
 namespace ShopMates.Admin.Controllers
 {
@@ -22,8 +23,17 @@ namespace ShopMates.Admin.Controllers
             _userApiClient = userApiClient;
             _configuration = configuration;
         }
-        public IActionResult Index()
+        public IActionResult Index(string keyword, int pageIndex, int pageSize)
         {
+            var session = HttpContext.Session.GetString("Token");
+            var request = new GetUserPagingRequest()
+            {
+                BearerToken = session,
+                Keyword = keyword,
+                PageIndex = pageIndex,
+                PageSize = pageSize
+            };
+            var data = _userApiClient.GetUsersPagaing(request);
             return View();
         }
 
@@ -48,6 +58,7 @@ namespace ShopMates.Admin.Controllers
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
                 IsPersistent = false
             };
+            HttpContext.Session.SetString("Token", token);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, userPrincipal, authProperties);
 
             return RedirectToAction("Index", "Home");

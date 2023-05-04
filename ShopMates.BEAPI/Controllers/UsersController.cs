@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopMates.Application.System.Users;
+using ShopMates.ViewModels.Catalog.Products;
 using ShopMates.ViewModels.System.Users;
 
 namespace ShopMates.BEAPI.Controllers
@@ -45,6 +46,14 @@ namespace ShopMates.BEAPI.Controllers
                 return BadRequest("Đăng kí không thành công rồi, đi báo chính quyền đi em");
             }
             return Ok();
+        }
+
+        [HttpGet("paging")]
+        [Authorize]
+        public async Task<IActionResult> GetAllPaging([FromQuery] GetUserPagingRequest request)
+        {
+            var users = await _userService.GetUsersPaging(request);
+            return Ok(users);
         }
     }
 }
