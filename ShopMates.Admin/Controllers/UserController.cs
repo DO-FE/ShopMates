@@ -11,6 +11,7 @@ using System.Security.Permissions;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
+using ShopMates.ViewModels.Common;
 
 namespace ShopMates.Admin.Controllers
 {
@@ -23,13 +24,13 @@ namespace ShopMates.Admin.Controllers
             _userApiClient = userApiClient;
             _configuration = configuration;
         }
-        public async Task<IActionResult> ListUser(string keyword = "a", int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> ListUser(int pageIndex = 1, int pageSize = 15)
         {
             var session = HttpContext.Session.GetString("Token");
-            var request = new GetUserPagingRequest()
+            var request = new PagingRequestBase()
             {
                 BearerToken = session,
-                Keyword = keyword,
+                //Keyword = keyword,
                 PageIndex = pageIndex,
                 PageSize = pageSize
             };
