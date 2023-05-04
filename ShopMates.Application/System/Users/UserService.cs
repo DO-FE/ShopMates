@@ -66,7 +66,7 @@ namespace ShopMates.Application.System.Users
         public async Task<PagedResult<UserViewModels>> GetUsersPaging(GetUserPagingRequest request)
         {
             var query = _userManager.Users;
-            if (string.IsNullOrEmpty(request.Keyword))
+            if (!string.IsNullOrEmpty(request.Keyword))
             {
                 query = query.Where(x => x.UserName.Contains(request.Keyword) || x.PhoneNumber.Contains(request.Keyword));
             }

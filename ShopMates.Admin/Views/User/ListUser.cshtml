@@ -2,11 +2,11 @@
 @model PagedResult<ShopMates.ViewModels.System.Users.UserViewModels>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "List Users";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1 class="h3 mb-0 text-gray-800">List Users</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -57,7 +57,7 @@
                     @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>

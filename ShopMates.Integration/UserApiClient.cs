@@ -43,7 +43,7 @@ namespace ShopMates.Integration
 
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", request.BearerToken);
-            var response = await client.GetAsync($"/api/Users/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&keyword={request.Keyword}");
+            var response = await client.GetAsync($"/api/Users/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&keyword={request.Keyword}&BearerToken={request.BearerToken}");
             var body = await response.Content.ReadAsStringAsync();
             var users = JsonConvert.DeserializeObject<PagedResult<UserViewModels>>(body);
             return users;

@@ -23,7 +23,7 @@ namespace ShopMates.Admin.Controllers
             _userApiClient = userApiClient;
             _configuration = configuration;
         }
-        public IActionResult Index(string keyword, int pageIndex, int pageSize)
+        public async Task<IActionResult> ListUser(string keyword = "a", int pageIndex = 1, int pageSize = 10)
         {
             var session = HttpContext.Session.GetString("Token");
             var request = new GetUserPagingRequest()
@@ -33,8 +33,8 @@ namespace ShopMates.Admin.Controllers
                 PageIndex = pageIndex,
                 PageSize = pageSize
             };
-            var data = _userApiClient.GetUsersPagaing(request);
-            return View();
+            var data = await _userApiClient.GetUsersPagaing(request);
+            return View(data);
         }
 
         [HttpGet]
