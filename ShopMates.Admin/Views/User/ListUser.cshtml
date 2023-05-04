@@ -5,63 +5,86 @@
     ViewData["Title"] = "List Users";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
-<h1 class="h3 mb-0 text-gray-800">List Users</h1>
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">List of Users</h1>
+    <p class="mb-4">
+        DataTables is a third party plugin that is used to generate the demo table below.
+        For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.
+    </p>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                ID
-            </th>
-            <th>
-                UserName
-            </th>
-            <th>
-                FirstName
-            </th>
-            <th>
-                LastName
-            </th>
-            <th>
-                Phone
-            </th>
-            <th>
-                Email
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Items) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.UserName)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.PhoneNumber)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <form method="post" asp-controller="User" asp-action="Create">
+                <button class="btn btn-primary" type="submit" value="Create">Create New One</button>
+            </form>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                UserName
+                            </th>
+                            <th>
+                                FirstName
+                            </th>
+                            <th>
+                                LastName
+                            </th>
+                            <th>
+                                Phone
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UserName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.FirstName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LastName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page level plugins -->
+<script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="~/js/demo/datatables-demo.js"></script>

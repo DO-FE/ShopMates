@@ -65,6 +65,14 @@ namespace ShopMates.Admin.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Remove("Token");
+            return RedirectToAction("Login", "User");
+        }
+
         [HttpGet]
         public IActionResult Register()
         {

@@ -10,6 +10,7 @@ namespace ShopMates.BEAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class Users : ControllerBase
     {
         private readonly IUserService _userService;
@@ -50,7 +51,6 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpGet("paging")]
-        [Authorize]
         public async Task<IActionResult> GetAllPaging([FromQuery] PagingRequestBase request)
         {
             var users = await _userService.GetUsersPaging(request);
