@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Web/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Web/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
