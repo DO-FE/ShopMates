@@ -14,6 +14,7 @@ namespace ShopMates.ViewModels.System.Users
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Display(Name = "Date of Birth")]
+        [DataType(DataType.Date)]
         public DateTime Dob { get; set; }
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -22,8 +23,10 @@ namespace ShopMates.ViewModels.System.Users
         [Display(Name = "User Name")]
         public string UserName { get; set; }
         [Display(Name = "Password")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         [Display(Name = "Confirm Password")]
+        [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
     }
 }

@@ -83,7 +83,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom User:</h6>
                         <a class="collapse-item" asp-area="" asp-controller="User" asp-action="ListUser">List</a>
-                        <a class="collapse-item" asp-area="" asp-controller="User" asp-action="CreateUser">Create</a>
+                        <a class="collapse-item" asp-area="" asp-controller="User" asp-action="Create">Create</a>
                         <a class="collapse-item" asp-area="" asp-controller="User" asp-action="RemoveUser">Remove</a>
                         <a class="collapse-item" asp-area="" asp-controller="User" asp-action="Role">Role</a>
                     </div>
@@ -405,7 +405,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <form method="post" asp-controller="User" asp-action="Logout">
+                    <form method="post" asp-controller="Login" asp-action="Logout">
                         <button class="btn btn-primary" type="submit" value="Logout">Logout</button>
                     </form>
                 </div>

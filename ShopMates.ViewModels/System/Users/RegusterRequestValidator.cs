@@ -17,7 +17,7 @@ namespace ShopMates.ViewModels.System.Users
             RuleFor(x => x.Email).NotEmpty().WithMessage("Điền Email vào nhanh").Matches(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$").WithMessage("Tính nhập bừa à? Nhập theo chuẩn email@email.com");
             RuleFor(x => x.PhoneNumber).NotEmpty().WithMessage("Điền SDT vào nhanh, để biết còn ket ban zalo");
             RuleFor(x => x.UserName).NotEmpty().WithMessage("Chỗ này đòi hỏi tên nè");
-            RuleFor(x => x.Password).NotEmpty().WithMessage("Chỗ này đòi mật khẩu nè ba má").MinimumLength(6).WithMessage("Muốn 6 kí tự lận, Nhập cho đúng vào");
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Chỗ này đòi mật khẩu nè ba má").MinimumLength(6).WithMessage("Nhập ít nhất là 7 kí tự và có 1 chữ Hoa và 1 kí tự đặt biệt nha");
             RuleFor(x => x).Custom((request, context) =>
             {
                 if (request.Password != request.ConfirmPassword)
