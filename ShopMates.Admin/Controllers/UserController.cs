@@ -30,7 +30,6 @@ namespace ShopMates.Admin.Controllers
             var request = new PagingRequestBase()
             {
                 BearerToken = session,
-                //Keyword = keyword,
                 PageIndex = pageIndex,
                 PageSize = pageSize
             };
@@ -71,6 +70,23 @@ namespace ShopMates.Admin.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Remove("Token");
             return RedirectToAction("Login", "User");
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(RegisterRequest request)
+        {
+            if (!ModelState.IsValid) 
+                return View();
+
+            var result = await _userApiClient.RegisterUser(request);
+            if(result) return RedirectToAction("Index");
+            return View(request);
         }
 
         [HttpGet]

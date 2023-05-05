@@ -13,5 +13,7 @@ namespace ShopMates.Integration
         Task<string> Authenticate(LoginRequest request);
 
         Task<PagedResult<UserViewModels>> GetUsersPagaing(PagingRequestBase request);
+
+        Task<bool> RegisterUser(RegisterRequest request);
     }
 }

@@ -48,5 +48,17 @@ namespace ShopMates.Integration
             var users = JsonConvert.DeserializeObject<PagedResult<UserViewModels>>(body);
             return users;
         }
+
+        public async Task<bool> RegisterUser(RegisterRequest request)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var json = JsonConvert.SerializeObject(request);
+            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            var response = await client.PostAsync($"/api/Users/register", httpContent);
+
+            return response.IsSuccessStatusCode;
+        }
     }
 }
