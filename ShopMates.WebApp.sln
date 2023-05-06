@@ -16,14 +16,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95BF1CBF-CB64-49B5-ADD0-0DD641C90580}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
+		Dockerfile-Admin = Dockerfile-Admin
 		Dockerfile-API = Dockerfile-API
+		Dockerfile-web = Dockerfile-web
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Web", "ShopMates.Web\ShopMates.Web.csproj", "{D60F36BB-A376-42DF-B030-E54FBFECF3BD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Admin", "ShopMates.Admin\ShopMates.Admin.csproj", "{170458DE-948B-4260-9BC0-E3437917FB80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMates.Integration", "ShopMates.Integration\ShopMates.Integration.csproj", "{90E4BEC8-D05C-43E3-8E51-31B2F772BEAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMates.Integration", "ShopMates.Integration\ShopMates.Integration.csproj", "{90E4BEC8-D05C-43E3-8E51-31B2F772BEAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
