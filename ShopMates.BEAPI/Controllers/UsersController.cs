@@ -31,7 +31,7 @@ namespace ShopMates.BEAPI.Controllers
             var resultToken = await _userService.Authenticate(request);
             if (string.IsNullOrEmpty(resultToken.ResultObj))
             {
-                return BadRequest("Có nhập tài khoản password cũng sai thì làm gì cho đời hả?");
+                return BadRequest(resultToken);
             }
             return Ok(resultToken);
         }
@@ -46,9 +46,9 @@ namespace ShopMates.BEAPI.Controllers
             var result = await _userService.Register(request);
             if (!result.IsSuccessed)
             {
-                return BadRequest(result.Message);
+                return BadRequest(result);
             }
-            return Ok();
+            return Ok(result);
         }
 
 		[HttpPut("{id}")]
@@ -60,9 +60,9 @@ namespace ShopMates.BEAPI.Controllers
 			var result = await _userService.Update(id, request);
 			if (!result.IsSuccessed)
 			{
-				return BadRequest(result.Message);
+				return BadRequest(result);
 			}
-			return Ok();
+			return Ok(result);
 		}
 
 		[HttpGet("paging")]
