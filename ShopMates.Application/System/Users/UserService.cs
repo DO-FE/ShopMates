@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -33,7 +34,7 @@ namespace ShopMates.Application.System.Users
             _config = config;
         }
 
-        public async Task<string> Authenticate(LoginRequest request)
+        public async Task<APIResult<string>> Authenticate(LoginRequest request)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
             if (user == null) return null;
@@ -60,10 +61,28 @@ namespace ShopMates.Application.System.Users
                 expires: DateTime.Now.AddHours(3),
                 signingCredentials: creds);
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return new APISuccessResult<string>(new JwtSecurityTokenHandler().WriteToken(token));
         }
 
-        public async Task<PagedResult<UserViewModels>> GetUsersPaging(PagingRequestBase request)
+		public async Task<APIResult<UserViewModels>> GetByID(Guid Id)
+		{
+            var user = await _userManager.FindByIdAsync(Id.ToString());
+            if (user == null)
+            {
+                return new APIErrorResult<UserViewModels>("UserName không tồn tại nhé");
+            }
+            var userVM = new UserViewModels()
+            {
+				PhoneNumber = user.PhoneNumber,
+				UserName = user.UserName,
+                Dob = user.Dob,
+				FirstName = user.FirstName,
+				LastName = user.LastName
+			};
+            return new APISuccessResult<UserViewModels>(userVM);
+		}
+
+		public async Task<APIResult<PagedResult<UserViewModels>>> GetUsersPaging(PagingRequestBase request)
         {
             var query = _userManager.Users;
             /*if (!string.IsNullOrEmpty(request.Keyword))
@@ -89,12 +108,22 @@ namespace ShopMates.Application.System.Users
                 TotalRecord = totalRow,
                 Items = data
             };
-            return pagedResult;
+            return new APISuccessResult<PagedResult<UserViewModels>>(pagedResult);
         }
 
-        public async Task<bool> Register(RegisterRequest request)
+        public async Task<APIResult<bool>> Register(RegisterRequest request)
         {
-            var user = new AppUser()
+            var user = await _userManager.FindByNameAsync(request.UserName);
+            if (user != null)
+            {
+                return new APIErrorResult<bool>("UserName này có rồi lấy cái khác đi");
+            }
+			if (await _userManager.FindByEmailAsync(request.Email) != null)
+			{
+				return new APIErrorResult<bool>("Email đã có rồi, lấy cái khác đi");
+			}
+
+			user = new AppUser()
             {
                 Dob = request.Dob,
                 Email = request.Email,
@@ -106,9 +135,25 @@ namespace ShopMates.Application.System.Users
             var result = await _userManager.CreateAsync(user, request.Password);
             if (result.Succeeded)
             {
-                return true;
+                return new APISuccessResult<bool>();
             }
-            return false;
+            return new APIErrorResult<bool>("Đăng ký không thành công");
         }
-    }
+
+		public async Task<APIResult<bool>> Update(Guid id, UserUpdateRequest request)
+		{
+            var user = await _userManager.FindByIdAsync(id.ToString());
+            user.Dob = request.Dob;
+            user.FirstName = request.FirstName;
+			user.LastName = request.LastName;
+			user.PhoneNumber = request.PhoneNumber;
+
+			var result = await _userManager.UpdateAsync(user);
+			if (result.Succeeded)
+			{
+				return new APISuccessResult<bool>();
+			}
+			return new APIErrorResult<bool>("Cập nhật không thành công");
+		}
+	}
 }

@@ -10,10 +10,14 @@ namespace ShopMates.Integration
 {
     public interface IUserApiClient
     {
-        Task<string> Authenticate(LoginRequest request);
+        Task<APIResult<string>> Authenticate(LoginRequest request);
 
-        Task<PagedResult<UserViewModels>> GetUsersPagaing(PagingRequestBase request);
+        Task<APIResult<PagedResult<UserViewModels>>> GetUsersPagaing(PagingRequestBase request);
 
-        Task<bool> RegisterUser(RegisterRequest request);
-    }
+        Task<APIResult<bool>> RegisterUser(RegisterRequest request);
+
+		Task<APIResult<bool>> UpdateUser(Guid id, UserUpdateRequest request);
+
+		Task<APIResult<UserViewModels>> GetByID(Guid id);
+	}
 }

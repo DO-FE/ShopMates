@@ -7,13 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+	<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
 	<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ShopMates.ViewModels\ShopMates.ViewModels.csproj" />
+	  <ProjectReference Include="..\ShopMates.Utilities\ShopMates.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

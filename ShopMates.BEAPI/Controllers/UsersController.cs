@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using ShopMates.Application.System.Users;
 using ShopMates.ViewModels.Catalog.Products;
 using ShopMates.ViewModels.Common;
@@ -28,7 +29,7 @@ namespace ShopMates.BEAPI.Controllers
                 return BadRequest(ModelState);
 
             var resultToken = await _userService.Authenticate(request);
-            if (string.IsNullOrEmpty(resultToken))
+            if (string.IsNullOrEmpty(resultToken.ResultObj))
             {
                 return BadRequest("Có nhập tài khoản password cũng sai thì làm gì cho đời hả?");
             }
@@ -43,18 +44,39 @@ namespace ShopMates.BEAPI.Controllers
                 return BadRequest(ModelState);
 
             var result = await _userService.Register(request);
-            if (!result)
+            if (!result.IsSuccessed)
             {
-                return BadRequest("Đăng kí không thành công rồi, đi báo chính quyền đi em");
+                return BadRequest(result.Message);
             }
             return Ok();
         }
 
-        [HttpGet("paging")]
+		[HttpPut("{id}")]
+		public async Task<IActionResult> Update(Guid id,[FromBody] UserUpdateRequest request)
+		{
+			if (!ModelState.IsValid)
+				return BadRequest(ModelState);
+
+			var result = await _userService.Update(id, request);
+			if (!result.IsSuccessed)
+			{
+				return BadRequest(result.Message);
+			}
+			return Ok();
+		}
+
+		[HttpGet("paging")]
         public async Task<IActionResult> GetAllPaging([FromQuery] PagingRequestBase request)
         {
             var users = await _userService.GetUsersPaging(request);
             return Ok(users);
         }
-    }
+
+		[HttpGet("{id}")]
+		public async Task<IActionResult> GetByID(Guid Id)
+		{
+			var users = await _userService.GetByID(Id);
+			return Ok(users);
+		}
+	}
 }

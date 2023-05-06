@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace ShopMates.ViewModels.Common
 {
-    public class RequestBase
-    {
-        public string BearerToken { get; set; }
-    }
+	public class APIResult<T>
+	{
+		public bool IsSuccessed { get; set; }
+		public string Message { get; set; }
+
+		public T ResultObj { get; set; }
+	}
 }
