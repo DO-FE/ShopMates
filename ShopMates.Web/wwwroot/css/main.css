@@ -2359,10 +2359,10 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .ltext-104 {
-  font-family: TimeNewRoman.ttf;
-  font-size: 60px;
-  line-height: 1.1;
-  text-transform: uppercase;
+    font-family: Montserrat-ExtraBoldItalic.ttf;
+    font-size: 60px;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
 .ltext-105 {
@@ -3329,4 +3329,9 @@ input.num-product::-webkit-inner-spin-button {
     padding: 20px;
   }
 
+}
+
+.icon-pay-1 {
+    width: 70px;
+    height: 42px;
 }

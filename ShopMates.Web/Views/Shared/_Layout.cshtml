@@ -60,11 +60,11 @@
 								</ul>
 							</li>
 
-							<li>
+							<li class="label1" data-label1="mới">
 								<a asp-area="" asp-controller="Product" asp-action="Index"> Sản phẩm</a>
 							</li>
 
-							<li class="label1" data-label1="hot">
+							<li>
 								<a asp-area="" asp-controller="Product" asp-action="Features">Features</a>
 							</li>
 
@@ -151,11 +151,11 @@
 					</span>
 				</li>
 
-				<li>
+				<li class="label1" data-label1="mới">
 					<a asp-area="" asp-controller="Product" asp-action="Index"> Sản phẩm</a>
 				</li>
 
-				<li class="label1" data-label1="hot">
+				<li>
 					<a asp-area="" asp-controller="Product" asp-action="Features">Features</a>
 				</li>
 
@@ -249,55 +249,55 @@
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-01.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-01.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-01.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-02.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-02.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-02.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-03.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-03.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-03.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-04.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-04.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-04.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-05.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-05.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-05.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-06.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-06.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-06.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-07.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-07.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-07.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-08.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-08.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-08.jpg);"></a>
 						</div>
 
 						<!-- item gallery sidebar -->
 						<div class="wrap-item-gallery m-b-10">
 							<a class="item-gallery bg-img1" href="~/images/gallery-09.jpg" data-lightbox="gallery"
-		  style="background-image: url(images/gallery-09.jpg);"></a>
+		  style="background-image: url(/app/wwwroot/images/gallery-09.jpg);"></a>
 						</div>
 					</div>
 				</div>
@@ -388,11 +388,11 @@
 					</div>
 
 					<div class="header-cart-buttons flex-w w-full">
-						<a href="~/shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-							Kiểm Tra Giỏ Hàng
+						<a asp-area="" asp-controller="Order" asp-action="Index" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
+							Xem Giỏ Hàng
 						</a>
 
-						<a href="~/shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+						<a asp-area="" asp-controller="Order" asp-action="Index" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
 							Đặt hàng
 						</a>
 					</div>
@@ -479,7 +479,7 @@
 					</h4>
 
 					<p class="stext-107 cl7 size-201">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+						Nếu có câu hỏi nào? Hãy liên hệ cho chúng tôi trực tiếp qua số: + 84 12345678 hoặc tại Độc lạ Bình Dương
 					</p>
 
 					<div class="p-t-27">
@@ -519,30 +519,30 @@
 
 			<div class="p-t-40">
 				<div class="flex-c-m flex-w p-b-18">
-					<a href="~/#" class="m-all-1">
-						<img src="~/images/icons/icon-pay-01.png" alt="ICON-PAY">
+					<a href="~/#" class="m-all-1 icon-pay-1">
+						<img src="~/images/icons/icon-pay-01.png" alt="ICON-PAY" class="icon-pay-1">
 					</a>
 
-					<a href="~/#" class="m-all-1">
-						<img src="~/images/icons/icon-pay-02.png" alt="ICON-PAY">
+					<a href="~/#" class="m-all-1 icon-pay-1">
+						<img src="~/images/icons/icon-pay-02.png" alt="ICON-PAY" class="icon-pay-1">
 					</a>
 
-					<a href="~/#" class="m-all-1">
-						<img src="~/images/icons/icon-pay-03.png" alt="ICON-PAY">
+					<a href="~/#" class="m-all-1 icon-pay-1">
+						<img src="~/images/icons/icon-pay-03.png" alt="ICON-PAY" class="icon-pay-1">
 					</a>
 
-					<a href="~/#" class="m-all-1">
-						<img src="~/images/icons/icon-pay-04.png" alt="ICON-PAY">
+					<a href="~/#" class="m-all-1 icon-pay-1">
+						<img src="~/images/icons/icon-pay-04.png" alt="ICON-PAY" class="icon-pay-1">
 					</a>
 
-					<a href="~/#" class="m-all-1">
-						<img src="~/images/icons/icon-pay-05.png" alt="ICON-PAY">
+					<a href="~/#" class="m-all-1 icon-pay-1">
+						<img src="~/images/icons/icon-pay-05.png" alt="ICON-PAY" class="icon-pay-1">
 					</a>
 				</div>
 
 				<p class="stext-107 cl6 txt-center">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="~/https://github.com/AxyRes" target="_blank">AxyRes</a> &amp; distributed by <a href="~/https://github.com/DO-FE" target="_blank">DOFE</a>
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://github.com/AxyRes" target="_blank">AxyRes</a> &amp; distributed by <a href="https://github.com/DO-FE" target="_blank">DOFE</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
 				</p>
