@@ -874,6 +874,20 @@
             },
             "Asset": null,
             "Patterns": null
+          },
+          "TimeNewRoman": {
+            "Children": {
+              "TimeNewRoman.ttf": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "fonts/TimeNewRoman/TimeNewRoman.ttf"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
           }
         },
         "Asset": null,

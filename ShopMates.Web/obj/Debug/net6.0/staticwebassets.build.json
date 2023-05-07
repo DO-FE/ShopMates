@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hTnu15WPWLfJDUIaUEw2s3T1hHF37U8dAr8C/M73QcI=",
+  "Hash": "fRiNMD4I698SuIhq4bq24Ivq89ThiFOn08GQBFAIUeE=",
   "Source": "ShopMates.Web",
   "BasePath": "_content/ShopMates.Web",
   "Mode": "Default",
@@ -1715,6 +1715,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\Poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\fonts\\TimeNewRoman\\TimeNewRoman.ttf",
+      "SourceId": "ShopMates.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\",
+      "BasePath": "_content/ShopMates.Web",
+      "RelativePath": "fonts/TimeNewRoman/TimeNewRoman.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\TimeNewRoman\\TimeNewRoman.ttf"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\image\\doge.gif",

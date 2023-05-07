@@ -197,6 +197,10 @@
       "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ThinItalic.ttf"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\fonts\\TimeNewRoman\\TimeNewRoman.ttf",
+      "PackagePath": "staticwebassets\\fonts\\TimeNewRoman\\TimeNewRoman.ttf"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
     },
