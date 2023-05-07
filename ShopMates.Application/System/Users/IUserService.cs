@@ -1,4 +1,5 @@
 ﻿using ShopMates.ViewModels.System.Users;
+using ShopMates.ViewModels.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,14 @@ namespace ShopMates.Application.System.Users
 {
     public interface IUserService
     {
-        Task<string> Authenticate(LoginRequest request);
+        Task<APIResult<string>> Authenticate(LoginRequest request);
 
-        Task<bool> Register(RegisterRequest request);
-    }
+        Task<APIResult<bool>> Register(RegisterRequest request);
+
+		Task<APIResult<bool>> Update(Guid id, UserUpdateRequest request);
+
+		Task<APIResult<PagedResult<UserViewModels>>> GetUsersPaging(PagingRequestBase request);
+
+		Task<APIResult<UserViewModels>> GetByID(Guid Id);
+	}
 }

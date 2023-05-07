@@ -1,115 +1,86 @@
 ﻿@{
     ViewData["Title"] = "Liên Hệ";
 }
-<h1>@ViewData["Title"]</h1>
-<style>
-    * {
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
 
-    body {
-        margin: 0;
-        padding: 0;
-    }
+<section class="bg0 p-t-104 p-b-116">
+	<div class="container">
+		<div class="flex-w flex-tr">
+			<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
+				<form>
+					<h4 class="mtext-105 cl2 txt-center p-b-30">
+						Gửi tin nhắn cho chúng tôi
+					</h4>
 
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-    }
+					<div class="bor8 m-b-20 how-pos4-parent">
+						<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Email của bạn">
+						<img class="how-pos4 pointer-none" src="~/images/icons/icon-email.png" alt="ICON">
+					</div>
 
-    h1 {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+					<div class="bor8 m-b-30">
+						<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="Chúng tôi có thể giúp gì cho bạn?"></textarea>
+					</div>
 
-    label {
-        display: block;
-        margin-bottom: 5px;
-    }
+					<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+						Gửi tin nhắn
+					</button>
+				</form>
+			</div>
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+			<div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
+				<div class="flex-w w-full p-b-42">
+					<span class="fs-18 cl5 txt-center size-211">
+						<span class="lnr lnr-map-marker"></span>
+					</span>
 
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+					<div class="size-212 p-t-2">
+						<span class="mtext-110 cl2">
+							Địa chỉ
+						</span>
 
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+						<p class="stext-115 cl6 size-213 p-t-18">
+							Độc lạ Bình Dương
+						</p>
+					</div>
+				</div>
 
-    .alert {
-        background-color: #f44336;
-        color: white;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
+				<div class="flex-w w-full p-b-42">
+					<span class="fs-18 cl5 txt-center size-211">
+						<span class="lnr lnr-phone-handset"></span>
+					</span>
 
-    .success {
-        background-color: #4CAF50;
-    }
+					<div class="size-212 p-t-2">
+						<span class="mtext-110 cl2">
+							Hãy nói chuyện trực tiếp qua sdt: 
+						</span>
 
-    .error {
-        background-color: #f44336;
-    }
-</style>
-<div class="text-center">
-    <div id="alert-box"></div>
-    <form id="contact-form" method="post" action="send-email.php">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+						<p class="stext-115 cl1 size-213 p-t-18">
+							113
+						</p>
+					</div>
+				</div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+				<div class="flex-w w-full">
+					<span class="fs-18 cl5 txt-center size-211">
+						<span class="lnr lnr-envelope"></span>
+					</span>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+					<div class="size-212 p-t-2">
+						<span class="mtext-110 cl2">
+							Tư vấn mua hàng
+						</span>
 
-        <input type="submit" value="Submit">
-    </form>
-    <p><a href="/ShopMates">Trở về Trang chủ</a></p>
+						<p class="stext-115 cl1 size-213 p-t-18">
+							nhattien-deptrai@gmail.com
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
+
+<!-- Map -->
+<div class="map">
+	<div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="~/images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
 </div>
-
-<script>
-    const form = document.getElementById('contact-form');
-    const alertBox = document.getElementById('alert-box');
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const formData = new FormData(form);
-        fetch(form.action, {
-            method: form.method,
-            body: formData
-        })
-            .then(response => {
-                if (response.ok) {
-                    return response.text();
-                }
-                else {
-                    throw new Error('Something went wrong');
-                }
-            })
-            .then(responseText => {
-                alertBox.classList.add('success');
-                alertBox.textContent = 'Your message has been sent.';
-            })
-            .catch(error => {
-                alertBox.classList.add('error');
-                alertBox.textContent = error.message;
-            });
-    });
-</script>
