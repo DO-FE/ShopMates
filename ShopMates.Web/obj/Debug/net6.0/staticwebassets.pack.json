@@ -401,14 +401,6 @@
       "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\icon-font.min.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\image\\doge.gif",
-      "PackagePath": "staticwebassets\\image\\doge.gif"
-    },
-    {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\image\\favicon.png",
-      "PackagePath": "staticwebassets\\image\\favicon.png"
-    },
-    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\about-01.jpg",
       "PackagePath": "staticwebassets\\images\\about-01.jpg"
     },

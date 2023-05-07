@@ -1561,28 +1561,6 @@
         "Asset": null,
         "Patterns": null
       },
-      "image": {
-        "Children": {
-          "doge.gif": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "image/doge.gif"
-            },
-            "Patterns": null
-          },
-          "favicon.png": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "image/favicon.png"
-            },
-            "Patterns": null
-          }
-        },
-        "Asset": null,
-        "Patterns": null
-      },
       "js": {
         "Children": {
           "main.js": {

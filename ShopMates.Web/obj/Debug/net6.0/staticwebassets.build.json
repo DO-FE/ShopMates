@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fRiNMD4I698SuIhq4bq24Ivq89ThiFOn08GQBFAIUeE=",
+  "Hash": "Cm5yhfCNom2LbN6gG0BPytOWnhZzOGk6S+eb+S4vCZ0=",
   "Source": "ShopMates.Web",
   "BasePath": "_content/ShopMates.Web",
   "Mode": "Default",
@@ -1732,40 +1732,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\TimeNewRoman\\TimeNewRoman.ttf"
-    },
-    {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\image\\doge.gif",
-      "SourceId": "ShopMates.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\",
-      "BasePath": "_content/ShopMates.Web",
-      "RelativePath": "image/doge.gif",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\doge.gif"
-    },
-    {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\image\\favicon.png",
-      "SourceId": "ShopMates.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\",
-      "BasePath": "_content/ShopMates.Web",
-      "RelativePath": "image/favicon.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\favicon.png"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\about-01.jpg",
