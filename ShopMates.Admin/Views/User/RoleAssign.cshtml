@@ -7,13 +7,14 @@
 
 <div class="container-fluid">
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Assign Role User</h1>
+    <h1 class="h3 mb-2 text-gray-800">Assign Role User </h1>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <a class="btn btn-primary" asp-controller="User" asp-action="ListUser">Back to List</a>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="card-body col-lg-5"><div></div>
+            <div class="card-body col-lg-7">
                 <form asp-action="RoleAssign">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="Id" />
