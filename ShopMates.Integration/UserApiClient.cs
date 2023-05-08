@@ -106,19 +106,19 @@ namespace ShopMates.Integration
         public async Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
         {
             var client = _httpClientFactory.CreateClient();
-            var json = JsonConvert.SerializeObject(request);
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+
+            var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-            var response = await client.PutAsync($"/api/Users/{id}/roles", httpContent);
+            var response = await client.PutAsync($"/api/users/{id}/roles", httpContent);
             var result = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
-            {
                 return JsonConvert.DeserializeObject<APISuccessResult<bool>>(result);
 
-            }
             return JsonConvert.DeserializeObject<APIErrorResult<bool>>(result);
         }
 

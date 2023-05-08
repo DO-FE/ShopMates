@@ -162,7 +162,7 @@ namespace ShopMates.Application.System.Users
         public async Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
         {
             var user = await _userManager.FindByIdAsync(id.ToString());
-            if (user != null)
+            if (user == null)
             {
                 return new APIErrorResult<bool>("Tài khoản không tồn tại rồi kiếm cái khác đê");
             }
