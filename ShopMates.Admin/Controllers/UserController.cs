@@ -88,6 +88,13 @@ namespace ShopMates.Admin.Controllers
 			return View(request);
 		}
 
+		[HttpGet]
+		public async Task<IActionResult> Details(Guid id)
+		{
+            var result = await _userApiClient.GetByID(id);
+			return View(result.ResultObj);
+		}
+
 
 		[HttpGet]
         public IActionResult Register()

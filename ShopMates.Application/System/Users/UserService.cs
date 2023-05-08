@@ -77,7 +77,9 @@ namespace ShopMates.Application.System.Users
 				UserName = user.UserName,
                 Dob = user.Dob,
 				FirstName = user.FirstName,
-				LastName = user.LastName
+                Email = user.Email,
+				LastName = user.LastName,
+                Id = Id
 			};
             return new APISuccessResult<UserViewModels>(userVM);
 		}
