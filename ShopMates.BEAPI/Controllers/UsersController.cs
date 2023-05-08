@@ -79,7 +79,7 @@ namespace ShopMates.BEAPI.Controllers
 			return Ok(users);
 		}
 
-        [HttpDelete("{id")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid Id)
         {
             var result = await _userService.Delete(Id);
