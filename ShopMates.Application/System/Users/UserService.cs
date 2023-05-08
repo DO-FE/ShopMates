@@ -64,7 +64,22 @@ namespace ShopMates.Application.System.Users
             return new APISuccessResult<string>(new JwtSecurityTokenHandler().WriteToken(token));
         }
 
-		public async Task<APIResult<UserViewModels>> GetByID(Guid Id)
+        public async Task<APIResult<bool>> Delete(Guid Id)
+        {
+            var user = await _userManager.FindByIdAsync(Id.ToString());
+            if (user == null)
+            {
+                return new APIErrorResult<bool>("UserName không tồn tại nhé");
+            }
+            var result = await _userManager.DeleteAsync(user);
+            if(result.Succeeded)
+            {
+                return new APISuccessResult<bool>();
+            }
+            return new APIErrorResult<bool>("Xóa không thành công rồi em ới ~");
+        }
+
+        public async Task<APIResult<UserViewModels>> GetByID(Guid Id)
 		{
             var user = await _userManager.FindByIdAsync(Id.ToString());
             if (user == null)

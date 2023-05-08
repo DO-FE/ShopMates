@@ -41,7 +41,23 @@ namespace ShopMates.Integration
             return JsonConvert.DeserializeObject<APISuccessResult<string>>(await response.Content.ReadAsStringAsync());
         }
 
-		public async Task<APIResult<UserViewModels>> GetByID(Guid id)
+        public async Task<APIResult<bool>> Delete(Guid id)
+        {
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var client = _httpClientFactory.CreateClient();
+
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var response = await client.DeleteAsync($"/api/Users/{id}");
+            var body = await response.Content.ReadAsStringAsync();
+            if (response.IsSuccessStatusCode)
+            {
+                return JsonConvert.DeserializeObject<APISuccessResult<bool>>(body);
+            }
+            return JsonConvert.DeserializeObject<APIErrorResult<bool>>(body);
+        }
+
+        public async Task<APIResult<UserViewModels>> GetByID(Guid id)
 		{
 			var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 			var client = _httpClientFactory.CreateClient();
