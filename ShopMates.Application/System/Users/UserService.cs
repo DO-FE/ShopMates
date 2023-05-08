@@ -86,6 +86,7 @@ namespace ShopMates.Application.System.Users
             {
                 return new APIErrorResult<UserViewModels>("UserName không tồn tại nhé");
             }
+            var roles = await _userManager.GetRolesAsync(user);
             var userVM = new UserViewModels()
             {
 				PhoneNumber = user.PhoneNumber,
@@ -94,7 +95,8 @@ namespace ShopMates.Application.System.Users
 				FirstName = user.FirstName,
                 Email = user.Email,
 				LastName = user.LastName,
-                Id = Id
+                Id = Id,
+                Roles = roles
 			};
             return new APISuccessResult<UserViewModels>(userVM);
 		}
@@ -157,7 +159,36 @@ namespace ShopMates.Application.System.Users
             return new APIErrorResult<bool>("Đăng ký không thành công");
         }
 
-		public async Task<APIResult<bool>> Update(Guid id, UserUpdateRequest request)
+        public async Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
+        {
+            var user = await _userManager.FindByIdAsync(id.ToString());
+            if (user != null)
+            {
+                return new APIErrorResult<bool>("Tài khoản không tồn tại rồi kiếm cái khác đê");
+            }
+            var removedRoles = request.Roles.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+            foreach (var roleName in removedRoles)
+            {
+                if (await _userManager.IsInRoleAsync(user, roleName) == true)
+                {
+                    await _userManager.RemoveFromRoleAsync(user, roleName);
+                }
+            }
+            await _userManager.RemoveFromRolesAsync(user, removedRoles);
+
+            var addedRoles = request.Roles.Where(x => x.Selected).Select(x => x.Name).ToList();
+            foreach (var roleName in addedRoles)
+            {
+                if (await _userManager.IsInRoleAsync(user, roleName) == false)
+                {
+                    await _userManager.AddToRoleAsync(user, roleName);
+                }
+            }
+
+            return new APISuccessResult<bool>();
+        }
+
+        public async Task<APIResult<bool>> Update(Guid id, UserUpdateRequest request)
 		{
             var user = await _userManager.FindByIdAsync(id.ToString());
             user.Dob = request.Dob;

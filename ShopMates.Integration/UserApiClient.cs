@@ -103,7 +103,26 @@ namespace ShopMates.Integration
 			return JsonConvert.DeserializeObject<APIErrorResult<bool>>(result);
 		}
 
-		public async Task<APIResult<bool>> UpdateUser(Guid id, UserUpdateRequest request)
+        public async Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var json = JsonConvert.SerializeObject(request);
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var response = await client.PutAsync($"/api/Users/{id}/roles", httpContent);
+            var result = await response.Content.ReadAsStringAsync();
+            if (response.IsSuccessStatusCode)
+            {
+                return JsonConvert.DeserializeObject<APISuccessResult<bool>>(result);
+
+            }
+            return JsonConvert.DeserializeObject<APIErrorResult<bool>>(result);
+        }
+
+        public async Task<APIResult<bool>> UpdateUser(Guid id, UserUpdateRequest request)
 		{
 			var client = _httpClientFactory.CreateClient();
 			var json = JsonConvert.SerializeObject(request);

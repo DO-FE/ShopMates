@@ -6,7 +6,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+@section Scripts{
+    <script>
+        setTimeout(function () {
+            $('#msgAlert').fadeOut('slow');
+        }, 3000);
+    </script>
+}
 <div class="container-fluid">
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">List of Users</h1>
@@ -20,6 +26,12 @@
              <a class="btn btn-primary" asp-controller="User" asp-action="Create">Create New One</a>
         </div>
         <div class="card-body">
+            <div class="row">
+                @if (ViewBag.SuccessMsg != null)
+                {
+                    <div id="msgAlert" class="alert alert-success" role="alert"> @ViewBag.SuccessMsg </div>
+                }
+            </div>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -58,7 +70,8 @@
                                 <td>
                                     @Html.ActionLink("Edit", "Update", new { id = item.Id }) |
                                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                                    @Html.ActionLink("Remove", "Delete", new { id = item.Id })
+                                    @Html.ActionLink("Remove", "Delete", new { id = item.Id }) |
+                                    @Html.ActionLink("Assign Role", "RoleAssign", new { id = item.Id })
                                 </td>
                             </tr>
                         }

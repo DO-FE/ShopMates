@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopMates.ViewModels.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace ShopMates.ViewModels.System.Users
         [Display(Name = "User Name")]
         public string UserName { get; set; }
         [Display(Name = "Date of Birth")]
-        public DateTime Dob { get; set; } 
+        public DateTime Dob { get; set; }
+        public IList<string> Roles { get; set; }
     }
 }

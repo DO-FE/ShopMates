@@ -19,10 +19,13 @@ namespace ShopMates.Admin.Controllers
     {
         private readonly IUserApiClient _userApiClient;
         private readonly IConfiguration _configuration;
-        public UserController(IUserApiClient userApiClient, IConfiguration configuration) 
+        private readonly IRoleApiClient _roleApiClient;
+
+        public UserController(IUserApiClient userApiClient, IConfiguration configuration, IRoleApiClient roleApiClient) 
         { 
             _userApiClient = userApiClient;
             _configuration = configuration;
+            _roleApiClient = roleApiClient;
         }
         public async Task<IActionResult> ListUser(int pageIndex = 1, int pageSize = 15)
         {
@@ -33,6 +36,10 @@ namespace ShopMates.Admin.Controllers
                 PageSize = pageSize
             };
             var data = await _userApiClient.GetUsersPagaing(request);
+            if (TempData["result"] != null)
+            {
+                ViewBag.SuccessMsg = TempData["result"];
+            }
             return View(data.ResultObj);
         }
 
@@ -49,7 +56,11 @@ namespace ShopMates.Admin.Controllers
                 return View();
 
             var result = await _userApiClient.RegisterUser(request);
-            if(result.IsSuccessed) return RedirectToAction("ListUser");
+            if (result.IsSuccessed) 
+            {
+                TempData["result"] = "Create User Successfully";
+                return RedirectToAction("ListUser");
+            }
 
 			ModelState.AddModelError("", result.Message);
 			return View(request);
@@ -82,9 +93,13 @@ namespace ShopMates.Admin.Controllers
 				return View();
 
 			var result = await _userApiClient.UpdateUser(request.Id, request);
-			if (result.IsSuccessed) return RedirectToAction("ListUser");
+			if (result.IsSuccessed)
+            {
+                TempData["result"] = "Update User Successfully";
+                return RedirectToAction("ListUser");
+            }
 
-			ModelState.AddModelError("", result.Message);
+            ModelState.AddModelError("", result.Message);
 			return View(request);
 		}
 
@@ -104,7 +119,11 @@ namespace ShopMates.Admin.Controllers
                 return View();
 
             var result = await _userApiClient.Delete(request.Id);
-            if (result.IsSuccessed) return RedirectToAction("ListUser");
+            if (result.IsSuccessed)
+            {
+                TempData["result"] = "Delete User Successfully";
+                return RedirectToAction("ListUser");
+            }
 
             ModelState.AddModelError("", result.Message);
             return View(request);
@@ -117,8 +136,33 @@ namespace ShopMates.Admin.Controllers
 			return View(result.ResultObj);
 		}
 
+        [HttpGet]
+        public async Task<IActionResult> RoleAssign(Guid id)
+        {
+            var roleAssignRequest = await GetRoleAssignRequest(id);
+            return View(roleAssignRequest);
+        }
 
-		[HttpGet]
+        [HttpPost]
+        public async Task<IActionResult> RoleAssign(RoleAssignRequest request)
+        {
+            if (!ModelState.IsValid)
+                return View();
+
+            var result = await _userApiClient.RoleAssign(request.Id, request);
+            if (result.IsSuccessed)
+            {
+                TempData["result"] = "Assign Role for User Successfully";
+                return RedirectToAction("ListUser");
+            }
+
+            ModelState.AddModelError("", result.Message);
+            var roleAssignRequest = await GetRoleAssignRequest(request.Id);
+            return View(roleAssignRequest);
+        }
+
+
+        [HttpGet]
         public IActionResult Register()
         {
             return View();
@@ -128,6 +172,23 @@ namespace ShopMates.Admin.Controllers
         public IActionResult ForgotPassword()
         {
             return View();
+        }
+
+        private async Task<RoleAssignRequest> GetRoleAssignRequest(Guid id)
+        {
+            var userObj = await _userApiClient.GetByID(id);
+            var roleObj = await _roleApiClient.GetAll();
+            var roleAssignRequest = new RoleAssignRequest();
+            foreach (var role in roleObj.ResultObj)
+            {
+                roleAssignRequest.Roles.Add(new SelectItem()
+                {
+                    ID = role.Id.ToString(),
+                    Name = role.Name,
+                    Selected = userObj.ResultObj.Roles.Contains(role.Name)
+                });
+            }
+            return roleAssignRequest;
         }
     }
 }

@@ -21,5 +21,7 @@ namespace ShopMates.Integration
         Task<APIResult<UserViewModels>> GetByID(Guid id);
 
         Task<APIResult<bool>> Delete(Guid id);
+
+        Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request);
     }
 }
