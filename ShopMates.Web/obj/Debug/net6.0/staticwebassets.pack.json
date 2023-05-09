@@ -517,6 +517,10 @@
       "PackagePath": "staticwebassets\\images\\gallery-09.jpg"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\icons\\dotnet-install.sh",
+      "PackagePath": "staticwebassets\\images\\icons\\dotnet-install.sh"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\icons\\favicon.png",
       "PackagePath": "staticwebassets\\images\\icons\\favicon.png"
     },

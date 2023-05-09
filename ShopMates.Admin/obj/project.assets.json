@@ -11134,6 +11134,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
       "ShopMates.Integration >= 1.0.0",
+      "ShopMates.Utilities >= 1.0.0",
       "ShopMates.ViewModels >= 1.0.0"
     ]
   },
@@ -11171,6 +11172,9 @@
           "projectReferences": {
             "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Integration\\ShopMates.Integration.csproj": {
               "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Integration\\ShopMates.Integration.csproj"
+            },
+            "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+              "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
             },
             "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
               "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"

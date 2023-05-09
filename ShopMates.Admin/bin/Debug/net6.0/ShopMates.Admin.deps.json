@@ -40,6 +40,7 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.13",
           "ShopMates.Integration": "1.0.0",
+          "ShopMates.Utilities": "1.0.0",
           "ShopMates.ViewModels": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",

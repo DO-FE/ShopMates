@@ -30,6 +30,10 @@ namespace ShopMates.Admin.Controllers
         public async Task<IActionResult> ListUser(int pageIndex = 1, int pageSize = 15)
         {
             var session = HttpContext.Session.GetString("Token");
+            if (session == null)
+            {
+                return View();
+            }
             var request = new PagingRequestBase()
             {
                 PageIndex = pageIndex,

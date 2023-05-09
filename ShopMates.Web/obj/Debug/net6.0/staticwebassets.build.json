@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PMWueCJOQrvt/JaO+0EYQfQPn5uIgUTLb34Rc1KGhrk=",
+  "Hash": "prQF+FEwD8ckAouHL4MD9LEO0E0ti5q8u9SYTDrqzB0=",
   "Source": "ShopMates.Web",
   "BasePath": "_content/ShopMates.Web",
   "Mode": "Default",
@@ -2225,6 +2225,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\gallery-09.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\icons\\dotnet-install.sh",
+      "SourceId": "ShopMates.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\",
+      "BasePath": "_content/ShopMates.Web",
+      "RelativePath": "images/icons/dotnet-install.sh",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\dotnet-install.sh"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\icons\\favicon.png",

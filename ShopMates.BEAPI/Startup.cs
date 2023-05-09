@@ -23,6 +23,7 @@ using FluentValidation.AspNetCore;
 using ShopMates.ViewModels.System.Users;
 using FluentValidation;
 using ShopMates.Application.System.Roles;
+using ShopMates.Application.System.Languages;
 
 namespace ShopMates.BEAPI
 {
@@ -49,6 +50,8 @@ namespace ShopMates.BEAPI
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
+
+            services.AddTransient<ILanguageService, LanguageService>();
 
 
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
