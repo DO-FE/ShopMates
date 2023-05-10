@@ -555,6 +555,20 @@
         },
         "Asset": null,
         "Patterns": null
+      },
+      "user-content": {
+        "Children": {
+          "cd13123b-c8ee-49f2-9532-2f0694f49530.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "user-content/cd13123b-c8ee-49f2-9532-2f0694f49530.jpg"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
       }
     },
     "Asset": null,

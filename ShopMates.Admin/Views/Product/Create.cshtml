@@ -4,7 +4,22 @@
     ViewData["Title"] = "Create Product";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Scripts{
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var imgPreview = document.getElementById('thumbnailPreview');
+                    imgPreview.src = e.target.result;
+                    imgPreview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}
 <div class="container-fluid">
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Add New Product</h1>
@@ -86,8 +101,9 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="ThumbnailImage" class="control-label"></label>
-                            <input asp-for="ThumbnailImage" type="file" class="form-control" />
+                            <input asp-for="ThumbnailImage" type="file" class="form-control" accept=".jpg, .jpeg, .png, .gif, .svg" onchange="previewImage(event)" />
                             <span asp-validation-for="ThumbnailImage" class="text-danger"></span>
+                            <img id="thumbnailPreview" src="#" alt="Thumbnail Preview" style="display: none; max-width: 100%; height: auto;" />
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Add Product" class="btn btn-primary" />
