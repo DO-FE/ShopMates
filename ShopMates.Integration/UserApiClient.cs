@@ -39,7 +39,7 @@ namespace ShopMates.Integration
                 return JsonConvert.DeserializeObject<APISuccessResult<string>>(await response.Content.ReadAsStringAsync());
             }
 
-            return JsonConvert.DeserializeObject<APISuccessResult<string>>(await response.Content.ReadAsStringAsync());
+            return JsonConvert.DeserializeObject<APIErrorResult<string>>(await response.Content.ReadAsStringAsync());
         }
 
         public async Task<APIResult<bool>> Delete(Guid id)

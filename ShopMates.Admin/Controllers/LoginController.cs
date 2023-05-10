@@ -35,6 +35,11 @@ namespace ShopMates.Admin.Controllers
                 return View(ModelState);
 
             var result = await _userApiClient.Authenticate(request);
+            if (!result.IsSuccessed)
+            {
+                ViewBag.Message = result.Message;
+                return View();
+            }
 
             var userPrincipal = this.ValidateToken(result.ResultObj);
             var authProperties = new AuthenticationProperties

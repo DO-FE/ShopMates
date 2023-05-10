@@ -32,7 +32,7 @@ namespace ShopMates.Admin.Controllers
             var session = HttpContext.Session.GetString("Token");
             if (session == null)
             {
-                return View();
+                return RedirectToAction("Index", "Login");
             }
             var request = new PagingRequestBase()
             {
