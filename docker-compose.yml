@@ -39,3 +39,9 @@ services:
       - "37372:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - api-data:/app
+
+volumes:
+  api-data:
+    external: true
