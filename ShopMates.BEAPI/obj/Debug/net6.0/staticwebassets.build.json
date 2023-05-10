@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "axw+FAU2AZRFY9ZmhoKgyk3bZjKYVNNwnbaPkDQbi6E=",
+  "Hash": "jEEbLoV8mp/pEnUovydYEQelyKG/hCotLsyb1zqvOtc=",
   "Source": "ShopMates.BEAPI",
   "BasePath": "_content/ShopMates.BEAPI",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ShopMates.BEAPI.styles.css",
-      "SourceId": "ShopMates.BEAPI",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/ShopMates.BEAPI",
-      "RelativePath": "ShopMates.BEAPI.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ShopMates.BEAPI.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.BEAPI.bundle.scp.css",
-      "SourceId": "ShopMates.BEAPI",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/ShopMates.BEAPI",
-      "RelativePath": "ShopMates.BEAPI.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.BEAPI.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\css\\site.css",
       "SourceId": "ShopMates.BEAPI",

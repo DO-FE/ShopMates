@@ -1,7 +1,6 @@
 {
   "ContentRoots": [
-    "/src/ShopMates.BEAPI/wwwroot/",
-    "/src/ShopMates.BEAPI/obj/Debug/net6.0/scopedcss/bundle/"
+    "/src/ShopMates.BEAPI/wwwroot/"
   ],
   "Root": {
     "Children": {
@@ -555,14 +554,6 @@
           }
         },
         "Asset": null,
-        "Patterns": null
-      },
-      "ShopMates.BEAPI.styles.css": {
-        "Children": null,
-        "Asset": {
-          "ContentRootIndex": 1,
-          "SubPath": "ShopMates.BEAPI.styles.css"
-        },
         "Patterns": null
       }
     },
