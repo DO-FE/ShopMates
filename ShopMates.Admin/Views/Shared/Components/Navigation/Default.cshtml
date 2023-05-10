@@ -45,7 +45,7 @@
                 </form>
             </div>
         </li>
-        <form id="frmChangeLanguage" action="/Home/Language" method="post" class="form-inline mr-auto w-100 navbar-search">
+        <form id="frmChangeLanguage" action="/AdminShopMates/Home/Language" method="post" class="form-inline mr-auto w-100 navbar-search">
             <div class="input-group">
                 <select class="form-control" onchange="this.form.submit()" asp-for="CurrentLanguageId"
                         asp-items="@(new SelectList(Model.Languages, "Id", "Name", Model.CurrentLanguageId))">
@@ -184,7 +184,7 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">@User.Identity.Name</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Welcome, @User.Identity.Name</span>
                 <img class="img-profile rounded-circle"
                      src="~/img/undraw_profile.svg">
             </a>
