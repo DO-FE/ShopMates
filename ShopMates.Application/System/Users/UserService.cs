@@ -37,12 +37,12 @@ namespace ShopMates.Application.System.Users
         public async Task<APIResult<string>> Authenticate(LoginRequest request)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
-            if (user == null) return null;
+            if (user == null) return new APIErrorResult<string>("Có cái username cũng nhập sai thì làm gì cho đời");
 
             var result = await _signInManager.PasswordSignInAsync(user, request.Password, request.RememberMe, true);
             if (!result.Succeeded)
             {
-                return new APIErrorResult<string>("Có Login thôi cũng sai user pass tè le");
+                return new APIErrorResult<string>("Có password nhập cũng sai thì làm gì cho đời");
             }
             var roles = await _userManager.GetRolesAsync(user);
             var claims = new[]
