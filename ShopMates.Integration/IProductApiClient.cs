@@ -11,6 +11,6 @@ namespace ShopMates.Integration
 {
     public interface IProductApiClient
     {
-        Task<APIResult<PagedResult<ProductViewModel>>> GetProductsPagaing(GetManageProductPagingRequest request);
+        Task<PagedResult<ProductViewModel>> GetProductsPagaing(GetManageProductPagingRequest request);
     }
 }

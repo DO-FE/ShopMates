@@ -16,10 +16,11 @@ namespace ShopMates.Integration
         public ProductApiClient(IHttpClientFactory httpClientFactory, IHttpContextAccessor httpContextAccessor, IConfiguration configuration) : base(httpClientFactory, httpContextAccessor, configuration)
         {
         }
-        public async Task<APIResult<PagedResult<ProductViewModel>>> GetProductsPagaing(GetManageProductPagingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetProductsPagaing(GetManageProductPagingRequest request)
         {
-            var data = await base.GetAsync<APIResult<PagedResult<ProductViewModel>>>($"/api/product/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&languageId={request.LanguageId}");
+            var data = await GetAsync<PagedResult<ProductViewModel>>($"/api/products/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&languageId={request.LanguageId}");
             return data;
+
         }
     }
 }

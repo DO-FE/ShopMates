@@ -37,7 +37,7 @@ namespace ShopMates.Admin.Controllers
             {
                 ViewBag.SuccessMsg = TempData["result"];
             }
-            return View(data.ResultObj);
+            return View(data);
         }
 
     }
