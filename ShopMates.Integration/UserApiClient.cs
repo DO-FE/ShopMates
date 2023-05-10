@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using ShopMates.Utilities.Constants;
 
 namespace ShopMates.Integration
 {
@@ -31,7 +32,7 @@ namespace ShopMates.Integration
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             var response = await client.PostAsync("/api/users/authenticate", httpContent);
             if (response.IsSuccessStatusCode)
             {
@@ -46,7 +47,7 @@ namespace ShopMates.Integration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
 
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.DeleteAsync($"/api/Users/{id}");
             var body = await response.Content.ReadAsStringAsync();
@@ -62,7 +63,7 @@ namespace ShopMates.Integration
 			var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 			var client = _httpClientFactory.CreateClient();
 
-			client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+			client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
 			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 			var response = await client.GetAsync($"/api/Users/{id}");
 			var body = await response.Content.ReadAsStringAsync();
@@ -78,7 +79,7 @@ namespace ShopMates.Integration
             var client = _httpClientFactory.CreateClient();
 
 			var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
-			client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+			client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.GetAsync($"/api/Users/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}");
             var body = await response.Content.ReadAsStringAsync();
@@ -92,7 +93,7 @@ namespace ShopMates.Integration
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             var response = await client.PostAsync($"/api/Users/register", httpContent);
             var result = await response.Content.ReadAsStringAsync();
             if(response.IsSuccessStatusCode)
@@ -106,7 +107,7 @@ namespace ShopMates.Integration
         public async Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
         {
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
@@ -129,7 +130,7 @@ namespace ShopMates.Integration
 			var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 			var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-			client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+			client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
 			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 			var response = await client.PutAsync($"/api/Users/{id}", httpContent);
 			var result = await response.Content.ReadAsStringAsync();

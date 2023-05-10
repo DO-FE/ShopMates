@@ -29,8 +29,7 @@ namespace ShopMates.Application.System.Languages
             var languages = await _context.Languages.Select(x => new LanguageViewModel()
             {
                 Id = x.Id,
-                Name = x.Name,
-                IsDefault = x.IsDefault
+                Name = x.Name
             }).ToListAsync();
             return new APISuccessResult<List<LanguageViewModel>>(languages);
         }

@@ -21,19 +21,10 @@ namespace ShopMates.Admin.Controllers.Compoments
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var languages = await _languageApiClient.GetAll();
-            var currentLanguageId = HttpContext
-                .Session
-                .GetString(SystemConstants.AppSettings.DefaultLanguageId);
-            var items = languages.ResultObj.Select(x => new SelectListItem()
-            {
-                Text = x.Name,
-                Value = x.Id.ToString(),
-                Selected = currentLanguageId == null ? x.IsDefault : currentLanguageId == x.Id.ToString()
-            });
             var navigationVm = new NavigationViewModel()
             {
-                CurrentLanguageId = currentLanguageId,
-                Languages = items.ToList()
+                CurrentLanguageId = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId),
+                Languages = languages.ResultObj
             };
 
             return View("Default", navigationVm);

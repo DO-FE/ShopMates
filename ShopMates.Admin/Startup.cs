@@ -22,7 +22,7 @@ namespace ShopMates.Admin
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
             {
                 option.LoginPath = "/Login/Index";
-                option.AccessDeniedPath = "/Account/Forbidden";
+                option.AccessDeniedPath = "/User/Forbidden";
             });
 
             services.AddControllersWithViews().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
