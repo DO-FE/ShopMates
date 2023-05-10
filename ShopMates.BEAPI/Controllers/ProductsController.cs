@@ -10,22 +10,22 @@ namespace ShopMates.BEAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Product : ControllerBase
+    public class Products : ControllerBase
     {
         private readonly IPublicProductService _publicProductService;
         private readonly IManageProductService _manageProductService;
 
-        public Product(IPublicProductService publicProductService, IManageProductService manageProductService)
+        public Products(IPublicProductService publicProductService, IManageProductService manageProductService)
         {
             _publicProductService = publicProductService;
             _manageProductService = manageProductService;
         }
 
-        [HttpGet("{languageId}")]
+        [HttpGet("paging")]
         [Authorize]
-        public async Task<IActionResult> GetAllPaging(string languageId, [FromQuery] GetPublicProductPagingRequest request)
+        public async Task<IActionResult> GetAllPaging([FromQuery] GetManageProductPagingRequest request)
         {
-            var products = await _publicProductService.GetAllByCategoryId(languageId, request);
+            var products = await _manageProductService.GetAllPaging(request);
             return Ok(products);
         }
 

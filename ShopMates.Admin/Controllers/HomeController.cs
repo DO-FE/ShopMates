@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShopMates.Admin.Models;
+using ShopMates.Utilities.Constants;
 using System.Diagnostics;
 
 namespace ShopMates.Admin.Controllers
@@ -35,6 +36,15 @@ namespace ShopMates.Admin.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpPost]
+        public IActionResult Language(NavigationViewModel viewModel)
+        {
+            HttpContext.Session.SetString(SystemConstants.AppSettings.DefaultLanguageId,
+                viewModel.CurrentLanguageId);
+
+            return Redirect("/AdminShopMates/Home/Index");
         }
     }
 }
