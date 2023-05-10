@@ -558,6 +558,14 @@
       },
       "user-content": {
         "Children": {
+          "8970d278-6423-47e2-b2cd-da5046c6b84a.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "user-content/8970d278-6423-47e2-b2cd-da5046c6b84a.jpg"
+            },
+            "Patterns": null
+          },
           "cd13123b-c8ee-49f2-9532-2f0694f49530.jpg": {
             "Children": null,
             "Asset": {
