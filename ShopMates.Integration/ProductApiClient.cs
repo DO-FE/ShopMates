@@ -31,8 +31,6 @@ namespace ShopMates.Integration
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString(SystemConstants.AppSettings.Token);
 
-            var languageId = _httpContextAccessor.HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
-
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
@@ -60,7 +58,7 @@ namespace ShopMates.Integration
             requestContent.Add(new StringContent(request.SeoDescription.ToString()), "seoDescription");
             requestContent.Add(new StringContent(request.SeoTitle.ToString()), "seoTitle");
             requestContent.Add(new StringContent(request.SeoAlias.ToString()), "seoAlias");
-            requestContent.Add(new StringContent(languageId), "languageId");
+            requestContent.Add(new StringContent(request.LanguageId.ToString()), "languageId");
 
             var response = await client.PostAsync($"/api/products/", requestContent);
             return response.IsSuccessStatusCode;
