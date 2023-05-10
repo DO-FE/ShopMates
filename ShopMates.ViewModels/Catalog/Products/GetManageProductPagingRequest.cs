@@ -13,7 +13,7 @@ namespace ShopMates.ViewModels.Catalog.Products
 
         public string LanguageId { get; set; }
 
-        public List<int> CategoryIds { get; set; }
+        //public List<int> CategoryIds { get; set; }
 
     }
 }

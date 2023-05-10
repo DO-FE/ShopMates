@@ -115,10 +115,10 @@ namespace ShopMates.Application.Catalog.Products
             //if (!string.IsNullOrEmpty(request.Keyword))
             //    query = query.Where(x => x.pt.Name.Contains(request.Keyword));
 
-            if (request.CategoryIds != null && request.CategoryIds.Count > 0)
-            {
-                query = query.Where(p => request.CategoryIds.Contains(p.pic.CategoryId));
-            }
+            //if (request.CategoryIds != null && request.CategoryIds.Count > 0)
+            //{
+            //    query = query.Where(p => request.CategoryIds.Contains(p.pic.CategoryId));
+            //}
 
             //3. Paging
             int totalRow = await query.CountAsync();
