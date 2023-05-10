@@ -40,5 +40,28 @@ namespace ShopMates.Admin.Controllers
             return View(data);
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(RegisterRequest request)
+        {
+            if (!ModelState.IsValid)
+                return View();
+
+            var result = await _productApiClient.RegisterUser(request);
+            if (result.IsSuccessed)
+            {
+                TempData["result"] = "Add Product Successfully";
+                return RedirectToAction("ListProduct");
+            }
+
+            ModelState.AddModelError("", result.Message);
+            return View(request);
+        }
+
     }
 }

@@ -42,7 +42,7 @@ namespace ShopMates.Application.System.Users
             var result = await _signInManager.PasswordSignInAsync(user, request.Password, request.RememberMe, true);
             if (!result.Succeeded)
             {
-                return null;
+                return new APIErrorResult<string>("Có Login thôi cũng sai user pass tè le");
             }
             var roles = await _userManager.GetRolesAsync(user);
             var claims = new[]

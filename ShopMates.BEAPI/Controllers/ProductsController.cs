@@ -38,6 +38,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpGet("{productId}/{languageId}")]
+        [Authorize]
         public async Task<IActionResult> GetById(int productId, string languageId)
         {
             var product = await _manageProductService.GetById(productId, languageId);
@@ -47,6 +48,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPost]
+        [Consumes("multipart/form-data")]
         [Authorize]
         public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
