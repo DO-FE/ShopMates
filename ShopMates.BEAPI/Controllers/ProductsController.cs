@@ -37,7 +37,7 @@ namespace ShopMates.BEAPI.Controllers
             return Ok(products);
         }
 
-        [HttpGet("get-by-id/{productId}")]
+        [HttpGet("{productId}")]
         public async Task<IActionResult> GetByProductId(int productId)
         {
             var product = await _manageProductService.GetById(productId);
