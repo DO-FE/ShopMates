@@ -40,7 +40,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     volumes:
-      - api-data:/app/wwwroot
+      - api-data:/app/wwwroot/user-content
 
 volumes:
   api-data:
