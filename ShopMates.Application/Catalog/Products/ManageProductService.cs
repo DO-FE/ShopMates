@@ -246,6 +246,7 @@ namespace ShopMates.Application.Catalog.Products
 
         public async Task<int> Update(ProductUpdateRequest request)
         {
+            decimal price;
             var product = await _context.Products.FindAsync(request.Id);
             var productTranslations = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == request.Id);
             if (product == null || productTranslations == null) throw new ShopMatesException($"Không tìm thấy sản phẩm: {request.Id}");
@@ -256,6 +257,8 @@ namespace ShopMates.Application.Catalog.Products
             productTranslations.SeoTitle = request.SeoTitle;
             productTranslations.Description = request.Description;
             productTranslations.Details = request.Details;
+            product.Price = request.Price;
+
 
             //Save Image
             if (request.ThumbnailImage != null)

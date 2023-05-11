@@ -99,9 +99,9 @@ namespace ShopMates.Integration
                 ByteArrayContent bytes = new ByteArrayContent(data);
                 requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
 
-                requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Name) ? "" : request.Name.ToString()), "name");
+                requestContent.Add(new StringContent(request.Name.ToString()), "name");
                 requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Description) ? "" : request.Description.ToString()), "description");
-
+                requestContent.Add(new StringContent(request.Price.ToString()), "price");
                 requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Details) ? "" : request.Details.ToString()), "details");
                 requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoDescription) ? "" : request.SeoDescription.ToString()), "seoDescription");
                 requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoTitle) ? "" : request.SeoTitle.ToString()), "seoTitle");

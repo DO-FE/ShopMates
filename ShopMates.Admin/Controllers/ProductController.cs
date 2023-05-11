@@ -75,6 +75,7 @@ namespace ShopMates.Admin.Controllers
                 Description = product.Description,
                 Details = product.Details,
                 Name = product.Name,
+                Price = product.Price,
                 SeoAlias = product.SeoAlias,
                 SeoDescription = product.SeoDescription,
                 SeoTitle = product.SeoTitle
@@ -84,16 +85,16 @@ namespace ShopMates.Admin.Controllers
 
         [HttpPost]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Update(ProductUpdateRequest request)
+        public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
-                return View();
+                return View(request);
 
             var result = await _productApiClient.UpdateProduct(request);
             if (result)
             {
                 TempData["result"] = "Update Product Successfully";
-                return RedirectToAction("ListUser");
+                return RedirectToAction("ListProducts");
             }
 
             ModelState.AddModelError("", "Update Product UnSuccessfilly");
