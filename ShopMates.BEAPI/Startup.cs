@@ -60,7 +60,7 @@ namespace ShopMates.BEAPI
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Nhật Tiến Đẹp Trai Pro VIP", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API SHopMates by Nhật Tiến", Version = "v1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
