@@ -1,0 +1,109 @@
+﻿@model ShopMates.ViewModels.Catalog.Products.ProductUpdateRequest
+
+@{
+    ViewData["Title"] = "Update Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script src="https://cdn.ckeditor.com/ckeditor5/21.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#txt_details'), {
+                // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            })
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(err => {
+                console.error(err.stack);
+            });
+    </script>
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var imgPreview = document.getElementById('thumbnailPreview');
+                    imgPreview.src = e.target.result;
+                    imgPreview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}
+
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Add New Product</h1>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <a class="btn btn-primary" asp-controller="Product" asp-action="ListProducts">Back to List</a>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <div class="">
+                    <form asp-action="Update" enctype="multipart/form-data" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Details" class="control-label"></label>
+                            <input asp-for="Details" class="form-control" />
+                            <span asp-validation-for="Details" class="text-danger"></span>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                                <label asp-for="SeoDescription" class="control-label"></label>
+                                <input asp-for="SeoDescription" class="form-control" />
+                                <span asp-validation-for="SeoDescription" class="text-danger"></span>
+                            </div>
+                            <div class="col-sm-4">
+                                <label asp-for="SeoTitle" class="control-label"></label>
+                                <input asp-for="SeoTitle" class="form-control" />
+                                <span asp-validation-for="SeoTitle" class="text-danger"></span>
+                            </div>
+                            <div class="col-sm-4">
+                                <label asp-for="SeoAlias" class="control-label"></label>
+                                <input asp-for="SeoAlias" class="form-control" />
+                                <span asp-validation-for="SeoAlias" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IsFeatured" class="control-label"></label>
+                            <select asp-for="IsFeatured" class="form-control">
+                                <option value="true">Active</option>
+                                <option value="false">DeActive</option>
+                            </select>
+                            <span asp-validation-for="IsFeatured" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ThumbnailImage" class="control-label"></label>
+                            <input asp-for="ThumbnailImage" type="file" class="form-control" accept=".jpg, .jpeg, .png, .gif, .svg" onchange="previewImage(event)" />
+                            <span asp-validation-for="ThumbnailImage" class="text-danger"></span>
+                            <img id="thumbnailPreview" src="#" alt="Thumbnail Preview" style="display: none; max-width: 100%; height: auto;" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center">
+                <iframe width="620" height="360" src="https://www.youtube.com/embed/niPkap1ozUA"
+                        frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+

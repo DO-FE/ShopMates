@@ -18421,6 +18421,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\Views\\Product\\Update.cshtml",
+      "TargetPath": "Views\\Product\\Update.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\Views\\Shared\\Components\\Navigation\\Default.cshtml",
       "TargetPath": "Views\\Shared\\Components\\Navigation\\Default.cshtml",
       "FileKind": "mvc"
