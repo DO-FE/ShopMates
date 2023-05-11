@@ -4,7 +4,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile-web
-    image: shopmates-web
+    image: axyres/shopmates-web:latest
     container_name: s-web
     restart: always
     ports:
@@ -18,7 +18,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile-Admin
-    image: shopmates-webadmin
+    image: axyres/shopmates-webadmin:latest
     container_name: s-webadmin
     restart: always
     ports:
@@ -32,15 +32,15 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile-API
-    image: shopmates-api
+    image: axyres/shopmates-api:latest
     container_name: s-webapi
     restart: always
     ports:
-      - "37372:80"
+      - "37354:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     volumes:
-      - api-data:/app
+      - api-data:/app/wwwroot
 
 volumes:
   api-data:

@@ -38,7 +38,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpGet("get-by-id/{productId}")]
-        public async Task<IActionResult> GetById(int productId)
+        public async Task<IActionResult> GetByProductId(int productId)
         {
             var product = await _manageProductService.GetById(productId);
             if (product == null)
@@ -59,7 +59,7 @@ namespace ShopMates.BEAPI.Controllers
                 return BadRequest("Bị lỗi nào đó khi tạo mới sản phẩm");
 
             var product = await _manageProductService.GetById(productId);
-            return CreatedAtAction(nameof(GetById), new { id = productId }, product);
+            return CreatedAtAction(nameof(GetByProductId), new { id = productId }, product);
         }
 
         [HttpPut]
