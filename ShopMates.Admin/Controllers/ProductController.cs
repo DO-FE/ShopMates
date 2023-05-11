@@ -78,7 +78,9 @@ namespace ShopMates.Admin.Controllers
                 Price = product.Price,
                 SeoAlias = product.SeoAlias,
                 SeoDescription = product.SeoDescription,
-                SeoTitle = product.SeoTitle
+                SeoTitle = product.SeoTitle,
+                Stock = product.Stock
+                
             };
             return View(updateVm);
         }

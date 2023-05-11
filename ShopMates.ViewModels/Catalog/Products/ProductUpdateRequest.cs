@@ -20,6 +20,8 @@ namespace ShopMates.ViewModels.Catalog.Products
 
         public string SeoAlias { get; set; }
 
+        public int Stock { set; get; }
+
         public bool? IsFeatured { get; set; }
 
         public IFormFile ThumbnailImage { get; set; }
