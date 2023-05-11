@@ -14,5 +14,9 @@ namespace ShopMates.Integration
         Task<PagedResult<ProductViewModel>> GetProductsPagaing(GetManageProductPagingRequest request);
 
         Task<bool> CreateProduct(ProductCreateRequest request);
+
+        Task<ProductViewModel> GetById(int id);
+
+        Task<bool> UpdateProduct(ProductUpdateRequest request);
     }
 }

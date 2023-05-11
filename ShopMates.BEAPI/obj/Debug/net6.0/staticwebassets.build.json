@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OCS2G3loxBInVQBViXtz4kvu6e9xyXYN98v7asg9G28=",
+  "Hash": "y5zQt1tkqkvpUPF/72IVijsr5d3GqLBUkRneZrWXsi4=",
   "Source": "ShopMates.BEAPI",
   "BasePath": "_content/ShopMates.BEAPI",
   "Mode": "Default",
@@ -1035,6 +1035,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
+      "SourceId": "ShopMates.BEAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
+      "BasePath": "_content/ShopMates.BEAPI",
+      "RelativePath": "user-content/0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",

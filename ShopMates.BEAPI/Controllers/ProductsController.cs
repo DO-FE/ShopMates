@@ -37,11 +37,11 @@ namespace ShopMates.BEAPI.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{productId}/{languageId}")]
+        [HttpGet("{productId}")]
         [Authorize]
-        public async Task<IActionResult> GetById(int productId, string languageId)
+        public async Task<IActionResult> GetById(int productId)
         {
-            var product = await _manageProductService.GetById(productId, languageId);
+            var product = await _manageProductService.GetById(productId);
             if (product == null)
                 return BadRequest("Không tìm thấy sản phẩm");
             return Ok(product);
@@ -60,11 +60,12 @@ namespace ShopMates.BEAPI.Controllers
             if (productId == 0)
                 return BadRequest("Bị lỗi nào đó khi tạo mới sản phẩm");
 
-            var product = await _manageProductService.GetById(productId, request.LanguageId);
+            var product = await _manageProductService.GetById(productId);
             return CreatedAtAction(nameof(GetById), new { id = productId }, product);
         }
 
         [HttpPut]
+        [Consumes("multipart/form-data")]
         [Authorize]
         public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {

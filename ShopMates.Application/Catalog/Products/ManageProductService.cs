@@ -151,11 +151,10 @@ namespace ShopMates.Application.Catalog.Products
 
         }
 
-        public async Task<ProductViewModel> GetById(int productId, string languageId)
+        public async Task<ProductViewModel> GetById(int productId)
         {
             var product = await _context.Products.FindAsync(productId);
-            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
-            && x.LanguageId == languageId);
+            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId);
 
             var productViewModel = new ProductViewModel()
             {

@@ -35,7 +35,7 @@ namespace ShopMates.Application.Catalog.Products
 
         Task<List<ProductImageViewModel>> GetListImage(int productId);
 
-        Task<ProductViewModel> GetById(int productId, string languageId);
+        Task<ProductViewModel> GetById(int productId);
 
         Task<ProductImageViewModel> GetImageById(int imageId);
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ShopMates.Data.Entities;
 using ShopMates.Integration;
 using ShopMates.Utilities.Constants;
 using ShopMates.ViewModels.Catalog.Products;
@@ -64,5 +65,39 @@ namespace ShopMates.Admin.Controllers
             return View(request);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var product = await _productApiClient.GetById(id);
+            var updateVm = new ProductUpdateRequest()
+            {
+                Id = product.Id,
+                Description = product.Description,
+                Details = product.Details,
+                Name = product.Name,
+                SeoAlias = product.SeoAlias,
+                SeoDescription = product.SeoDescription,
+                SeoTitle = product.SeoTitle
+            };
+            return View(updateVm);
+        }
+
+        [HttpPost]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Update(ProductUpdateRequest request)
+        {
+            if (!ModelState.IsValid)
+                return View();
+
+            var result = await _productApiClient.UpdateProduct(request);
+            if (result)
+            {
+                TempData["result"] = "Update Product Successfully";
+                return RedirectToAction("ListUser");
+            }
+
+            ModelState.AddModelError("", "Update Product UnSuccessfilly");
+            return View(request);
+        }
     }
 }

@@ -241,6 +241,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
+      "PackagePath": "staticwebassets\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
       "PackagePath": "staticwebassets\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg"
     },
