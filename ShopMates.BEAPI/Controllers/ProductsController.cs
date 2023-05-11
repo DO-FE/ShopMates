@@ -62,13 +62,18 @@ namespace ShopMates.BEAPI.Controllers
             return CreatedAtAction(nameof(GetByProductId), new { id = productId }, product);
         }
 
-        [HttpPut]
+        [HttpPut("{productId}")]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
+        public async Task<IActionResult> Update([FromRoute] int productId, [FromForm] ProductUpdateRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            request.Id = productId;
             var affectedResult = await _manageProductService.Update(request);
             if (affectedResult == 0)
-                return BadRequest("Bị lỗi gì đó khi Cập nhật sản phẩm");
+                return BadRequest();
             return Ok();
         }
 
