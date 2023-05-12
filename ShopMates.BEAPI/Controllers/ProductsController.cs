@@ -10,22 +10,22 @@ namespace ShopMates.BEAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Product : ControllerBase
+    [Authorize]
+    public class Products : ControllerBase
     {
         private readonly IPublicProductService _publicProductService;
         private readonly IManageProductService _manageProductService;
 
-        public Product(IPublicProductService publicProductService, IManageProductService manageProductService)
+        public Products(IPublicProductService publicProductService, IManageProductService manageProductService)
         {
             _publicProductService = publicProductService;
             _manageProductService = manageProductService;
         }
 
-        [HttpGet("{languageId}")]
-        [Authorize]
-        public async Task<IActionResult> GetAllPaging(string languageId, [FromQuery] GetPublicProductPagingRequest request)
+        [HttpGet("paging")]
+        public async Task<IActionResult> GetAllPaging([FromQuery] GetManageProductPagingRequest request)
         {
-            var products = await _publicProductService.GetAllByCategoryId(languageId, request);
+            var products = await _manageProductService.GetAllPaging(request);
             return Ok(products);
         }
 
@@ -37,17 +37,17 @@ namespace ShopMates.BEAPI.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{productId}/{languageId}")]
-        public async Task<IActionResult> GetById(int productId, string languageId)
+        [HttpGet("{productId}")]
+        public async Task<IActionResult> GetByProductId(int productId)
         {
-            var product = await _manageProductService.GetById(productId, languageId);
+            var product = await _manageProductService.GetById(productId);
             if (product == null)
                 return BadRequest("Không tìm thấy sản phẩm");
             return Ok(product);
         }
 
         [HttpPost]
-        [Authorize]
+        [Consumes("multipart/form-data")]
         public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
             if (!ModelState.IsValid)
@@ -58,22 +58,26 @@ namespace ShopMates.BEAPI.Controllers
             if (productId == 0)
                 return BadRequest("Bị lỗi nào đó khi tạo mới sản phẩm");
 
-            var product = await _manageProductService.GetById(productId, request.LanguageId);
-            return CreatedAtAction(nameof(GetById), new { id = productId }, product);
+            var product = await _manageProductService.GetById(productId);
+            return CreatedAtAction(nameof(GetByProductId), new { id = productId }, product);
         }
 
-        [HttpPut]
-        [Authorize]
-        public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
+        [HttpPut("{productId}")]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Update([FromRoute] int productId, [FromForm] ProductUpdateRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            request.Id = productId;
             var affectedResult = await _manageProductService.Update(request);
             if (affectedResult == 0)
-                return BadRequest("Bị lỗi gì đó khi Cập nhật sản phẩm");
+                return BadRequest();
             return Ok();
         }
 
         [HttpDelete("{productId}")]
-        [Authorize]
         public async Task<IActionResult> Delete(int productId)
         {
             var affectedResult = await _manageProductService.Delete(productId);
@@ -83,7 +87,6 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPatch("{productId}/{newPrice}")]
-        [Authorize]
         public async Task<IActionResult> UpdatePrice(int productId, decimal newPrice)
         {
             var isSuccessful = await _manageProductService.UpdatePrice(productId, newPrice);
@@ -96,7 +99,6 @@ namespace ShopMates.BEAPI.Controllers
         //Image
 
         [HttpPost("{productId}/images")]
-        [Authorize]
         public async Task<IActionResult> CreateImage(int productId, [FromForm] ProductImageCreateRequest request)
         {
             if (!ModelState.IsValid)
@@ -113,7 +115,6 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPut("{productId}/images/{imageId}")]
-        [Authorize]
         public async Task<IActionResult> UpdateImage(int imageId, [FromForm] ProductImageUpdateRequest request)
         {
             if (!ModelState.IsValid)
@@ -122,23 +123,22 @@ namespace ShopMates.BEAPI.Controllers
             }
             var result = await _manageProductService.UpdateImages(imageId, request);
             if (result == 0)
-                return BadRequest("Bị lỗi nào đó khi tạo mới sản phẩm");
+                return BadRequest("Bị lỗi nào đó khi tạo mới hình ảnh");
 
             return Ok();
         }
 
-        [HttpGet("{productId}/images/{imageId}")]
+        [HttpGet("{productId}/images")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetImageById(int productId, int imageId)
+        public async Task<IActionResult> GetImageById(int productId)
         {
-            var image = await _manageProductService.GetImageById(imageId);
+            var image = await _manageProductService.GetImageById(productId);
             if (image == null)
-                return BadRequest("Không tìm thấy sản phẩm");
+                return BadRequest("Không tìm thấy hình ảnh");
             return Ok(image);
         }
 
         [HttpDelete("{productId}/images/{imageId}")]
-        [Authorize]
         public async Task<IActionResult> DeleteImage(int imageId)
         {
             if (!ModelState.IsValid)

@@ -9,11 +9,11 @@ namespace ShopMates.ViewModels.Catalog.Products
 {
     public class GetManageProductPagingRequest : PagingRequestBase
     {
-        public string Keyword { get; set; }
+        //public string Keyword { get; set; }
 
         public string LanguageId { get; set; }
 
-        public List<int> CategoryIds { get; set; }
+        //public List<int> CategoryIds { get; set; }
 
     }
 }

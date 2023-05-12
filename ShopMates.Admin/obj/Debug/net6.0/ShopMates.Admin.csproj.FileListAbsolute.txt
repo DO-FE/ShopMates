@@ -569,3 +569,4 @@ C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.dll
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin\bin\Debug\net6.0\refs\Microsoft.Extensions.Options.dll
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin\bin\Debug\net6.0\refs\Microsoft.Extensions.Primitives.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin\bin\Debug\net6.0\appsettings.Production.json

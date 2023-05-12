@@ -17,7 +17,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShopMates.Integration\ShopMates.Integration.csproj" />
+    <ProjectReference Include="..\ShopMates.Utilities\ShopMates.Utilities.csproj" />
     <ProjectReference Include="..\ShopMates.ViewModels\ShopMates.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\user-content\" />
   </ItemGroup>
 
 </Project>

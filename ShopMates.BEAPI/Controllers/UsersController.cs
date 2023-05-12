@@ -65,7 +65,21 @@ namespace ShopMates.BEAPI.Controllers
 			return Ok(result);
 		}
 
-		[HttpGet("paging")]
+        [HttpPut("{id}/roles")]
+        public async Task<IActionResult> RoleAssign(Guid id, [FromBody] RoleAssignRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _userService.RoleAssign(id, request);
+            if (!result.IsSuccessed)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("paging")]
         public async Task<IActionResult> GetAllPaging([FromQuery] PagingRequestBase request)
         {
             var users = await _userService.GetUsersPaging(request);
@@ -78,5 +92,12 @@ namespace ShopMates.BEAPI.Controllers
 			var users = await _userService.GetByID(Id);
 			return Ok(users);
 		}
-	}
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid Id)
+        {
+            var result = await _userService.Delete(Id);
+            return Ok(result);
+        }
+    }
 }

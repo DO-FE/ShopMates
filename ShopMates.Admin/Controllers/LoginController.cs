@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using ShopMates.Utilities.Constants;
 
 namespace ShopMates.Admin.Controllers
 {
@@ -34,6 +35,11 @@ namespace ShopMates.Admin.Controllers
                 return View(ModelState);
 
             var result = await _userApiClient.Authenticate(request);
+            if (!result.IsSuccessed)
+            {
+                ViewBag.Message = result.Message;
+                return View();
+            }
 
             var userPrincipal = this.ValidateToken(result.ResultObj);
             var authProperties = new AuthenticationProperties
@@ -41,7 +47,8 @@ namespace ShopMates.Admin.Controllers
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
                 IsPersistent = false
             };
-            HttpContext.Session.SetString("Token", result.ResultObj);
+            HttpContext.Session.SetString(SystemConstants.AppSettings.DefaultLanguageId, _configuration[SystemConstants.AppSettings.DefaultLanguageId]);
+            HttpContext.Session.SetString(SystemConstants.AppSettings.Token, result.ResultObj);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, userPrincipal, authProperties);
 
             return RedirectToAction("Index", "Home");

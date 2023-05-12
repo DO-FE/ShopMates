@@ -19,5 +19,9 @@ namespace ShopMates.Application.System.Users
 		Task<APIResult<PagedResult<UserViewModels>>> GetUsersPaging(PagingRequestBase request);
 
 		Task<APIResult<UserViewModels>> GetByID(Guid Id);
-	}
+
+        Task<APIResult<bool>> Delete(Guid Id);
+
+        Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request);
+    }
 }

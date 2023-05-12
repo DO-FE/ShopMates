@@ -22,6 +22,8 @@ using Microsoft.IdentityModel.Tokens;
 using FluentValidation.AspNetCore;
 using ShopMates.ViewModels.System.Users;
 using FluentValidation;
+using ShopMates.Application.System.Roles;
+using ShopMates.Application.System.Languages;
 
 namespace ShopMates.BEAPI
 {
@@ -47,6 +49,10 @@ namespace ShopMates.BEAPI
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRoleService, RoleService>();
+
+            services.AddTransient<ILanguageService, LanguageService>();
+
 
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
 
@@ -54,7 +60,7 @@ namespace ShopMates.BEAPI
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Nhật Tiến Đẹp Trai Pro VIP", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Nhật Tiến Đẹp Trai Pro Dev + Ops", Version = "v1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -125,7 +131,7 @@ namespace ShopMates.BEAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseAuthentication();

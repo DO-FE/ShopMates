@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿ using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -14,7 +14,7 @@ namespace ShopMates.ViewModels.Catalog.Products
         public decimal OriginalPrice { set; get; }
         public int Stock { set; get; }
 
-        [Required(ErrorMessage = "Bạn phải nhập tên sản phẩm")]
+        [Required(ErrorMessage = "Nhập tên sản phẩm đi, ko nhập lấy gì biết tên hả?")]
         public string Name { set; get; }
 
         public string Description { set; get; }

@@ -51,6 +51,7 @@ namespace ShopMates.Application.Catalog.Products
                 Stock = request.Stock,
                 ViewCount = 0,
                 DateCreated = DateTime.Now,
+                IsFeatured = request.IsFeatured,
                 ProductTranslations = new List<ProductTranslation>()
                 {
                     new ProductTranslation()
@@ -83,7 +84,8 @@ namespace ShopMates.Application.Catalog.Products
                 };
             }
             _context.Products.Add(product);
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+            return product.Id;
         }
 
         public async Task<int> Delete(int productId)
@@ -107,17 +109,19 @@ namespace ShopMates.Application.Catalog.Products
             // 1. Select join
             var query = from p in _context.Products
                         join pt in _context.ProductTranslations on p.Id equals pt.ProductId
-                        join pic in _context.ProductInCategories on p.Id equals pic.ProductId
-                        join c in _context.Categories on pic.CategoryId equals c.Id
-                        select new { p, pt, pic };
+//                        join pic in _context.ProductInCategories on p.Id equals pic.ProductId
+//                        join c in _context.Categories on pic.CategoryId equals c.Id
+                        where pt.LanguageId == request.LanguageId
+                        select new { p, pt };
             //2. filter
-            if (!string.IsNullOrEmpty(request.Keyword))
-                query = query.Where(x => x.pt.Name.Contains(request.Keyword));
+            //if (!string.IsNullOrEmpty(request.Keyword))
+            //    query = query.Where(x => x.pt.Name.Contains(request.Keyword));
 
-            if (request.CategoryIds.Count > 0)
-            {
-                query = query.Where(p => request.CategoryIds.Contains(p.pic.CategoryId));
-            }
+            //if (request.CategoryIds != null && request.CategoryIds.Count > 0)
+            //{
+            //    query = query.Where(p => request.CategoryIds.Contains(p.pic.CategoryId));
+            //}
+
             //3. Paging
             int totalRow = await query.CountAsync();
 
@@ -148,11 +152,10 @@ namespace ShopMates.Application.Catalog.Products
 
         }
 
-        public async Task<ProductViewModel> GetById(int productId, string languageId)
+        public async Task<ProductViewModel> GetById(int productId)
         {
             var product = await _context.Products.FindAsync(productId);
-            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
-            && x.LanguageId == languageId);
+            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId);
 
             var productViewModel = new ProductViewModel()
             {
@@ -195,12 +198,12 @@ namespace ShopMates.Application.Catalog.Products
             return productImage.Id;
         }
 
-        public async Task<ProductImageViewModel> GetImageById(int imageId)
+        public async Task<ProductImageViewModel> GetImageById(int productId)
         {
-            var image = await _context.ProductImages.FindAsync(imageId);
+            var image = await _context.ProductImages.FirstOrDefaultAsync(x => x.ProductId == productId);
             if(image == null) 
             {
-                throw new ShopMatesException($"Không tìm thấy hình ảnh với imageID {imageId}");
+                throw new ShopMatesException($"Không tìm thấy hình ảnh với productID {productId}");
             }
             var viewModel = new ProductImageViewModel()
             {
@@ -211,7 +214,7 @@ namespace ShopMates.Application.Catalog.Products
                 ImagePath = image.ImagePath,
                 IsDefault = image.IsDefault,
                 ProductId = image.ProductId,
-                SortOrder = image.SortOrder,
+                SortOrder = image.SortOrder
             };
             return viewModel;
         }
@@ -254,6 +257,10 @@ namespace ShopMates.Application.Catalog.Products
             productTranslations.SeoTitle = request.SeoTitle;
             productTranslations.Description = request.Description;
             productTranslations.Details = request.Details;
+            product.Stock = request.Stock;
+            product.IsFeatured = request.IsFeatured;
+            product.Price = request.Price;
+
 
             //Save Image
             if (request.ThumbnailImage != null)

@@ -37,12 +37,12 @@ namespace ShopMates.Application.System.Users
         public async Task<APIResult<string>> Authenticate(LoginRequest request)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
-            if (user == null) return null;
+            if (user == null) return new APIErrorResult<string>("Có cái username cũng nhập sai thì làm gì cho đời");
 
             var result = await _signInManager.PasswordSignInAsync(user, request.Password, request.RememberMe, true);
             if (!result.Succeeded)
             {
-                return null;
+                return new APIErrorResult<string>("Có password nhập cũng sai thì làm gì cho đời");
             }
             var roles = await _userManager.GetRolesAsync(user);
             var claims = new[]
@@ -64,20 +64,39 @@ namespace ShopMates.Application.System.Users
             return new APISuccessResult<string>(new JwtSecurityTokenHandler().WriteToken(token));
         }
 
-		public async Task<APIResult<UserViewModels>> GetByID(Guid Id)
+        public async Task<APIResult<bool>> Delete(Guid Id)
+        {
+            var user = await _userManager.FindByIdAsync(Id.ToString());
+            if (user == null)
+            {
+                return new APIErrorResult<bool>("UserName không tồn tại nhé");
+            }
+            var result = await _userManager.DeleteAsync(user);
+            if(result.Succeeded)
+            {
+                return new APISuccessResult<bool>();
+            }
+            return new APIErrorResult<bool>("Xóa không thành công rồi em ới ~");
+        }
+
+        public async Task<APIResult<UserViewModels>> GetByID(Guid Id)
 		{
             var user = await _userManager.FindByIdAsync(Id.ToString());
             if (user == null)
             {
                 return new APIErrorResult<UserViewModels>("UserName không tồn tại nhé");
             }
+            var roles = await _userManager.GetRolesAsync(user);
             var userVM = new UserViewModels()
             {
 				PhoneNumber = user.PhoneNumber,
 				UserName = user.UserName,
                 Dob = user.Dob,
 				FirstName = user.FirstName,
-				LastName = user.LastName
+                Email = user.Email,
+				LastName = user.LastName,
+                Id = Id,
+                Roles = roles
 			};
             return new APISuccessResult<UserViewModels>(userVM);
 		}
@@ -140,7 +159,36 @@ namespace ShopMates.Application.System.Users
             return new APIErrorResult<bool>("Đăng ký không thành công");
         }
 
-		public async Task<APIResult<bool>> Update(Guid id, UserUpdateRequest request)
+        public async Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
+        {
+            var user = await _userManager.FindByIdAsync(id.ToString());
+            if (user == null)
+            {
+                return new APIErrorResult<bool>("Tài khoản không tồn tại rồi kiếm cái khác đê");
+            }
+            var removedRoles = request.Roles.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+            foreach (var roleName in removedRoles)
+            {
+                if (await _userManager.IsInRoleAsync(user, roleName) == true)
+                {
+                    await _userManager.RemoveFromRoleAsync(user, roleName);
+                }
+            }
+            await _userManager.RemoveFromRolesAsync(user, removedRoles);
+
+            var addedRoles = request.Roles.Where(x => x.Selected).Select(x => x.Name).ToList();
+            foreach (var roleName in addedRoles)
+            {
+                if (await _userManager.IsInRoleAsync(user, roleName) == false)
+                {
+                    await _userManager.AddToRoleAsync(user, roleName);
+                }
+            }
+
+            return new APISuccessResult<bool>();
+        }
+
+        public async Task<APIResult<bool>> Update(Guid id, UserUpdateRequest request)
 		{
             var user = await _userManager.FindByIdAsync(id.ToString());
             user.Dob = request.Dob;

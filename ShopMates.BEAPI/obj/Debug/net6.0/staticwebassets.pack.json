@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.BEAPI.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ShopMates.BEAPI.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -243,6 +239,18 @@
     {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
+      "PackagePath": "staticwebassets\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
+      "PackagePath": "staticwebassets\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
+      "PackagePath": "staticwebassets\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ShopMates.BEAPI.Microsoft.AspNetCore.StaticWebAssets.props",

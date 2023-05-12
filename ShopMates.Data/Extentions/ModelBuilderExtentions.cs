@@ -82,13 +82,32 @@ namespace ShopMates.Data.Extentions
             // any guid
             var ADMIN_ID = new Guid("8F81B6C3-9468-4B62-B178-18AE55DAAD62");
             var ROLE_ID = new Guid("410CD1A8-43A2-42F2-88BE-BCD3727D0F27");
+            var SALE_ID = new Guid("D64B4652-CD9A-48EC-8977-D04606F2B8E1");
+            var CUS_ID = new Guid("AF355384-53BD-4EC5-8CB3-8E76DE87223D");
+
 
             modelBuilder.Entity<AppRole>().HasData(new AppRole
             {
                 Id = ROLE_ID,
-                Name = "Admin",
-                NormalizedName = "Adminitrator",
+                Name = "ADMIN",
+                NormalizedName = "ADMIN",
                 Description = "Adminitrator Role Powerful, Can hack this"
+            });
+
+            modelBuilder.Entity<AppRole>().HasData(new AppRole
+            {
+                Id = SALE_ID,
+                Name = "SALER",
+                NormalizedName = "SALER",
+                Description = "Saler account for accountant"
+            });
+
+            modelBuilder.Entity<AppRole>().HasData(new AppRole
+            {
+                Id = CUS_ID,
+                Name = "CUSTOMER",
+                NormalizedName = "CUSTOMER",
+                Description = "Role normal can buy order view product"
             });
 
             var hasder = new PasswordHasher<AppUser>();
@@ -101,7 +120,7 @@ namespace ShopMates.Data.Extentions
                 Email = "admin@gmail.com",
                 NormalizedEmail = "admin@gmail.com",
                 EmailConfirmed = true,
-                PasswordHash = hasder.HashPassword(null, "Test123"),
+                PasswordHash = hasder.HashPassword(null, "Admin@123"),
                 SecurityStamp = string.Empty,
                 FirstName = "Tien",
                 LastName = "Lam",
