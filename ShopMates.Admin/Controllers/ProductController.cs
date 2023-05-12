@@ -95,10 +95,13 @@ namespace ShopMates.Admin.Controllers
             return View(updateVm);
         }
 
-        private string GetFileUrl(string imagePath)
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
         {
-            return $"/{USER_CONTENT_FOLDER_NAME}/{imagePath}";
+            var result = await _productApiClient.GetById(id);
+            return View(result);
         }
+
 
         [HttpPost]
         [Consumes("multipart/form-data")]
@@ -143,6 +146,11 @@ namespace ShopMates.Admin.Controllers
 
             ModelState.AddModelError("", "Delete Product UnSuccessfilly");
             return View(request);
+        }
+
+        private string GetFileUrl(string imagePath)
+        {
+            return $"/{USER_CONTENT_FOLDER_NAME}/{imagePath}";
         }
     }
 }
