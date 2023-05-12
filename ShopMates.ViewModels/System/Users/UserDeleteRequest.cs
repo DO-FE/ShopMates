@@ -11,5 +11,8 @@ namespace ShopMates.ViewModels.System.Users
     {
         [Display(Name = "ID User")]
         public Guid Id { get; set; }
+
+        [Display(Name = "User Name")]
+        public string UserName { get; set; }
     }
 }

@@ -18441,6 +18441,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\Views\\Product\\Delete.cshtml",
+      "TargetPath": "Views\\Product\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\Views\\User\\ListUser.cshtml",
       "TargetPath": "Views\\User\\ListUser.cshtml",
       "FileKind": "mvc"

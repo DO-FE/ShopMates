@@ -70,7 +70,7 @@
                                 <td>
                                     @Html.ActionLink("Edit", "Update", new { id = item.Id }) |
                                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                                    @Html.ActionLink("Remove", "Delete", new { id = item.Id })
+                                    @Html.ActionLink("Remove", "Delete", new { id = item.Id , name = item.Name })
                                 </td>
                             </tr>
                         }

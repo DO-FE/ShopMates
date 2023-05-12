@@ -45,6 +45,11 @@ namespace ShopMates.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            var session = HttpContext.Session.GetString("Token");
+            if (session == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
 
@@ -110,6 +115,33 @@ namespace ShopMates.Admin.Controllers
             }
 
             ModelState.AddModelError("", "Update Product UnSuccessfilly");
+            return View(request);
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id, string name)
+        {
+            return View(new ProductDeleteRequest()
+            {
+                Id = id,
+                Name = name
+            });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(ProductDeleteRequest request)
+        {
+            if (!ModelState.IsValid)
+                return View();
+
+            var result = await _productApiClient.DeleteProduct(request);
+            if (result)
+            {
+                TempData["result"] = "Delete Product Successfully";
+                return RedirectToAction("ListProducts");
+            }
+
+            ModelState.AddModelError("", "Delete Product UnSuccessfilly");
             return View(request);
         }
     }

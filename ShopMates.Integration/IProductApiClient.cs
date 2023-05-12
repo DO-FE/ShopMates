@@ -1,4 +1,5 @@
-﻿using ShopMates.ViewModels.Catalog.ProductImages;
+﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using ShopMates.ViewModels.Catalog.ProductImages;
 using ShopMates.ViewModels.Catalog.Products;
 using ShopMates.ViewModels.Common;
 using ShopMates.ViewModels.System.Users;
@@ -21,5 +22,6 @@ namespace ShopMates.Integration
         Task<bool> UpdateProduct(ProductUpdateRequest request);
 
         Task<ProductImageViewModel> ViewProductImages(int productID);
+        Task<bool> DeleteProduct(ProductDeleteRequest request);
     }
 }

@@ -68,6 +68,11 @@ namespace ShopMates.Integration
             return response.IsSuccessStatusCode;
         }
 
+        public async Task<bool> DeleteProduct(ProductDeleteRequest request)
+        {
+            return await Delete($"/api/products/" + request.Id);
+        }
+
         public async Task<ProductViewModel> GetById(int id)
         {
             var data = await GetAsync<ProductViewModel>($"/api/products/{id}");

@@ -50,6 +50,11 @@ namespace ShopMates.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            var session = HttpContext.Session.GetString("Token");
+            if (session == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
 
@@ -108,11 +113,12 @@ namespace ShopMates.Admin.Controllers
 		}
 
         [HttpGet]
-        public IActionResult Delete(Guid id)
+        public IActionResult Delete(Guid id, string username)
         {
             return View(new UserDeleteRequest()
             {
-                Id = id
+                Id = id,
+                UserName = username
             });
         }
 
