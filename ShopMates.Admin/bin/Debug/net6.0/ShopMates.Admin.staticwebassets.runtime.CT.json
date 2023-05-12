@@ -65,6 +65,14 @@
       },
       "css": {
         "Children": {
+          "chat-style.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/chat-style.css"
+            },
+            "Patterns": null
+          },
           "sb-admin-2.css": {
             "Children": null,
             "Asset": {

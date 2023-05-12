@@ -11,12 +11,10 @@ namespace ShopMates.Admin.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IUserApiClient _userApiClient;
 
-        public HomeController(ILogger<HomeController> logger, IUserApiClient userApiClient)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _userApiClient = userApiClient;
         }
 
         public IActionResult Index()
@@ -33,12 +31,6 @@ namespace ShopMates.Admin.Controllers
         public IActionResult Message()
         {
             return View();
-        }
-
-        public async Task<IActionResult> Profile(Guid id)
-        {
-            var result = await _userApiClient.GetByID(id);
-            return View(result.ResultObj);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
