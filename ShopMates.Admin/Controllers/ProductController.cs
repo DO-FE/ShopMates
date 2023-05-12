@@ -13,6 +13,7 @@ namespace ShopMates.Admin.Controllers
     {
         private readonly IProductApiClient _productApiClient;
         private readonly IConfiguration _configuration;
+        private const string USER_CONTENT_FOLDER_NAME = "user-content";
 
         public ProductController(IProductApiClient productApiClient, IConfiguration configuration)
         {
@@ -69,6 +70,8 @@ namespace ShopMates.Admin.Controllers
         public async Task<IActionResult> Update(int id)
         {
             var product = await _productApiClient.GetById(id);
+            var image = await _productApiClient.ViewProductImages(id);
+            string imageUrl = GetFileUrl(image.ImagePath);
             var updateVm = new ProductUpdateRequest()
             {
                 Id = product.Id,
@@ -80,9 +83,16 @@ namespace ShopMates.Admin.Controllers
                 SeoDescription = product.SeoDescription,
                 SeoTitle = product.SeoTitle,
                 Stock = product.Stock
-                
+
             };
+            ViewBag.ImageUrl = imageUrl;
+
             return View(updateVm);
+        }
+
+        private string GetFileUrl(string imagePath)
+        {
+            return $"/{USER_CONTENT_FOLDER_NAME}/{imagePath}";
         }
 
         [HttpPost]

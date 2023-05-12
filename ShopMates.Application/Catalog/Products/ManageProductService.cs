@@ -197,12 +197,12 @@ namespace ShopMates.Application.Catalog.Products
             return productImage.Id;
         }
 
-        public async Task<ProductImageViewModel> GetImageById(int imageId)
+        public async Task<ProductImageViewModel> GetImageById(int productId)
         {
-            var image = await _context.ProductImages.FindAsync(imageId);
+            var image = await _context.ProductImages.FirstOrDefaultAsync(x => x.ProductId == productId);
             if(image == null) 
             {
-                throw new ShopMatesException($"Không tìm thấy hình ảnh với imageID {imageId}");
+                throw new ShopMatesException($"Không tìm thấy hình ảnh với productID {productId}");
             }
             var viewModel = new ProductImageViewModel()
             {
@@ -213,7 +213,7 @@ namespace ShopMates.Application.Catalog.Products
                 ImagePath = image.ImagePath,
                 IsDefault = image.IsDefault,
                 ProductId = image.ProductId,
-                SortOrder = image.SortOrder,
+                SortOrder = image.SortOrder
             };
             return viewModel;
         }

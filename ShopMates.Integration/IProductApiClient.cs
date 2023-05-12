@@ -1,4 +1,5 @@
-﻿using ShopMates.ViewModels.Catalog.Products;
+﻿using ShopMates.ViewModels.Catalog.ProductImages;
+using ShopMates.ViewModels.Catalog.Products;
 using ShopMates.ViewModels.Common;
 using ShopMates.ViewModels.System.Users;
 using System;
@@ -18,5 +19,7 @@ namespace ShopMates.Integration
         Task<ProductViewModel> GetById(int id);
 
         Task<bool> UpdateProduct(ProductUpdateRequest request);
+
+        Task<ProductImageViewModel> ViewProductImages(int productID);
     }
 }

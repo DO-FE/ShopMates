@@ -103,7 +103,7 @@
                             <label asp-for="ThumbnailImage" class="control-label"></label>
                             <input asp-for="ThumbnailImage" type="file" class="form-control" accept=".jpg, .jpeg, .png, .gif, .svg" onchange="previewImage(event)" />
                             <span asp-validation-for="ThumbnailImage" class="text-danger"></span>
-                            <img id="thumbnailPreview" src="#" alt="Thumbnail Preview" style="display: none; max-width: 100%; height: auto;" />
+                            <img id="thumbnailPreview" src="@ViewBag.ImageUrl" alt="Thumbnail Preview" style="display: none; max-width: 100%; height: auto;" />
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Save" class="btn btn-primary" />

@@ -123,18 +123,18 @@ namespace ShopMates.BEAPI.Controllers
             }
             var result = await _manageProductService.UpdateImages(imageId, request);
             if (result == 0)
-                return BadRequest("Bị lỗi nào đó khi tạo mới sản phẩm");
+                return BadRequest("Bị lỗi nào đó khi tạo mới hình ảnh");
 
             return Ok();
         }
 
-        [HttpGet("{productId}/images/{imageId}")]
+        [HttpGet("{productId}/images")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetImageById(int productId, int imageId)
+        public async Task<IActionResult> GetImageById(int productId)
         {
-            var image = await _manageProductService.GetImageById(imageId);
+            var image = await _manageProductService.GetImageById(productId);
             if (image == null)
-                return BadRequest("Không tìm thấy sản phẩm");
+                return BadRequest("Không tìm thấy hình ảnh");
             return Ok(image);
         }
 

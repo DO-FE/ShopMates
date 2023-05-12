@@ -12,6 +12,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using ShopMates.Data.Entities;
+using ShopMates.ViewModels.Catalog.ProductImages;
 
 namespace ShopMates.Integration
 {
@@ -27,6 +28,7 @@ namespace ShopMates.Integration
             _configuration = configuration;
             _httpClientFactory = httpClientFactory;
         }
+
 
         public async Task<bool> CreateProduct(ProductCreateRequest request)
         {
@@ -113,6 +115,13 @@ namespace ShopMates.Integration
                 return response.IsSuccessStatusCode;
             }
             return false;
+        }
+
+        public async Task<ProductImageViewModel> ViewProductImages(int productID)
+        {
+            var data = await GetAsync<ProductImageViewModel>($"/api/products/{productID}/images");
+
+            return data;
         }
     }
 }
