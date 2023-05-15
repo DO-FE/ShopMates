@@ -119,6 +119,14 @@
       },
       "img": {
         "Children": {
+          "login-image.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/login-image.jpg"
+            },
+            "Patterns": null
+          },
           "undraw_posting_photo.svg": {
             "Children": null,
             "Asset": {
