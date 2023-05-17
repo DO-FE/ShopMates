@@ -33,6 +33,11 @@ namespace ShopMates.Admin.Controllers
             return View();
         }
 
+        public IActionResult Error404()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -46,6 +51,12 @@ namespace ShopMates.Admin.Controllers
                 viewModel.CurrentLanguageId);
 
             return Redirect("/AdminShopMates/Home/Index");
+        }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            return View();
         }
     }
 }

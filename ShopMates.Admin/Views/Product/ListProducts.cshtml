@@ -23,7 +23,17 @@
 
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <a class="btn btn-primary" asp-controller="Product" asp-action="Create">Create New One</a>
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <a class="btn btn-primary" asp-controller="Product" asp-action="Create">Create New One</a>
+                </div>
+                <div class="col-md-4 col-xs-12"></div>
+                <div class="col-md-4 col-xs-12">
+                    <select class="form-control" data-live-search="true" onchange="this.form.submit()" name="categoryId" asp-items="@ViewBag.Categories" placeholder="Category">
+                        <option disabled selected value="">--Select Category--</option>
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">

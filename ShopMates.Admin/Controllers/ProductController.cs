@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopMates.Data.Entities;
 using ShopMates.Integration;
 using ShopMates.Utilities.Constants;
@@ -13,14 +14,16 @@ namespace ShopMates.Admin.Controllers
     {
         private readonly IProductApiClient _productApiClient;
         private readonly IConfiguration _configuration;
+        private readonly ICategoryApiClient _categoryApiClient;
         private const string USER_CONTENT_FOLDER_NAME = "user-content";
 
-        public ProductController(IProductApiClient productApiClient, IConfiguration configuration)
+        public ProductController(IProductApiClient productApiClient, IConfiguration configuration, ICategoryApiClient categoryApiClient)
         {
             _productApiClient = productApiClient;
             _configuration = configuration;
+            _categoryApiClient = categoryApiClient;
         }
-        public async Task<IActionResult> ListProducts(int pageIndex = 1, int pageSize = 15)
+        public async Task<IActionResult> ListProducts(int? categoryId, int pageIndex = 1, int pageSize = 15)
         {
             var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
             var session = HttpContext.Session.GetString("Token");
@@ -32,9 +35,16 @@ namespace ShopMates.Admin.Controllers
             {
                 PageIndex = pageIndex,
                 PageSize = pageSize,
-                LanguageId = language
+                LanguageId = language,
+                CategoryId = categoryId
             };
             var data = await _productApiClient.GetProductsPagaing(request);
+            var categories = await _categoryApiClient.GetAll(language);
+            ViewBag.Categories = categories.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString()
+            });
             if (TempData["result"] != null)
             {
                 ViewBag.SuccessMsg = TempData["result"];

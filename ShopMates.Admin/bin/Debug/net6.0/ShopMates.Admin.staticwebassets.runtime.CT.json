@@ -127,6 +127,14 @@
             },
             "Patterns": null
           },
+          "profile_image.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/profile_image.jpg"
+            },
+            "Patterns": null
+          },
           "undraw_posting_photo.svg": {
             "Children": null,
             "Asset": {

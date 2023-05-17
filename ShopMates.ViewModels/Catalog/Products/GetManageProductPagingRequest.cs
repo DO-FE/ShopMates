@@ -15,5 +15,6 @@ namespace ShopMates.ViewModels.Catalog.Products
 
         //public List<int> CategoryIds { get; set; }
 
+        public int? CategoryId { get; set; }
     }
 }

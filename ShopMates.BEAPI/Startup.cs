@@ -24,6 +24,7 @@ using ShopMates.ViewModels.System.Users;
 using FluentValidation;
 using ShopMates.Application.System.Roles;
 using ShopMates.Application.System.Languages;
+using ShopMates.Application.Catalog.Categories;
 
 namespace ShopMates.BEAPI
 {
@@ -50,6 +51,8 @@ namespace ShopMates.BEAPI
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
+
+            services.AddTransient<ICategoryService, CategoryService>();
 
             services.AddTransient<ILanguageService, LanguageService>();
 

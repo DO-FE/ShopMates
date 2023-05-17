@@ -21,10 +21,7 @@
     <div class="card shadow mb-4">
         <div class="card-body">
             <div class="row">
-                @if (ViewBag.SuccessMsg != null)
-                {
-                    <div id="msgAlert" class="alert alert-success" role="alert"> @ViewBag.SuccessMsg </div>
-                }
+
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -40,8 +37,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model.Items)
-                        {
+
                             <tr>
                                 <td>
                                     Comming soon
@@ -62,12 +58,11 @@
                                     Comming soon
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Edit", "Update", new { id = item.Id }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                                    @Html.ActionLink("Remove", "Delete", new { id = item.Id , name = item.Name })
+                                    @Html.ActionLink("Edit", "Update", new { }) |
+                                    @Html.ActionLink("Details", "Details", new { }) |
+                                    @Html.ActionLink("Remove", "Delete", new { })
                                 </td>
                             </tr>
-                        }
                     </tbody>
                 </table>
             </div>
