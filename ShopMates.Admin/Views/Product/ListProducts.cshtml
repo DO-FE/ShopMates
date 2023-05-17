@@ -29,9 +29,12 @@
                 </div>
                 <div class="col-md-4 col-xs-12"></div>
                 <div class="col-md-4 col-xs-12">
-                    <select class="form-control" data-live-search="true" onchange="this.form.submit()" name="categoryId" asp-items="@ViewBag.Categories" placeholder="Category">
-                        <option disabled selected value="">--Select Category--</option>
-                    </select>
+                     <form asp-action="ListProducts" method="get">
+                        <select class="form-control text-center" data-live-search="true" onchange="this.form.submit()" name="categoryId" asp-items="@ViewBag.Categories" placeholder="Category">
+                            <option disabled selected value="" class="text-center">-- Select Category --</option>
+                            <option value="">All</option>
+                        </select>
+                    </form>
                 </div>
             </div>
         </div>

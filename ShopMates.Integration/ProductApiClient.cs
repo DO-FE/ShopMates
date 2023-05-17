@@ -63,6 +63,7 @@ namespace ShopMates.Integration
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoTitle) ? "" : request.SeoTitle.ToString()), "seoTitle");
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoAlias) ? "" : request.SeoAlias.ToString()), "seoAlias");
             requestContent.Add(new StringContent(request.LanguageId.ToString()), "languageId");
+            requestContent.Add(new StringContent(request.CategoryId.ToString()), "categoryId");
             requestContent.Add(new StringContent(request.IsFeatured.ToString()), "isFeatured");
 
             var response = await client.PostAsync($"/api/products/", requestContent);

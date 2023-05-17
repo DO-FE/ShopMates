@@ -54,8 +54,15 @@ namespace ShopMates.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
+            var categories = await _categoryApiClient.GetAll(language);
+            ViewBag.Categories = categories.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString()
+            });
             var session = HttpContext.Session.GetString("Token");
             if (session == null)
             {
@@ -87,7 +94,7 @@ namespace ShopMates.Admin.Controllers
         {
             var product = await _productApiClient.GetById(id);
             var image = await _productApiClient.ViewProductImages(id);
-            string imageUrl = GetFileUrl(image.ImagePath);
+            var imageUrl = GetFileUrl(image.ImagePath);
             var updateVm = new ProductUpdateRequest()
             {
                 Id = product.Id,
@@ -111,7 +118,8 @@ namespace ShopMates.Admin.Controllers
         {
             var result = await _productApiClient.GetById(id);
             var image = await _productApiClient.ViewProductImages(id);
-            ViewBag.ImageUrl = image.ImagePath;
+            var imageUrl = GetFileUrl(image.ImagePath);
+            ViewBag.ImageUrl = imageUrl;
             return View(result);
         }
 
@@ -163,7 +171,7 @@ namespace ShopMates.Admin.Controllers
 
         private string GetFileUrl(string imagePath)
         {
-            return $"/{USER_CONTENT_FOLDER_NAME}/{imagePath}";
+            return $"/AdminShopMates/{USER_CONTENT_FOLDER_NAME}/{imagePath}";
         }
     }
 }

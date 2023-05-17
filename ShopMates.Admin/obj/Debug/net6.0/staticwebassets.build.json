@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XGdwjW0NfS/vOV6v5W7/+wIvLD06dlHyYMmYmvPHPdc=",
+  "Hash": "gg0aBFI3AKjbpUgZQAqCR1yCPOcWtm4+0w6DJixyt2c=",
   "Source": "ShopMates.Admin",
   "BasePath": "_content/ShopMates.Admin",
   "Mode": "Default",
@@ -1870,23 +1870,6 @@
       "OriginalItemSpec": "wwwroot\\scss\\utilities\\_text.scss"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
-      "SourceId": "ShopMates.Admin",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
-      "BasePath": "_content/ShopMates.Admin",
-      "RelativePath": "user-content/0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg"
-    },
-    {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
@@ -1919,6 +1902,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\da664719-7fed-46a8-88cf-f754996d486f.jpg",
+      "SourceId": "ShopMates.Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "BasePath": "_content/ShopMates.Admin",
+      "RelativePath": "user-content/da664719-7fed-46a8-88cf-f754996d486f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\da664719-7fed-46a8-88cf-f754996d486f.jpg"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
