@@ -110,6 +110,8 @@ namespace ShopMates.Admin.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var result = await _productApiClient.GetById(id);
+            var image = await _productApiClient.ViewProductImages(id);
+            ViewBag.ImageUrl = image.ImagePath;
             return View(result);
         }
 

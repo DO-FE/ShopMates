@@ -109,7 +109,7 @@ namespace ShopMates.BEAPI.Controllers
             if (imageId == 0)
                 return BadRequest("Bị lỗi nào đó khi tạo mới sản phẩm");
 
-            var image = await _manageProductService.GetImageById(imageId);
+            var image = await _manageProductService.GetImageById(productId);
 
             return CreatedAtAction(nameof(GetImageById), new { id = imageId }, image);
         }

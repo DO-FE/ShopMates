@@ -1,4 +1,4 @@
-﻿ using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -24,6 +24,8 @@ namespace ShopMates.ViewModels.Catalog.Products
 
         public string SeoAlias { get; set; }
         public string LanguageId { set; get; }
+
+        public int CategoryId { set; get; }
 
         public bool? IsFeatured { get; set; }
 

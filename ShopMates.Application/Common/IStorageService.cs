@@ -9,9 +9,11 @@ namespace ShopMates.Application.Common
 {
     public interface IStorageService
     {
-        String GetFileUrl(String fileName);
+        string GetFileUrl(string fileName);
 
-        Task SaveFileAsync (Stream mediaBinaryStream, String fileName);
+        Task SaveFileAsync (Stream mediaBinaryStream, string fileName);
+
+        Task<string> LoadFileAsync(string fileName);
 
         Task DeleteFileAsync(string fileName);
     }

@@ -28,6 +28,7 @@ namespace ShopMates.Application.Catalog.Products
     {
         private readonly ShopMatesDbContext _context;
         private readonly IStorageService _storageService;
+
         public ManageProductService(ShopMatesDbContext context, IStorageService storageService) 
         {
             _context = context;
@@ -63,6 +64,13 @@ namespace ShopMates.Application.Catalog.Products
                         SeoAlias = request.SeoAlias,
                         SeoTitle = request.SeoTitle,
                         LanguageId = request.LanguageId
+                    }
+                },
+                ProductInCategories = new List<ProductInCategory>()
+                {
+                    new ProductInCategory()
+                    {
+                        CategoryId = request.CategoryId
                     }
                 }
             };
@@ -111,8 +119,9 @@ namespace ShopMates.Application.Catalog.Products
                         join pt in _context.ProductTranslations on p.Id equals pt.ProductId
                         join pic in _context.ProductInCategories on p.Id equals pic.ProductId
                         join c in _context.Categories on pic.CategoryId equals c.Id
-                        where pt.LanguageId == request.LanguageId
-                        select new { p, pt, pic };
+                        join ct in _context.CategoryTranslations on c.Id equals ct.CategoryId
+                        where pt.LanguageId == request.LanguageId && ct.LanguageId == request.LanguageId
+                        select new { p, pt, pic, ct };
             //2. filter
             //if (!string.IsNullOrEmpty(request.Keyword))
             //    query = query.Where(x => x.pt.Name.Contains(request.Keyword));
@@ -139,7 +148,8 @@ namespace ShopMates.Application.Catalog.Products
                 SeoDescription = x.pt.SeoDescription,
                 SeoTitle = x.pt.SeoTitle,
                 Stock = x.p.Stock,
-                ViewCount = x.p.ViewCount
+                ViewCount = x.p.ViewCount,
+                CategoryName = x.ct.Name
             }).ToListAsync();
 
             //4. Select and projection
@@ -154,24 +164,25 @@ namespace ShopMates.Application.Catalog.Products
 
         public async Task<ProductViewModel> GetById(int productId)
         {
-            var product = await _context.Products.FindAsync(productId);
-            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId);
+            var product = await _context.Products.Include(p => p.ProductTranslations).Include(p => p.ProductInCategories).ThenInclude(pic => pic.Category).ThenInclude(c => c.CategoryTranslations).Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == productId);
 
             var productViewModel = new ProductViewModel()
             {
                 Id = product.Id,
-                DateCreated = product.DateCreated,
-                Description = productTranslation != null ? productTranslation.Description : null,
-                LanguageId = productTranslation.LanguageId,
-                Details = productTranslation != null ? productTranslation.Details : null,
-                Name = productTranslation != null ? productTranslation.Name : null,
-                OriginalPrice = product.OriginalPrice,
                 Price = product.Price,
-                SeoAlias = productTranslation != null ? productTranslation.SeoAlias : null,
-                SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
-                SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
+                OriginalPrice = product.OriginalPrice,
                 Stock = product.Stock,
-                ViewCount = product.ViewCount
+                ViewCount = product.ViewCount,
+                DateCreated = product.DateCreated,
+                Name = product.ProductTranslations.FirstOrDefault()?.Name,
+                Description = product.ProductTranslations.FirstOrDefault()?.Description,
+                Details = product.ProductTranslations.FirstOrDefault()?.Details,
+                SeoDescription = product.ProductTranslations.FirstOrDefault()?.SeoDescription,
+                SeoTitle = product.ProductTranslations.FirstOrDefault()?.SeoTitle,
+                SeoAlias = product.ProductTranslations.FirstOrDefault()?.SeoAlias,
+                LanguageId = product.ProductTranslations.FirstOrDefault()?.LanguageId,
+                IsFeatured = product.IsFeatured,
+                CategoryName = product.ProductInCategories.FirstOrDefault()?.Category?.CategoryTranslations.FirstOrDefault()?.Name
             };
             return productViewModel;
         }
@@ -249,6 +260,7 @@ namespace ShopMates.Application.Catalog.Products
         {
             var product = await _context.Products.FindAsync(request.Id);
             var productTranslations = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == request.Id);
+            var productInCategory = await _context.ProductInCategories.FirstOrDefaultAsync(x => x.ProductId == request.Id);
             if (product == null || productTranslations == null) throw new ShopMatesException($"Không tìm thấy sản phẩm: {request.Id}");
 
             productTranslations.Name = request.Name;
@@ -257,9 +269,11 @@ namespace ShopMates.Application.Catalog.Products
             productTranslations.SeoTitle = request.SeoTitle;
             productTranslations.Description = request.Description;
             productTranslations.Details = request.Details;
+            productTranslations.LanguageId = request.LanguageId;
             product.Stock = request.Stock;
             product.IsFeatured = request.IsFeatured;
             product.Price = request.Price;
+            productInCategory.CategoryId = request.CategoryId;
 
 
             //Save Image
@@ -316,6 +330,14 @@ namespace ShopMates.Application.Catalog.Products
             var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
             var filename = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
             await _storageService.SaveFileAsync(file.OpenReadStream(), filename);
+            return filename;
+        }
+
+        private async Task<string> LoadFile(IFormFile file)
+        {
+            var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+            var filename = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
+            await _storageService.LoadFileAsync(filename);
             return filename;
         }
     }

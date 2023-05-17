@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ShopMates.Data.Entities;
 using ShopMates.ViewModels.Catalog.ProductImages;
+using Microsoft.AspNetCore.Http.Internal;
 
 namespace ShopMates.Integration
 {
