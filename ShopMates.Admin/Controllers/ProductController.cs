@@ -133,7 +133,6 @@ namespace ShopMates.Admin.Controllers
 
 
         [HttpPost]
-        [Consumes("multipart/form-data")]
         public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
