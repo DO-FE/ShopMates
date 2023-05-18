@@ -182,8 +182,7 @@ namespace ShopMates.Application.Catalog.Products
                 SeoAlias = product.ProductTranslations.FirstOrDefault()?.SeoAlias,
                 LanguageId = product.ProductTranslations.FirstOrDefault()?.LanguageId,
                 IsFeatured = product.IsFeatured,
-                CategoryName = product.ProductInCategories.FirstOrDefault()?.Category?.CategoryTranslations.FirstOrDefault()?.Name,
-                ThumbnailImage = await GetThumbnailImage(product.Id)
+                CategoryName = product.ProductInCategories.FirstOrDefault()?.Category?.CategoryTranslations.FirstOrDefault()?.Name
             };  
             return productViewModel;
         }
@@ -332,29 +331,6 @@ namespace ShopMates.Application.Catalog.Products
             var filename = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
             await _storageService.SaveFileAsync(file.OpenReadStream(), filename);
             return filename;
-        }
-
-        private async Task<IFormFile> GetThumbnailImage(int productId)
-        {
-            var productImage = await _context.ProductImages
-                .FirstOrDefaultAsync(pi => pi.ProductId == productId && pi.IsDefault);
-
-            if (productImage != null)
-            {
-                // Assuming you have a method to retrieve the image file based on the image path
-                var imageFile = await _storageService.GetImageFile(productImage.ImagePath);
-
-                // Create an instance of FormFile with the image data
-                var formFile = new FormFile(imageFile, 0, imageFile.Length, null, Path.GetFileName(imageFile.Name))
-                {
-                    Headers = new HeaderDictionary(),
-                    ContentType = "application/octet-stream"
-                };
-
-                return formFile;
-            }
-
-            return null;
         }
     }
 }

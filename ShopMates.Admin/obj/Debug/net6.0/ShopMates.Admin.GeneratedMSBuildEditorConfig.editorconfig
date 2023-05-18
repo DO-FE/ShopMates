@@ -9,113 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShopMates.Admin
 build_property.RootNamespace = ShopMates.Admin
-build_property.ProjectDir = C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin\
+build_property.ProjectDir = c:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin
+build_property.MSBuildProjectDirectory = c:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Error404.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Error404.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Index.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Message.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Message.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Privacy.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Profile.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Login/Index.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Order/ListOrder.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Order/ListOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTGlzdE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Create.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Delete.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Details.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/ListProducts.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/ListProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxMaXN0UHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Update.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/Components/Navigation/Default.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/Components/Navigation/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2aWdhdGlvblxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/Error.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Create.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Delete.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Details.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/ForgotPassword.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/ListUser.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/ListUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMaXN0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Register.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/RoleAssign.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/RoleAssign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSb2xlQXNzaWduLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Update.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/User/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/_ViewImports.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/_ViewStart.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/_Layout.cshtml]
+[c:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hhiw38vnaj

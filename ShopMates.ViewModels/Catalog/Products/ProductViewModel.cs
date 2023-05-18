@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using ShopMates.ViewModels.Catalog.ProductImages;
 using System;
 using System.Collections.Generic;
 using System.Linq;

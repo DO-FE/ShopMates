@@ -113,8 +113,7 @@ namespace ShopMates.Admin.Controllers
                 SeoDescription = product.SeoDescription,
                 SeoTitle = product.SeoTitle,
                 Stock = product.Stock,
-                IsFeatured = product.IsFeatured,
-                ThumbnailImage = product.ThumbnailImage
+                IsFeatured = product.IsFeatured
 
             };
             ViewBag.ImageUrl = imageUrl;
@@ -126,6 +125,9 @@ namespace ShopMates.Admin.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var result = await _productApiClient.GetById(id);
+            var image = await _productApiClient.ViewProductImages(id);
+            var imageUrl = GetFileUrl(image.ImagePath);
+            ViewBag.ImageUrl = imageUrl;
             return View(result);
         }
 
