@@ -11,5 +11,7 @@ namespace ShopMates.Integration
     public interface ICategoryApiClient
     {
         Task<List<CategoryViewModel>> GetAll(string languageId);
+
+        Task<CategoryViewModel> GetById(int productId);
     }
 }

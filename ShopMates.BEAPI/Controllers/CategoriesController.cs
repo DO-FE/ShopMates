@@ -17,10 +17,18 @@ namespace ShopMates.BEAPI.Controllers
         {
             _categoryService = categoryService;
         }
+
         [HttpGet("{languageId}")]
         public async Task<IActionResult> GetAllPaging(string languageId)
         {
             var categories = await _categoryService.GetAll(languageId);
+            return Ok(categories);
+        }
+
+        [HttpGet("get-by-id/{productId}")]
+        public async Task<IActionResult> GetCatId(int productId)
+        {
+            var categories = await _categoryService.GetById(productId);
             return Ok(categories);
         }
     }

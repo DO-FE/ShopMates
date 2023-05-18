@@ -96,8 +96,9 @@ namespace ShopMates.Admin.Controllers
             var image = await _productApiClient.ViewProductImages(id);
             var imageUrl = GetFileUrl(image.ImagePath);
             var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
-            var categories = await _categoryApiClient.GetAll(language);
-            ViewBag.Categories = categories.Select(x => new SelectListItem()
+            var listcategories = await _categoryApiClient.GetAll(language);
+            var category = await _categoryApiClient.GetById(id);
+            ViewBag.Categories = listcategories.Select(x => new SelectListItem()
             {
                 Text = x.Name,
                 Value = x.Id.ToString()
@@ -113,8 +114,8 @@ namespace ShopMates.Admin.Controllers
                 SeoDescription = product.SeoDescription,
                 SeoTitle = product.SeoTitle,
                 Stock = product.Stock,
-                IsFeatured = product.IsFeatured
-
+                IsFeatured = product.IsFeatured,
+                CategoryId = category.Id
             };
             ViewBag.ImageUrl = imageUrl;
 

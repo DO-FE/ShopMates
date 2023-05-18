@@ -12,5 +12,7 @@ namespace ShopMates.Application.Catalog.Categories
     public interface ICategoryService
     {
         Task<List<CategoryViewModel>> GetAll(string languageId);
+
+        Task<CategoryViewModel> GetById(int productId);
     }
 }
