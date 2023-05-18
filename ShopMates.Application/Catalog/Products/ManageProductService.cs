@@ -260,10 +260,20 @@ namespace ShopMates.Application.Catalog.Products
 
         public async Task<int> Update(ProductUpdateRequest request)
         {
-            var product = await _context.Products.FindAsync(request.Id);
-            var productTranslations = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == request.Id);
-            var productInCategory = await _context.ProductInCategories.FirstOrDefaultAsync(x => x.ProductId == request.Id);
-            if (product == null || productTranslations == null) throw new ShopMatesException($"Không tìm thấy sản phẩm: {request.Id}");
+            var product = await _context.Products.Include(p => p.ProductTranslations).Include(p => p.ProductInCategories).ThenInclude(pic => pic.Category).ThenInclude(c => c.CategoryTranslations).Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == request.Id);
+
+            if (product == null)
+            {
+                throw new ShopMatesException($"Không tìm thấy sản phẩm: {request.Id}");
+            }
+
+            var productTranslations = product.ProductTranslations.FirstOrDefault();
+            var productInCategory = product.ProductInCategories.FirstOrDefault();
+
+            if (productTranslations == null || productInCategory == null)
+            {
+                throw new ShopMatesException($"Không tìm thấy thông tin sản phẩm: {request.Id}");
+            }
 
             productTranslations.Name = request.Name;
             productTranslations.SeoAlias = request.SeoAlias;

@@ -72,7 +72,7 @@ namespace ShopMates.BEAPI.Controllers
             request.Id = productId;
             var affectedResult = await _manageProductService.Update(request);
             if (affectedResult == 0)
-                return BadRequest();
+                return BadRequest("Không có gì thay đổi của sản phẩm");
             return Ok();
         }
 

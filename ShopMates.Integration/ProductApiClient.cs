@@ -100,7 +100,6 @@ namespace ShopMates.Integration
             var requestContent = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
 
             var response = await client.PutAsync($"/api/products/{request.Id}", requestContent);
-            var result = await response.Content.ReadAsStringAsync();
             return response.IsSuccessStatusCode;
 
         }

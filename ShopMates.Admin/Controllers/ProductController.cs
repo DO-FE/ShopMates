@@ -156,7 +156,7 @@ namespace ShopMates.Admin.Controllers
                 return RedirectToAction("ListProducts");
             }
 
-            ModelState.AddModelError("", "Update Product UnSuccessfilly");
+            ModelState.AddModelError("", "Product update failed because nothing changed or something went wrong");
             return View(request);
         }
 
