@@ -17,7 +17,5 @@ namespace ShopMates.Application.Common
         Task<string> LoadFileAsync(string fileName);
 
         Task DeleteFileAsync(string fileName);
-
-        Task<FileStream> GetImageFile(string imagePath);
     }
 }
