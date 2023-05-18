@@ -1129,6 +1129,14 @@
           },
           "icons": {
             "Children": {
+              "dotnet-install.sh": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "images/icons/dotnet-install.sh"
+                },
+                "Patterns": null
+              },
               "favicon.png": {
                 "Children": null,
                 "Asset": {
