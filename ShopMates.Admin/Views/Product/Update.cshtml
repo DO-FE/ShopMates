@@ -52,17 +52,23 @@
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <input type="hidden" asp-for="Id" />
                         <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="col-sm-4 mb-3 mb-sm-0">
                                 <label asp-for="Name" class="control-label"></label>
                                 <input asp-for="Name" class="form-control" />
                                 <span asp-validation-for="Name" class="text-danger"></span>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <label asp-for="CategoryId" class="control-label">Categories</label>
                                 <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.Categories">
                                     <option disabled selected value="" class="text-center">-- Chossing one category --</option>
                                 </select>
                                 <span asp-validation-for="CategoryId" class="text-danger"></span>
+                            </div>
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                                <label asp-for="LanguageId" class="control-label">Langauge</label>
+                                <select asp-for="LanguageId" class="form-control" asp-items="@ViewBag.Language">
+                                </select>
+                                <span asp-validation-for="LanguageId" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group">

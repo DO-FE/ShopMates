@@ -63,7 +63,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPut("{productId}")]
-        public async Task<IActionResult> Update([FromRoute] int productId, [FromForm] ProductUpdateRequest request)
+        public async Task<IActionResult> Update([FromRoute] int productId, [FromBody] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
             {

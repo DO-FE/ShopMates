@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using ShopMates.Data.Entities;
 using ShopMates.ViewModels.Catalog.ProductImages;
 using Microsoft.AspNetCore.Http.Internal;
+using Newtonsoft.Json;
 
 namespace ShopMates.Integration
 {
@@ -96,21 +97,12 @@ namespace ShopMates.Integration
             client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 
-            var requestContent = new MultipartFormDataContent();
+            var requestContent = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
 
-            requestContent.Add(new StringContent(request.Name.ToString()), "name");
-            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Description) ? "" : request.Description.ToString()), "description");
-            requestContent.Add(new StringContent(request.Price.ToString()), "price");
-            requestContent.Add(new StringContent(request.Stock.ToString()), "stock");
-            requestContent.Add(new StringContent(request.CategoryId.ToString()), "categoryId");
-            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Details) ? "" : request.Details.ToString()), "details");
-            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoDescription) ? "" : request.SeoDescription.ToString()), "seoDescription");
-            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoTitle) ? "" : request.SeoTitle.ToString()), "seoTitle");
-            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoAlias) ? "" : request.SeoAlias.ToString()), "seoAlias");
-            requestContent.Add(new StringContent(request.IsFeatured.ToString()), "isFeatured");
-
-            var response = await client.PutAsync($"/api/products/" + request.Id, requestContent);
+            var response = await client.PutAsync($"/api/products/{request.Id}", requestContent);
+            var result = await response.Content.ReadAsStringAsync();
             return response.IsSuccessStatusCode;
+
         }
 
         public async Task<ProductImageViewModel> ViewProductImages(int productID)

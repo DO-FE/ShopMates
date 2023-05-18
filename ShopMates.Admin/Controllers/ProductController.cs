@@ -12,16 +12,18 @@ namespace ShopMates.Admin.Controllers
 {
     public class ProductController : Controller
     {
+        private readonly ILanguageApiClient _languageApiClient;
         private readonly IProductApiClient _productApiClient;
         private readonly IConfiguration _configuration;
         private readonly ICategoryApiClient _categoryApiClient;
         private const string USER_CONTENT_FOLDER_NAME = "user-content";
 
-        public ProductController(IProductApiClient productApiClient, IConfiguration configuration, ICategoryApiClient categoryApiClient)
+        public ProductController(IProductApiClient productApiClient, IConfiguration configuration, ICategoryApiClient categoryApiClient, ILanguageApiClient languageApiClient)
         {
             _productApiClient = productApiClient;
             _configuration = configuration;
             _categoryApiClient = categoryApiClient;
+            _languageApiClient = languageApiClient;
         }
         public async Task<IActionResult> ListProducts(int? categoryId, int pageIndex = 1, int pageSize = 15)
         {
@@ -95,6 +97,12 @@ namespace ShopMates.Admin.Controllers
             var product = await _productApiClient.GetById(id);
             var image = await _productApiClient.ViewProductImages(id);
             var imageUrl = GetFileUrl(image.ImagePath);
+            var listlanguageResult = await _languageApiClient.GetAll();
+            var listlanguage = listlanguageResult.ResultObj.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString()
+            });
             var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
             var listcategories = await _categoryApiClient.GetAll(language);
             var category = await _categoryApiClient.GetById(id);
@@ -103,6 +111,8 @@ namespace ShopMates.Admin.Controllers
                 Text = x.Name,
                 Value = x.Id.ToString()
             });
+            ViewBag.ImageUrl = imageUrl;
+            ViewBag.Language = listlanguage;
             var updateVm = new ProductUpdateRequest()
             {
                 Id = product.Id,
@@ -115,9 +125,9 @@ namespace ShopMates.Admin.Controllers
                 SeoTitle = product.SeoTitle,
                 Stock = product.Stock,
                 IsFeatured = product.IsFeatured,
-                CategoryId = category.Id
+                CategoryId = category.Id,
+                LanguageId = product.LanguageId
             };
-            ViewBag.ImageUrl = imageUrl;
 
             return View(updateVm);
         }
