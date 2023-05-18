@@ -21,7 +21,7 @@ namespace ShopMates.Application.Common
 
         public string GetFileUrl(string fileName)
         {
-            return $"/{USER_CONTENT_FOLDER_NAME}/{fileName}";
+            return _userContentFolder + fileName;
         }
 
         public async Task SaveFileAsync(Stream mediaBinaryStream, string fileName)
@@ -52,13 +52,6 @@ namespace ShopMates.Application.Common
             {
                 await Task.Run(() => File.Delete(filePath));
             }
-        }
-
-        public Task<FileStream> GetImageFile(string imagePath)
-        {
-            var filePath = Path.Combine(_userContentFolder, imagePath);
-            var imageFileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-            return Task.FromResult(imageFileStream);
         }
     }
 }

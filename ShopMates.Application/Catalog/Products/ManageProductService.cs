@@ -120,8 +120,9 @@ namespace ShopMates.Application.Catalog.Products
                         join pic in _context.ProductInCategories on p.Id equals pic.ProductId
                         join c in _context.Categories on pic.CategoryId equals c.Id
                         join ct in _context.CategoryTranslations on c.Id equals ct.CategoryId
+                        join pi in _context.ProductImages on p.Id equals pi.ProductId
                         where pt.LanguageId == request.LanguageId && ct.LanguageId == request.LanguageId
-                        select new { p, pt, pic, ct };
+                        select new { p, pt, pic, ct , pi };
             //2. filter
             //if (!string.IsNullOrEmpty(request.Keyword))
             //    query = query.Where(x => x.pt.Name.Contains(request.Keyword));
@@ -149,7 +150,8 @@ namespace ShopMates.Application.Catalog.Products
                 SeoTitle = x.pt.SeoTitle,
                 Stock = x.p.Stock,
                 ViewCount = x.p.ViewCount,
-                CategoryName = x.ct.Name
+                CategoryName = x.ct.Name,
+                ImageUrl = _storageService.GetFileUrl(x.pi.ImagePath)
             }).ToListAsync();
 
             //4. Select and projection
@@ -275,19 +277,6 @@ namespace ShopMates.Application.Catalog.Products
             product.Price = request.Price;
             productInCategory.CategoryId = request.CategoryId;
 
-
-            //Save Image
-            if (request.ThumbnailImage != null)
-            {
-                var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.ProductId == request.Id);
-                if (thumbnailImage != null)
-                {
-                    thumbnailImage.FileSize = request.ThumbnailImage.Length;
-                    thumbnailImage.ImagePath = await this.SaveFile(request.ThumbnailImage);
-                    _context.ProductImages.Update(thumbnailImage);
-                }
-            }
-
             return await _context.SaveChangesAsync();
         }
 
@@ -332,5 +321,6 @@ namespace ShopMates.Application.Catalog.Products
             await _storageService.SaveFileAsync(file.OpenReadStream(), filename);
             return filename;
         }
+
     }
 }

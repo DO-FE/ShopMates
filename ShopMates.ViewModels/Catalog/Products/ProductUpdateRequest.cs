@@ -26,7 +26,5 @@ namespace ShopMates.ViewModels.Catalog.Products
         public int Stock { set; get; }
 
         public bool? IsFeatured { get; set; }
-
-        public IFormFile ThumbnailImage { get; set; }
     }
 }

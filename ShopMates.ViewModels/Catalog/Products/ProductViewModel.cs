@@ -27,6 +27,8 @@ namespace ShopMates.ViewModels.Catalog.Products
 
         public bool? IsFeatured { get; set; }
 
+        public string ImageUrl { set; get; }
+
         public IFormFile ThumbnailImage { get; set; }
 
         public string CategoryName { get; set; }

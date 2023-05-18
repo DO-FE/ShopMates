@@ -19,31 +19,21 @@
             });
     </script>
     <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var imageUrl = '@ViewBag.ImageUrl';
+            if (imageUrl) {
+                var input = document.getElementById('thumbnailInput');
+                input.setAttribute('data-image-url', imageUrl);
+                input.value = '';
+            }
+        });
+
         function previewImage(event) {
             var input = event.target;
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    var imgPreview = document.getElementById('thumbnailPreview');
-                    imgPreview.src = e.target.result;
-                    imgPreview.style.display = 'block';
-                };
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-    </script>
-    <script>
-        function previewImage(event) {
-            var input = event.target;
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    var thumbnailPreview = document.getElementById('thumbnailPreview');
-                    thumbnailPreview.src = e.target.result;
-                    thumbnailPreview.style.display = 'block';
-                };
-                reader.readAsDataURL(input.files[0]);
-            }
+            var imageUrl = input.getAttribute('data-image-url');
+
+            var imgElement = document.getElementById('previewImage');
+            imgElement.src = imageUrl;
         }
     </script>
 }
@@ -122,12 +112,7 @@
                                 <span asp-validation-for="IsFeatured" class="text-danger"></span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label asp-for="ThumbnailImage" class="control-label"></label>
-                            <input asp-for="ThumbnailImage" type="file" class="form-control" accept=".jpg, .jpeg, .png, .gif, .svg" onchange="previewImage(event)" />
-                            <span asp-validation-for="ThumbnailImage" class="text-danger"></span>
-                        </div>
-                        <img id="thumbnailPreview" src="@ViewBag.ImageUrl" alt="Thumbnail Preview" style="display: none; max-width: 100%; height: auto;" />
+                        <img src="@ViewBag.ImageUrl" alt="Product Image" />
                         <div class="form-group">
                             <input type="submit" value="Save" class="btn btn-primary" />
                         </div>

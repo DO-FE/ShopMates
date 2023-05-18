@@ -50,6 +50,7 @@
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Image</th>
                             <th>Name</th>
                             <th>OriginalPrice</th>
                             <th>Price</th>
@@ -64,6 +65,9 @@
                             <tr>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    <img src="@Html.DisplayFor(modelItem => item.ImageUrl)" alt="Product Image" />
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Name)
@@ -84,6 +88,7 @@
                                     @Html.ActionLink("Edit", "Update", new { id = item.Id }) |
                                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                                     @Html.ActionLink("Remove", "Delete", new { id = item.Id , name = item.Name })
+                                    @Html.ActionLink("EditImage", "UpdateImage", new { id = item.Id , name = item.Name })
                                 </td>
                             </tr>
                         }
