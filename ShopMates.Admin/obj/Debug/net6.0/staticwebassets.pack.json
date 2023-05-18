@@ -445,6 +445,10 @@
       "PackagePath": "staticwebassets\\user-content\\da664719-7fed-46a8-88cf-f754996d486f.jpg"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\quan-jean-nam.jpg",
+      "PackagePath": "staticwebassets\\user-content\\quan-jean-nam.jpg"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
     },

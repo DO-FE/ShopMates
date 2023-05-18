@@ -95,6 +95,13 @@ namespace ShopMates.Admin.Controllers
             var product = await _productApiClient.GetById(id);
             var image = await _productApiClient.ViewProductImages(id);
             var imageUrl = GetFileUrl(image.ImagePath);
+            var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
+            var categories = await _categoryApiClient.GetAll(language);
+            ViewBag.Categories = categories.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString()
+            });
             var updateVm = new ProductUpdateRequest()
             {
                 Id = product.Id,
@@ -105,7 +112,9 @@ namespace ShopMates.Admin.Controllers
                 SeoAlias = product.SeoAlias,
                 SeoDescription = product.SeoDescription,
                 SeoTitle = product.SeoTitle,
-                Stock = product.Stock
+                Stock = product.Stock,
+                IsFeatured = product.IsFeatured,
+                ThumbnailImage = product.ThumbnailImage
 
             };
             ViewBag.ImageUrl = imageUrl;
@@ -117,9 +126,6 @@ namespace ShopMates.Admin.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var result = await _productApiClient.GetById(id);
-            var image = await _productApiClient.ViewProductImages(id);
-            var imageUrl = GetFileUrl(image.ImagePath);
-            ViewBag.ImageUrl = imageUrl;
             return View(result);
         }
 

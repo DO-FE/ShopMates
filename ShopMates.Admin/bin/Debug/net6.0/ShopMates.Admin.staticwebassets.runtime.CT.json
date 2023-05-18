@@ -1006,6 +1006,14 @@
               "SubPath": "user-content/da664719-7fed-46a8-88cf-f754996d486f.jpg"
             },
             "Patterns": null
+          },
+          "quan-jean-nam.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "user-content/quan-jean-nam.jpg"
+            },
+            "Patterns": null
           }
         },
         "Asset": null,

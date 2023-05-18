@@ -182,8 +182,9 @@ namespace ShopMates.Application.Catalog.Products
                 SeoAlias = product.ProductTranslations.FirstOrDefault()?.SeoAlias,
                 LanguageId = product.ProductTranslations.FirstOrDefault()?.LanguageId,
                 IsFeatured = product.IsFeatured,
-                CategoryName = product.ProductInCategories.FirstOrDefault()?.Category?.CategoryTranslations.FirstOrDefault()?.Name
-            };
+                CategoryName = product.ProductInCategories.FirstOrDefault()?.Category?.CategoryTranslations.FirstOrDefault()?.Name,
+                ThumbnailImage = await GetThumbnailImage(product.Id)
+            };  
             return productViewModel;
         }
 
@@ -333,12 +334,27 @@ namespace ShopMates.Application.Catalog.Products
             return filename;
         }
 
-        private async Task<string> LoadFile(IFormFile file)
+        private async Task<IFormFile> GetThumbnailImage(int productId)
         {
-            var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-            var filename = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
-            await _storageService.LoadFileAsync(filename);
-            return filename;
+            var productImage = await _context.ProductImages
+                .FirstOrDefaultAsync(pi => pi.ProductId == productId && pi.IsDefault);
+
+            if (productImage != null)
+            {
+                // Assuming you have a method to retrieve the image file based on the image path
+                var imageFile = await _storageService.GetImageFile(productImage.ImagePath);
+
+                // Create an instance of FormFile with the image data
+                var formFile = new FormFile(imageFile, 0, imageFile.Length, null, Path.GetFileName(imageFile.Name))
+                {
+                    Headers = new HeaderDictionary(),
+                    ContentType = "application/octet-stream"
+                };
+
+                return formFile;
+            }
+
+            return null;
         }
     }
 }

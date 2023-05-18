@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gg0aBFI3AKjbpUgZQAqCR1yCPOcWtm4+0w6DJixyt2c=",
+  "Hash": "nP4ew+W7g0aKy5ObuiCShlloD72CX7ruYTIpzkiA+n8=",
   "Source": "ShopMates.Admin",
   "BasePath": "_content/ShopMates.Admin",
   "Mode": "Default",
@@ -1919,6 +1919,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user-content\\da664719-7fed-46a8-88cf-f754996d486f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\quan-jean-nam.jpg",
+      "SourceId": "ShopMates.Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "BasePath": "_content/ShopMates.Admin",
+      "RelativePath": "user-content/quan-jean-nam.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\quan-jean-nam.jpg"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",

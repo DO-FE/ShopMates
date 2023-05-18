@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopMates.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,5 +17,7 @@ namespace ShopMates.Application.Common
         Task<string> LoadFileAsync(string fileName);
 
         Task DeleteFileAsync(string fileName);
+
+        Task<FileStream> GetImageFile(string imagePath);
     }
 }
