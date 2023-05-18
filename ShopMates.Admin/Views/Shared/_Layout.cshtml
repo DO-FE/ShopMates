@@ -118,15 +118,15 @@
                         <a class="collapse-item" asp-area="" asp-controller="User" asp-action="ForgotPassword">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <a class="collapse-item" asp-controller="Home" asp-action="Error404">404 Page</a>
+                        <a class="collapse-item" asp-controller="Home" asp-action="Error404">Blank Page</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Messages">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Message">
                     <i class="fas fa-envelope fa-fw"></i><span class="badge badge-danger badge-counter">9+</span>
                     <span>Messenger Center</span>
                 </a>

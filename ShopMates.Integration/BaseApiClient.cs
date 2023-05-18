@@ -1,7 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using ShopMates.Utilities.Constants;
+using ShopMates.ViewModels.Catalog.ProductImages;
+using ShopMates.ViewModels.Catalog.Products;
+using Microsoft.AspNetCore.Http.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;

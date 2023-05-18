@@ -25,6 +25,8 @@ services:
       - "37362:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
+    volumes:
+      - user-content:/app/wwwroot/user-content
     depends_on:
       - web-api
       
@@ -40,8 +42,8 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     volumes:
-      - api-data:/app/wwwroot/user-content
+      - user-content:/app/wwwroot/user-content
 
 volumes:
-  api-data:
+  user-content:
     external: true

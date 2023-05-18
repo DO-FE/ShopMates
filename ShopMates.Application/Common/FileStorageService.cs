@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using ShopMates.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -20,7 +21,7 @@ namespace ShopMates.Application.Common
 
         public string GetFileUrl(string fileName)
         {
-            return $"/{USER_CONTENT_FOLDER_NAME}/{fileName}";
+            return _userContentFolder + fileName;
         }
 
         public async Task SaveFileAsync(Stream mediaBinaryStream, string fileName)
@@ -28,6 +29,20 @@ namespace ShopMates.Application.Common
             var filePath = Path.Combine(_userContentFolder, fileName);
             using var output = new FileStream(filePath, FileMode.Create);
             await mediaBinaryStream.CopyToAsync(output);
+        }
+        public async Task<string> LoadFileAsync(string fileName)
+        {
+            var filePath = Path.Combine(_userContentFolder, fileName);
+            if (File.Exists(filePath))
+            {
+                using (var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+                {
+                    var memoryStream = new MemoryStream();
+                    await fileStream.CopyToAsync(memoryStream);
+                    return filePath;
+                }
+            }
+            return null; // Or throw an exception if the file doesn't exist
         }
 
         public async Task DeleteFileAsync(string fileName)

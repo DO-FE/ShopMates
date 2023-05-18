@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using ShopMates.ViewModels.Catalog.ProductImages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +16,6 @@ namespace ShopMates.ViewModels.Catalog.Products
         public int Stock { set; get; }
         public int ViewCount { set; get; }
         public DateTime DateCreated { set; get; }
-
         public string Name { set; get; }
         public string Description { set; get; }
         public string Details { set; get; }
@@ -26,8 +27,10 @@ namespace ShopMates.ViewModels.Catalog.Products
 
         public bool? IsFeatured { get; set; }
 
-        public string ThumbnailImage { get; set; }
+        public string ImageUrl { set; get; }
 
-        public List<string> Categories { get; set; } = new List<string>();
+        public IFormFile ThumbnailImage { get; set; }
+
+        public string CategoryName { get; set; }
     }
 }

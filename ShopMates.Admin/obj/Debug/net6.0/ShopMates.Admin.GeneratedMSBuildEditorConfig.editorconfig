@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Admin
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Order/ListOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTGlzdE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AxyRes/Documents/Project Learning for C Sharp/ShopMates/ShopMates.Admin/Views/Product/Create.cshtml]

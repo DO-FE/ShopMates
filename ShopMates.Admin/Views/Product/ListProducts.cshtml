@@ -23,7 +23,20 @@
 
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <a class="btn btn-primary" asp-controller="Product" asp-action="Create">Create New One</a>
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <a class="btn btn-primary" asp-controller="Product" asp-action="Create">Create New One</a>
+                </div>
+                <div class="col-md-4 col-xs-12"></div>
+                <div class="col-md-4 col-xs-12">
+                     <form asp-action="ListProducts" method="get">
+                        <select class="form-control text-center" data-live-search="true" onchange="this.form.submit()" name="categoryId" asp-items="@ViewBag.Categories" placeholder="Category">
+                            <option disabled selected value="" class="text-center">-- Select Category --</option>
+                            <option value="">All</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">
@@ -70,7 +83,8 @@
                                 <td>
                                     @Html.ActionLink("Edit", "Update", new { id = item.Id }) |
                                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                                    @Html.ActionLink("Remove", "Delete", new { id = item.Id , name = item.Name })
+                                    @Html.ActionLink("Remove", "Delete", new { id = item.Id , name = item.Name }) |
+                                    @Html.ActionLink("EditImage", "UpdateImage", new { id = item.Id , name = item.Name })
                                 </td>
                             </tr>
                         }

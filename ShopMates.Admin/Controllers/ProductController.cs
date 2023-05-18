@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopMates.Data.Entities;
 using ShopMates.Integration;
 using ShopMates.Utilities.Constants;
@@ -11,16 +12,20 @@ namespace ShopMates.Admin.Controllers
 {
     public class ProductController : Controller
     {
+        private readonly ILanguageApiClient _languageApiClient;
         private readonly IProductApiClient _productApiClient;
         private readonly IConfiguration _configuration;
+        private readonly ICategoryApiClient _categoryApiClient;
         private const string USER_CONTENT_FOLDER_NAME = "user-content";
 
-        public ProductController(IProductApiClient productApiClient, IConfiguration configuration)
+        public ProductController(IProductApiClient productApiClient, IConfiguration configuration, ICategoryApiClient categoryApiClient, ILanguageApiClient languageApiClient)
         {
             _productApiClient = productApiClient;
             _configuration = configuration;
+            _categoryApiClient = categoryApiClient;
+            _languageApiClient = languageApiClient;
         }
-        public async Task<IActionResult> ListProducts(int pageIndex = 1, int pageSize = 15)
+        public async Task<IActionResult> ListProducts(int? categoryId, int pageIndex = 1, int pageSize = 15)
         {
             var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
             var session = HttpContext.Session.GetString("Token");
@@ -32,9 +37,17 @@ namespace ShopMates.Admin.Controllers
             {
                 PageIndex = pageIndex,
                 PageSize = pageSize,
-                LanguageId = language
+                LanguageId = language,
+                CategoryId = categoryId
             };
             var data = await _productApiClient.GetProductsPagaing(request);
+            var categories = await _categoryApiClient.GetAll(language);
+            ViewBag.Categories = categories.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString(),
+                Selected = categoryId.HasValue && categoryId.Value == x.Id
+            });
             if (TempData["result"] != null)
             {
                 ViewBag.SuccessMsg = TempData["result"];
@@ -43,8 +56,15 @@ namespace ShopMates.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
+            var categories = await _categoryApiClient.GetAll(language);
+            ViewBag.Categories = categories.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString()
+            });
             var session = HttpContext.Session.GetString("Token");
             if (session == null)
             {
@@ -76,7 +96,23 @@ namespace ShopMates.Admin.Controllers
         {
             var product = await _productApiClient.GetById(id);
             var image = await _productApiClient.ViewProductImages(id);
-            string imageUrl = GetFileUrl(image.ImagePath);
+            var imageUrl = GetFileUrl(image.ImagePath);
+            var listlanguageResult = await _languageApiClient.GetAll();
+            var listlanguage = listlanguageResult.ResultObj.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString()
+            });
+            var language = HttpContext.Session.GetString(SystemConstants.AppSettings.DefaultLanguageId);
+            var listcategories = await _categoryApiClient.GetAll(language);
+            var category = await _categoryApiClient.GetById(id);
+            ViewBag.Categories = listcategories.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString()
+            });
+            ViewBag.ImageUrl = imageUrl;
+            ViewBag.Language = listlanguage;
             var updateVm = new ProductUpdateRequest()
             {
                 Id = product.Id,
@@ -87,10 +123,11 @@ namespace ShopMates.Admin.Controllers
                 SeoAlias = product.SeoAlias,
                 SeoDescription = product.SeoDescription,
                 SeoTitle = product.SeoTitle,
-                Stock = product.Stock
-
+                Stock = product.Stock,
+                IsFeatured = product.IsFeatured,
+                CategoryId = category.Id,
+                LanguageId = product.LanguageId
             };
-            ViewBag.ImageUrl = imageUrl;
 
             return View(updateVm);
         }
@@ -99,12 +136,14 @@ namespace ShopMates.Admin.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var result = await _productApiClient.GetById(id);
+            var image = await _productApiClient.ViewProductImages(id);
+            var imageUrl = GetFileUrl(image.ImagePath);
+            ViewBag.ImageUrl = imageUrl;
             return View(result);
         }
 
 
         [HttpPost]
-        [Consumes("multipart/form-data")]
         public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
@@ -117,7 +156,7 @@ namespace ShopMates.Admin.Controllers
                 return RedirectToAction("ListProducts");
             }
 
-            ModelState.AddModelError("", "Update Product UnSuccessfilly");
+            ModelState.AddModelError("", "Product update failed because nothing changed or something went wrong");
             return View(request);
         }
 
@@ -150,7 +189,7 @@ namespace ShopMates.Admin.Controllers
 
         private string GetFileUrl(string imagePath)
         {
-            return $"/{USER_CONTENT_FOLDER_NAME}/{imagePath}";
+            return $"/AdminShopMates/{USER_CONTENT_FOLDER_NAME}/{imagePath}";
         }
     }
 }

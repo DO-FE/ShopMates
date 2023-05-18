@@ -13,6 +13,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ShopMates.Data.Entities;
 using ShopMates.ViewModels.Catalog.ProductImages;
+using Microsoft.AspNetCore.Http.Internal;
+using Newtonsoft.Json;
 
 namespace ShopMates.Integration
 {
@@ -62,6 +64,7 @@ namespace ShopMates.Integration
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoTitle) ? "" : request.SeoTitle.ToString()), "seoTitle");
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoAlias) ? "" : request.SeoAlias.ToString()), "seoAlias");
             requestContent.Add(new StringContent(request.LanguageId.ToString()), "languageId");
+            requestContent.Add(new StringContent(request.CategoryId.ToString()), "categoryId");
             requestContent.Add(new StringContent(request.IsFeatured.ToString()), "isFeatured");
 
             var response = await client.PostAsync($"/api/products/", requestContent);
@@ -82,7 +85,7 @@ namespace ShopMates.Integration
 
         public async Task<PagedResult<ProductViewModel>> GetProductsPagaing(GetManageProductPagingRequest request)
         {
-            var data = await GetAsync<PagedResult<ProductViewModel>>($"/api/products/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&languageId={request.LanguageId}");
+            var data = await GetAsync<PagedResult<ProductViewModel>>($"/api/products/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&languageId={request.LanguageId}&categoryId={request.CategoryId}");
             return data;
         }
 
@@ -94,32 +97,11 @@ namespace ShopMates.Integration
             client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 
-            var requestContent = new MultipartFormDataContent();
+            var requestContent = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
 
-            if (request.ThumbnailImage != null)
-            {
-                byte[] data;
-                using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
-                {
-                    data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
-                }
-                ByteArrayContent bytes = new ByteArrayContent(data);
-                requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
+            var response = await client.PutAsync($"/api/products/{request.Id}", requestContent);
+            return response.IsSuccessStatusCode;
 
-                requestContent.Add(new StringContent(request.Name.ToString()), "name");
-                requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Description) ? "" : request.Description.ToString()), "description");
-                requestContent.Add(new StringContent(request.Price.ToString()), "price");
-                requestContent.Add(new StringContent(request.Stock.ToString()), "stock");
-                requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Details) ? "" : request.Details.ToString()), "details");
-                requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoDescription) ? "" : request.SeoDescription.ToString()), "seoDescription");
-                requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoTitle) ? "" : request.SeoTitle.ToString()), "seoTitle");
-                requestContent.Add(new StringContent(string.IsNullOrEmpty(request.SeoAlias) ? "" : request.SeoAlias.ToString()), "seoAlias");
-                requestContent.Add(new StringContent(request.IsFeatured.ToString()), "isFeatured");
-
-                var response = await client.PutAsync($"/api/products/" + request.Id, requestContent);
-                return response.IsSuccessStatusCode;
-            }
-            return false;
         }
 
         public async Task<ProductImageViewModel> ViewProductImages(int productID)

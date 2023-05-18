@@ -11,12 +11,10 @@ namespace ShopMates.Admin.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IUserApiClient _userApiClient;
 
-        public HomeController(ILogger<HomeController> logger, IUserApiClient userApiClient)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _userApiClient = userApiClient;
         }
 
         public IActionResult Index()
@@ -35,10 +33,9 @@ namespace ShopMates.Admin.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Profile(Guid id)
+        public IActionResult Error404()
         {
-            var result = await _userApiClient.GetByID(id);
-            return View(result.ResultObj);
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -54,6 +51,12 @@ namespace ShopMates.Admin.Controllers
                 viewModel.CurrentLanguageId);
 
             return Redirect("/AdminShopMates/Home/Index");
+        }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            return View();
         }
     }
 }

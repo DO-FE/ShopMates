@@ -63,8 +63,7 @@ namespace ShopMates.BEAPI.Controllers
         }
 
         [HttpPut("{productId}")]
-        [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Update([FromRoute] int productId, [FromForm] ProductUpdateRequest request)
+        public async Task<IActionResult> Update([FromRoute] int productId, [FromBody] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -73,7 +72,7 @@ namespace ShopMates.BEAPI.Controllers
             request.Id = productId;
             var affectedResult = await _manageProductService.Update(request);
             if (affectedResult == 0)
-                return BadRequest();
+                return BadRequest("Không có gì thay đổi của sản phẩm");
             return Ok();
         }
 
@@ -109,7 +108,7 @@ namespace ShopMates.BEAPI.Controllers
             if (imageId == 0)
                 return BadRequest("Bị lỗi nào đó khi tạo mới sản phẩm");
 
-            var image = await _manageProductService.GetImageById(imageId);
+            var image = await _manageProductService.GetImageById(productId);
 
             return CreatedAtAction(nameof(GetImageById), new { id = imageId }, image);
         }

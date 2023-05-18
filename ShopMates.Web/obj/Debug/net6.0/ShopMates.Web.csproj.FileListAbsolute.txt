@@ -29,3 +29,4 @@ C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Web\o
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Web\obj\Debug\net6.0\ShopMates.Web.pdb
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Web\obj\Debug\net6.0\ShopMates.Web.genruntimeconfig.cache
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Web\obj\Debug\net6.0\ref\ShopMates.Web.dll
+C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Web\bin\Debug\net6.0\appsettings.Production.json
