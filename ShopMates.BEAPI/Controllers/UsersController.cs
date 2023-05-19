@@ -93,6 +93,13 @@ namespace ShopMates.BEAPI.Controllers
 			return Ok(users);
 		}
 
+        [HttpGet("username/{username}")]
+        public async Task<IActionResult> GetByUS(string username)
+        {
+            var users = await _userService.GetByUS(username);
+            return Ok(users);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid Id)
         {

@@ -19,6 +19,7 @@ namespace ShopMates.Application.System.Users
 		Task<APIResult<PagedResult<UserViewModels>>> GetUsersPaging(PagingRequestBase request);
 
 		Task<APIResult<UserViewModels>> GetByID(Guid Id);
+        Task<APIResult<UserViewModels>> GetByUS(string username);
 
         Task<APIResult<bool>> Delete(Guid Id);
 

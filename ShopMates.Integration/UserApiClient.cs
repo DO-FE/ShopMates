@@ -11,16 +11,17 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using ShopMates.Utilities.Constants;
+using ShopMates.ViewModels.Catalog.Products;
 
 namespace ShopMates.Integration
 {
-    public class UserApiClient : IUserApiClient
+    public class UserApiClient : BaseApiClient, IUserApiClient
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-		public UserApiClient(IHttpClientFactory httpClientFactory, IConfiguration configuration, IHttpContextAccessor httpContextAccessor) 
+		public UserApiClient(IHttpClientFactory httpClientFactory, IConfiguration configuration, IHttpContextAccessor httpContextAccessor) : base(httpClientFactory, httpContextAccessor, configuration)
         {
             _configuration = configuration;
             _httpClientFactory = httpClientFactory;
@@ -38,7 +39,6 @@ namespace ShopMates.Integration
             {
                 return JsonConvert.DeserializeObject<APISuccessResult<string>>(await response.Content.ReadAsStringAsync());
             }
-
             return JsonConvert.DeserializeObject<APIErrorResult<string>>(await response.Content.ReadAsStringAsync());
         }
 
@@ -60,21 +60,38 @@ namespace ShopMates.Integration
 
         public async Task<APIResult<UserViewModels>> GetByID(Guid id)
 		{
-			var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
-			var client = _httpClientFactory.CreateClient();
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var client = _httpClientFactory.CreateClient();
 
-			client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
-			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-			var response = await client.GetAsync($"/api/Users/{id}");
-			var body = await response.Content.ReadAsStringAsync();
-            if(response.IsSuccessStatusCode)
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var response = await client.GetAsync($"/api/Users/{id}");
+            var body = await response.Content.ReadAsStringAsync();
+            if (response.IsSuccessStatusCode)
             {
                 return JsonConvert.DeserializeObject<APISuccessResult<UserViewModels>>(body);
-			}
-			return JsonConvert.DeserializeObject<APIErrorResult<UserViewModels>>(body);
-		}
+            }
+            return JsonConvert.DeserializeObject<APIErrorResult<UserViewModels>>(body);
 
-		public async Task<APIResult<PagedResult<UserViewModels>>> GetUsersPagaing(PagingRequestBase request)
+        }
+
+        public async Task<APIResult<UserViewModels>> GetByUserName(string username)
+        {
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var client = _httpClientFactory.CreateClient();
+
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var response = await client.GetAsync($"/api/Users/username/{username}");
+            var body = await response.Content.ReadAsStringAsync();
+            if (response.IsSuccessStatusCode)
+            {
+                return JsonConvert.DeserializeObject<APISuccessResult<UserViewModels>>(body);
+            }
+            return JsonConvert.DeserializeObject<APIErrorResult<UserViewModels>>(body);
+        }
+
+        public async Task<APIResult<PagedResult<UserViewModels>>> GetUsersPagaing(PagingRequestBase request)
         {
             var client = _httpClientFactory.CreateClient();
 

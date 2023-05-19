@@ -52,11 +52,5 @@ namespace ShopMates.Admin.Controllers
 
             return Redirect("/AdminShopMates/Home/Index");
         }
-
-        [HttpGet]
-        public IActionResult Profile()
-        {
-            return View();
-        }
     }
 }

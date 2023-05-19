@@ -12,6 +12,8 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using ShopMates.ViewModels.Common;
+using ShopMates.ViewModels.System.Users;
 
 namespace ShopMates.Integration
 {
@@ -64,6 +66,7 @@ namespace ShopMates.Integration
             }
             throw new Exception(body);
         }
+
 
         public async Task<bool> Delete(string url)
         {

@@ -101,7 +101,29 @@ namespace ShopMates.Application.System.Users
             return new APISuccessResult<UserViewModels>(userVM);
 		}
 
-		public async Task<APIResult<PagedResult<UserViewModels>>> GetUsersPaging(PagingRequestBase request)
+        public async Task<APIResult<UserViewModels>> GetByUS(string username)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null)
+            {
+                return new APIErrorResult<UserViewModels>("UserName không tồn tại nhé");
+            }
+            var roles = await _userManager.GetRolesAsync(user);
+            var userVM = new UserViewModels()
+            {
+                PhoneNumber = user.PhoneNumber,
+                UserName = username,
+                Dob = user.Dob,
+                FirstName = user.FirstName,
+                Email = user.Email,
+                LastName = user.LastName,
+                Id = user.Id,
+                Roles = roles
+            };
+            return new APISuccessResult<UserViewModels>(userVM);
+        }
+
+        public async Task<APIResult<PagedResult<UserViewModels>>> GetUsersPaging(PagingRequestBase request)
         {
             var query = _userManager.Users;
             /*if (!string.IsNullOrEmpty(request.Keyword))

@@ -19,6 +19,7 @@ namespace ShopMates.Integration
         Task<APIResult<bool>> UpdateUser(Guid id, UserUpdateRequest request);
 
         Task<APIResult<UserViewModels>> GetByID(Guid id);
+        Task<APIResult<UserViewModels>> GetByUserName(string username);
 
         Task<APIResult<bool>> Delete(Guid id);
 

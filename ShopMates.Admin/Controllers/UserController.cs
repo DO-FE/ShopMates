@@ -12,6 +12,7 @@ using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 using ShopMates.ViewModels.Common;
+using ShopMates.Utilities.Constants;
 
 namespace ShopMates.Admin.Controllers
 {
@@ -199,6 +200,14 @@ namespace ShopMates.Admin.Controllers
                 });
             }
             return roleAssignRequest;
+        }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            var userId = HttpContext.Session.GetString(SystemConstants.UserLogin.GuidID);
+            var user = _userApiClient.GetByID(Guid.Parse(userId));
+            return View(user);
         }
     }
 }
