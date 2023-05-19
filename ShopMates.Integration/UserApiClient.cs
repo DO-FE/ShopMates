@@ -77,11 +77,6 @@ namespace ShopMates.Integration
 
         public async Task<APIResult<UserViewModels>> GetByUserName(string username)
         {
-            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
-            var client = _httpClientFactory.CreateClient();
-
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.GetAsync($"/api/Users/username/{username}");
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)

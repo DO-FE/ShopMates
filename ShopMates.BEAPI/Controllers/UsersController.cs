@@ -94,6 +94,7 @@ namespace ShopMates.BEAPI.Controllers
 		}
 
         [HttpGet("username/{username}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetByUS(string username)
         {
             var users = await _userService.GetByUS(username);

@@ -203,11 +203,11 @@ namespace ShopMates.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Profile()
+        public async Task<IActionResult> Profile()
         {
             var userId = HttpContext.Session.GetString(SystemConstants.UserLogin.GuidID);
-            var user = _userApiClient.GetByID(Guid.Parse(userId));
-            return View(user);
+            var user = await _userApiClient.GetByID(Guid.Parse(userId));
+            return View(user.ResultObj);
         }
     }
 }

@@ -41,17 +41,17 @@ namespace ShopMates.Admin.Controllers
                 return View();
             }
 
-            var user = await _userApiClient.GetByUserName(request.UserName);
-
             var userPrincipal = this.ValidateToken(result.ResultObj);
             var authProperties = new AuthenticationProperties
             {
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
                 IsPersistent = false
             };
+            var user = this.GetByUserName(request.UserName);
+
             HttpContext.Session.SetString(SystemConstants.AppSettings.DefaultLanguageId, _configuration[SystemConstants.AppSettings.DefaultLanguageId]);
             HttpContext.Session.SetString(SystemConstants.AppSettings.Token, result.ResultObj);
-            HttpContext.Session.SetString(SystemConstants.UserLogin.GuidID, user.ResultObj.Id.ToString());
+            HttpContext.Session.SetString(SystemConstants.UserLogin.GuidID, user.Id.ToString());
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, userPrincipal, authProperties);
 
             return RedirectToAction("Index", "Home");
@@ -81,6 +81,13 @@ namespace ShopMates.Admin.Controllers
             ClaimsPrincipal principal = new JwtSecurityTokenHandler().ValidateToken(jwtToken, validationParameters, out validatedToken);
 
             return principal;
+        }
+
+        private async Task<UserViewModels> GetByUserName(string username)
+        {
+            var userResult = await _userApiClient.GetByUserName(username);
+            var user = userResult.ResultObj;
+            return user;
         }
     }
 }
