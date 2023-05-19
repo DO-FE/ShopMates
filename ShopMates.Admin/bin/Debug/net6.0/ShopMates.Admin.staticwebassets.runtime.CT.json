@@ -73,6 +73,14 @@
             },
             "Patterns": null
           },
+          "profile.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/profile.css"
+            },
+            "Patterns": null
+          },
           "sb-admin-2.css": {
             "Children": null,
             "Asset": {

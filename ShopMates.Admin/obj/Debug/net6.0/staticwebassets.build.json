@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0CpzLLW7Q4+DoHmvpL8Z3EOUeTss1hHTKngka7FXW28=",
+  "Hash": "mhTcpJoW29z7LyKHmjuCK2qVHIKVWI6uk8wn/3l+cKs=",
   "Source": "ShopMates.Admin",
   "BasePath": "_content/ShopMates.Admin",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\chat-style.css"
+    },
+    {
+      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\profile.css",
+      "SourceId": "ShopMates.Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "BasePath": "_content/ShopMates.Admin",
+      "RelativePath": "css/profile.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
       "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.css",

@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\css\\chat-style.css"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.css",
       "PackagePath": "staticwebassets\\css\\sb-admin-2.css"
     },
