@@ -73,11 +73,11 @@
             },
             "Patterns": null
           },
-          "profile.css": {
+          "fonts.css": {
             "Children": null,
             "Asset": {
               "ContentRootIndex": 0,
-              "SubPath": "css/profile.css"
+              "SubPath": "css/fonts.css"
             },
             "Patterns": null
           },
@@ -140,6 +140,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "img/profile_image.jpg"
+            },
+            "Patterns": null
+          },
+          "profile_image_1.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/profile_image_1.jpg"
             },
             "Patterns": null
           },

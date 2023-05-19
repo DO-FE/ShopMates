@@ -29,8 +29,8 @@
       "PackagePath": "staticwebassets\\css\\chat-style.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\profile.css",
-      "PackagePath": "staticwebassets\\css\\profile.css"
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\fonts.css",
+      "PackagePath": "staticwebassets\\css\\fonts.css"
     },
     {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.css",
@@ -59,6 +59,10 @@
     {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\profile_image.jpg",
       "PackagePath": "staticwebassets\\img\\profile_image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\profile_image_1.jpg",
+      "PackagePath": "staticwebassets\\img\\profile_image_1.jpg"
     },
     {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_posting_photo.svg",

@@ -160,6 +160,8 @@ namespace ShopMates.Admin.Controllers
             return View(request);
         }
 
+
+
         [HttpGet]
         public IActionResult Delete(int id, string name)
         {
