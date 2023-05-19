@@ -47,11 +47,19 @@ namespace ShopMates.Admin.Controllers
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
                 IsPersistent = false
             };
-            var user = this.GetByUserName(request.UserName);
 
             HttpContext.Session.SetString(SystemConstants.AppSettings.DefaultLanguageId, _configuration[SystemConstants.AppSettings.DefaultLanguageId]);
             HttpContext.Session.SetString(SystemConstants.AppSettings.Token, result.ResultObj);
-            HttpContext.Session.SetString(SystemConstants.UserLogin.GuidID, user.Id.ToString());
+
+            var user = await _userApiClient.GetByUserName(request.UserName);
+            if (!user.IsSuccessed)
+            {
+                ViewBag.Message = result.Message;
+                return View();
+            }
+
+            HttpContext.Session.SetString(SystemConstants.UserLogin.GuidID, user.ResultObj.Id.ToString());
+
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, userPrincipal, authProperties);
 
             return RedirectToAction("Index", "Home");
