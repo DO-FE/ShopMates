@@ -77,6 +77,7 @@ namespace ShopMates.Integration
 
         public async Task<APIResult<UserViewModels>> GetByUserName(string username)
         {
+            var client = _httpClientFactory.CreateClient();
             var response = await client.GetAsync($"/api/Users/username/{username}");
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
