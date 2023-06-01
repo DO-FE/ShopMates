@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShopMates.Web.Models;
 using System.Diagnostics;
 
@@ -18,6 +19,7 @@ namespace ShopMates.Web.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult ContactUs()
         {
             return View();

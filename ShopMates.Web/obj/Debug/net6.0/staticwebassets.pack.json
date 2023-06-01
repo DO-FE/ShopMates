@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\ShopMates.Web.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\css\\login-page.css",
+      "PackagePath": "staticwebassets\\css\\login-page.css"
+    },
+    {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\css\\login-page.min.css",
+      "PackagePath": "staticwebassets\\css\\login-page.min.css"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },
@@ -573,6 +581,10 @@
       "PackagePath": "staticwebassets\\images\\icons\\icon-prev.png"
     },
     {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\icons\\login-image.jpg",
+      "PackagePath": "staticwebassets\\images\\icons\\login-image.jpg"
+    },
+    {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\images\\icons\\logo-01.png",
       "PackagePath": "staticwebassets\\images\\icons\\logo-01.png"
     },
@@ -775,6 +787,14 @@
     {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\vendor\\animsition\\js\\animsition.min.js",
       "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\vendor\\bootstrap\\css\\all.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\vendor\\bootstrap\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\all.min.css"
     },
     {
       "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Web\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",

@@ -7,6 +7,22 @@
     "Children": {
       "css": {
         "Children": {
+          "login-page.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/login-page.css"
+            },
+            "Patterns": null
+          },
+          "login-page.min.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/login-page.min.css"
+            },
+            "Patterns": null
+          },
           "main.css": {
             "Children": null,
             "Asset": {
@@ -1241,6 +1257,14 @@
                 },
                 "Patterns": null
               },
+              "login-image.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "images/icons/login-image.jpg"
+                },
+                "Patterns": null
+              },
               "logo-01.png": {
                 "Children": null,
                 "Asset": {
@@ -1669,6 +1693,22 @@
             "Children": {
               "css": {
                 "Children": {
+                  "all.css": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "vendor/bootstrap/css/all.css"
+                    },
+                    "Patterns": null
+                  },
+                  "all.min.css": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "vendor/bootstrap/css/all.min.css"
+                    },
+                    "Patterns": null
+                  },
                   "bootstrap-grid.css": {
                     "Children": null,
                     "Asset": {

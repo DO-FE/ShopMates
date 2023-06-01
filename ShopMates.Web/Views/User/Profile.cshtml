@@ -1,0 +1,102 @@
+﻿@model ShopMates.ViewModels.System.Users.UserViewModels
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">User Infomation: <strong>[ @Html.DisplayFor(model => model.UserName) ]</strong></h1>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Back to Home</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img src="~/img/profile_image_1.jpg" alt="avatar"
+                             class="rounded-circle img-fluid" style="width: 150px;">
+                        <h5 class="my-3">AxyRes</h5>
+                        <p class="text-muted mb-1">Full Stack Developer</p>
+                        <p class="text-muted mb-4">Độc lạ Bình Dương</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="#" class="btn btn-primary">Follow</a>
+                            <a href="#" class="btn btn-outline-primary ms-1">Message</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mb-lg-0">
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fas fa-globe fa-lg text-warning"></i>
+                                <p class="mb-0"><a href="http://axyres.devops-nhattien.asia/ShopMates">ShopMates Website Online</a></p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                                <p class="mb-0"><a href="https://github.com/DO-FE/ShopMates">ShopMates Scource Code</a></p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                <p class="mb-0">Nhật Tiến</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row col-sm-9"><p class="text-center"><strong>User Information</strong></p></div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Full Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">@Html.DisplayFor(model => model.Email)</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Phone</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">@Html.DisplayFor(model => model.PhoneNumber)</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Date of Birth</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">@Html.DisplayFor(model => model.Dob)</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Address</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">Độc lạ Bình Dương</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

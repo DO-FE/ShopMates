@@ -16,6 +16,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.16" />
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopMates.Integration\ShopMates.Integration.csproj" />
+    <ProjectReference Include="..\ShopMates.Utilities\ShopMates.Utilities.csproj" />
+    <ProjectReference Include="..\ShopMates.ViewModels\ShopMates.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

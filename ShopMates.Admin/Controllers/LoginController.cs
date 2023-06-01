@@ -90,12 +90,5 @@ namespace ShopMates.Admin.Controllers
 
             return principal;
         }
-
-        private async Task<UserViewModels> GetByUserName(string username)
-        {
-            var userResult = await _userApiClient.GetByUserName(username);
-            var user = userResult.ResultObj;
-            return user;
-        }
     }
 }
