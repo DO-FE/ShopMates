@@ -10,7 +10,7 @@ services:
     ports:
       - "37580:80"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - web-api
   
@@ -24,7 +24,7 @@ services:
     ports:
       - "37362:80"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_ENVIRONMENT=Development
     volumes:
       - user-content:/app/wwwroot/user-content
     depends_on:

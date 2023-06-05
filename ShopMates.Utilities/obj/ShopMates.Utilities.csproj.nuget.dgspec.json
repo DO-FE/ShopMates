@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {}
+    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
         "projectName": "ShopMates.Utilities",
-        "projectPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
-        "packagesPath": "C:\\Users\\AxyRes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Utilities\\obj\\",
+        "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AxyRes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nhat Tien FullStack\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
