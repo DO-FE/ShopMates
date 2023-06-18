@@ -19,7 +19,6 @@ namespace ShopMates.Web.Controllers
             return View();
         }
 
-        [Authorize]
         public IActionResult ContactUs()
         {
             return View();

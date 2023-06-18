@@ -4,7 +4,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile-web
-    image: axyres/shopmates-web:latest
+    image: shopmates-web:latest
     container_name: s-web
     restart: always
     ports:
@@ -18,7 +18,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile-Admin
-    image: axyres/shopmates-webadmin:latest
+    image: shopmates-webadmin:latest
     container_name: s-webadmin
     restart: always
     ports:
@@ -34,7 +34,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile-API
-    image: axyres/shopmates-api:latest
+    image: shopmates-api:latest
     container_name: s-webapi
     restart: always
     ports:
