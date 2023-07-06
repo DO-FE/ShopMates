@@ -9,7 +9,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="MailKit" Version="4.1.0" />
 		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
+		<PackageReference Include="MimeKit" Version="4.1.0" />
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
 	</ItemGroup>
 

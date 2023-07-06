@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/0tdZultmYVPKCU78QbCbp7zddC8H8/NY6Gz6UML7Ms=",
+  "Hash": "vhgi2ws7Mq2cyD7bWy6Z30/yDC0vbpPqL+oiVUdaJe0=",
   "Source": "ShopMates.BEAPI",
   "BasePath": "_content/ShopMates.BEAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ShopMates.BEAPI\\wwwroot",
       "Source": "ShopMates.BEAPI",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
       "BasePath": "_content/ShopMates.BEAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\favicon.ico",
       "SourceId": "ShopMates.BEAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
       "BasePath": "_content/ShopMates.BEAPI",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
+      "Identity": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
       "SourceId": "ShopMates.BEAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
       "BasePath": "_content/ShopMates.BEAPI",
       "RelativePath": "user-content/0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\user-content\\0464725b-fcc1-4152-8f2d-b549cf2fb423.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
+      "Identity": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
       "SourceId": "ShopMates.BEAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
       "BasePath": "_content/ShopMates.BEAPI",
       "RelativePath": "user-content/8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
+      "Identity": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
       "SourceId": "ShopMates.BEAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
       "BasePath": "_content/ShopMates.BEAPI",
       "RelativePath": "user-content/9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
+      "Identity": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
       "SourceId": "ShopMates.BEAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\wwwroot\\",
       "BasePath": "_content/ShopMates.BEAPI",
       "RelativePath": "user-content/cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
       "AssetKind": "All",

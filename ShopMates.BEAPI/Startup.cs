@@ -25,6 +25,7 @@ using FluentValidation;
 using ShopMates.Application.System.Roles;
 using ShopMates.Application.System.Languages;
 using ShopMates.Application.Catalog.Categories;
+using ShopMates.Application.Mail;
 
 namespace ShopMates.BEAPI
 {
@@ -55,6 +56,7 @@ namespace ShopMates.BEAPI
             services.AddTransient<ICategoryService, CategoryService>();
 
             services.AddTransient<ILanguageService, LanguageService>();
+            services.AddTransient<IEmailService, EmailService>();
 
 
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
