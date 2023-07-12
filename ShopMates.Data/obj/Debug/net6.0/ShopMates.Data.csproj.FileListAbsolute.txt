@@ -12,3 +12,17 @@ C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Data\
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.pdb
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.genruntimeconfig.cache
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ref\ShopMates.Data.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\bin\Debug\net6.0\ShopMates.Data.deps.json
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\bin\Debug\net6.0\ShopMates.Data.runtimeconfig.json
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\bin\Debug\net6.0\ShopMates.Data.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\bin\Debug\net6.0\ShopMates.Data.pdb
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.csproj.AssemblyReference.cache
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.AssemblyInfoInputs.cache
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.AssemblyInfo.cs
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.csproj.CoreCompileInputs.cache
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\refint\ShopMates.Data.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.pdb
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ShopMates.Data.genruntimeconfig.cache
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Data\obj\Debug\net6.0\ref\ShopMates.Data.dll

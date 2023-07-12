@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0CpzLLW7Q4+DoHmvpL8Z3EOUeTss1hHTKngka7FXW28=",
+  "Hash": "dJdA5JXHQr5doIkFeIfy+LT9CgE+gSQDFiViokFwtwI=",
   "Source": "ShopMates.Admin",
   "BasePath": "_content/ShopMates.Admin",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ShopMates.Admin\\wwwroot",
       "Source": "ShopMates.Admin",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ShopMates.Admin.styles.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ShopMates.Admin.styles.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "ShopMates.Admin.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ShopMates.Admin.styles.css"
+      "OriginalItemSpec": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ShopMates.Admin.styles.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.Admin.bundle.scp.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.Admin.bundle.scp.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "ShopMates.Admin.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.Admin.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.Admin.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-area-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-area-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "assets/demo/chart-area-demo.js",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\demo\\chart-area-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-bar-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-bar-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "assets/demo/chart-bar-demo.js",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\demo\\chart-bar-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-pie-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-pie-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "assets/demo/chart-pie-demo.js",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\demo\\chart-pie-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\datatables-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\datatables-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "assets/demo/datatables-demo.js",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\demo\\datatables-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\img\\error-404-monochrome.svg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "assets/img/error-404-monochrome.svg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\error-404-monochrome.svg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\chat-style.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\chat-style.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "css/chat-style.css",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\chat-style.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "css/sb-admin-2.css",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\sb-admin-2.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.min.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.min.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "css/sb-admin-2.min.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\sb-admin-2.min.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\site.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\styles.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\favicon.ico",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\login-image.jpg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\login-image.jpg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/login-image.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\img\\login-image.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\profile_image.jpg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\profile_image.jpg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/profile_image.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\img\\profile_image.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_posting_photo.svg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_posting_photo.svg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/undraw_posting_photo.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\img\\undraw_posting_photo.svg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile.svg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile.svg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/undraw_profile.svg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\img\\undraw_profile.svg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_1.svg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_1.svg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/undraw_profile_1.svg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\img\\undraw_profile_1.svg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_2.svg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_2.svg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/undraw_profile_2.svg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\undraw_profile_2.svg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_3.svg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_3.svg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/undraw_profile_3.svg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\img\\undraw_profile_3.svg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_rocket.svg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_rocket.svg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "img/undraw_rocket.svg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\undraw_rocket.svg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-area-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-area-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/demo/chart-area-demo.js",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\js\\demo\\chart-area-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-bar-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-bar-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/demo/chart-bar-demo.js",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\js\\demo\\chart-bar-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-pie-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-pie-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/demo/chart-pie-demo.js",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\js\\demo\\chart-pie-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\datatables-demo.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\datatables-demo.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/demo/datatables-demo.js",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\js\\demo\\datatables-demo.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/sb-admin-2.js",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sb-admin-2.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/sb-admin-2.min.js",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sb-admin-2.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\scripts.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\scripts.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/scripts.js",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\site.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "user-content/8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "user-content/9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "user-content/cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\quan-jean-nam.jpg",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\quan-jean-nam.jpg",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "user-content/quan-jean-nam.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\user-content\\quan-jean-nam.jpg"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/bootstrap/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/chart.js/Chart.bundle.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\chart.js\\Chart.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/chart.js/Chart.bundle.min.js",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\chart.js\\Chart.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/chart.js/Chart.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\chart.js\\Chart.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/chart.js/Chart.min.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\chart.js\\Chart.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/datatables/dataTables.bootstrap4.css",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\datatables\\dataTables.bootstrap4.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/datatables/dataTables.bootstrap4.js",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\datatables\\dataTables.bootstrap4.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.css",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.css",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/datatables/dataTables.bootstrap4.min.css",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.css"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/datatables/dataTables.bootstrap4.min.js",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/datatables/jquery.dataTables.js",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\datatables\\jquery.dataTables.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/datatables/jquery.dataTables.min.js",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\datatables\\jquery.dataTables.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery/jquery.js",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery/jquery.min.js",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.map",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.map",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery/jquery.min.map",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery/jquery.slim.js",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery\\jquery.slim.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery/jquery.slim.min.js",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.map",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.map",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery/jquery.slim.min.map",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.compatibility.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.compatibility.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery-easing/jquery.easing.compatibility.js",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery-easing\\jquery.easing.compatibility.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery-easing/jquery.easing.js",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\jquery-easing\\jquery.easing.js"
     },
     {
-      "Identity": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.min.js",
+      "Identity": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.min.js",
       "SourceId": "ShopMates.Admin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\",
       "BasePath": "_content/ShopMates.Admin",
       "RelativePath": "vendor/jquery-easing/jquery.easing.min.js",
       "AssetKind": "All",

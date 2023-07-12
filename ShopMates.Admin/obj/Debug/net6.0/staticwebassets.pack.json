@@ -1,287 +1,287 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.Admin.bundle.scp.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopMates.Admin.bundle.scp.css",
       "PackagePath": "staticwebassets\\ShopMates.Admin.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-area-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-area-demo.js",
       "PackagePath": "staticwebassets\\assets\\demo\\chart-area-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-bar-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-bar-demo.js",
       "PackagePath": "staticwebassets\\assets\\demo\\chart-bar-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-pie-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\chart-pie-demo.js",
       "PackagePath": "staticwebassets\\assets\\demo\\chart-pie-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\datatables-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\demo\\datatables-demo.js",
       "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\assets\\img\\error-404-monochrome.svg",
       "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\chat-style.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\chat-style.css",
       "PackagePath": "staticwebassets\\css\\chat-style.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.css",
       "PackagePath": "staticwebassets\\css\\sb-admin-2.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.min.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\sb-admin-2.min.css",
       "PackagePath": "staticwebassets\\css\\sb-admin-2.min.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\login-image.jpg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\login-image.jpg",
       "PackagePath": "staticwebassets\\img\\login-image.jpg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\profile_image.jpg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\profile_image.jpg",
       "PackagePath": "staticwebassets\\img\\profile_image.jpg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_posting_photo.svg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_posting_photo.svg",
       "PackagePath": "staticwebassets\\img\\undraw_posting_photo.svg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile.svg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile.svg",
       "PackagePath": "staticwebassets\\img\\undraw_profile.svg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_1.svg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_1.svg",
       "PackagePath": "staticwebassets\\img\\undraw_profile_1.svg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_2.svg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_2.svg",
       "PackagePath": "staticwebassets\\img\\undraw_profile_2.svg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_3.svg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_profile_3.svg",
       "PackagePath": "staticwebassets\\img\\undraw_profile_3.svg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_rocket.svg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\img\\undraw_rocket.svg",
       "PackagePath": "staticwebassets\\img\\undraw_rocket.svg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-area-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-area-demo.js",
       "PackagePath": "staticwebassets\\js\\demo\\chart-area-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-bar-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-bar-demo.js",
       "PackagePath": "staticwebassets\\js\\demo\\chart-bar-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-pie-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\chart-pie-demo.js",
       "PackagePath": "staticwebassets\\js\\demo\\chart-pie-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\datatables-demo.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\demo\\datatables-demo.js",
       "PackagePath": "staticwebassets\\js\\demo\\datatables-demo.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.js",
       "PackagePath": "staticwebassets\\js\\sb-admin-2.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\sb-admin-2.min.js",
       "PackagePath": "staticwebassets\\js\\sb-admin-2.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\scripts.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\scripts.js",
       "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg",
       "PackagePath": "staticwebassets\\user-content\\8970d278-6423-47e2-b2cd-da5046c6b84a.jpg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg",
       "PackagePath": "staticwebassets\\user-content\\9c522e2b-6c2d-4a59-be37-e1675fac79c5.jpg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg",
       "PackagePath": "staticwebassets\\user-content\\cd13123b-c8ee-49f2-9532-2f0694f49530.jpg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\quan-jean-nam.jpg",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\user-content\\quan-jean-nam.jpg",
       "PackagePath": "staticwebassets\\user-content\\quan-jean-nam.jpg"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.js",
       "PackagePath": "staticwebassets\\vendor\\chart.js\\Chart.bundle.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.bundle.min.js",
       "PackagePath": "staticwebassets\\vendor\\chart.js\\Chart.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.js",
       "PackagePath": "staticwebassets\\vendor\\chart.js\\Chart.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\chart.js\\Chart.min.js",
       "PackagePath": "staticwebassets\\vendor\\chart.js\\Chart.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.css",
       "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.js",
       "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.css",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.css",
       "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.min.css"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.js",
       "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.js",
       "PackagePath": "staticwebassets\\vendor\\datatables\\jquery.dataTables.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\datatables\\jquery.dataTables.min.js",
       "PackagePath": "staticwebassets\\vendor\\datatables\\jquery.dataTables.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.compatibility.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.compatibility.js",
       "PackagePath": "staticwebassets\\vendor\\jquery-easing\\jquery.easing.compatibility.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.js",
       "PackagePath": "staticwebassets\\vendor\\jquery-easing\\jquery.easing.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery-easing\\jquery.easing.min.js",
       "PackagePath": "staticwebassets\\vendor\\jquery-easing\\jquery.easing.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.js",
       "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.js",
       "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.map",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.min.map",
       "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.js",
       "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.js",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.min.js"
     },
     {
-      "Id": "C:\\Users\\AxyRes\\Documents\\Project Learning for C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.map",
+      "Id": "C:\\Users\\TIEN-DEVOPS\\OneDrive\\Documents\\Project C Sharp\\ShopMates\\ShopMates.Admin\\wwwroot\\vendor\\jquery\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.min.map"
     },
     {

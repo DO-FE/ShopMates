@@ -10,3 +10,15 @@ C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Utili
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\refint\ShopMates.Utilities.dll
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.pdb
 C:\Users\AxyRes\Documents\Project Learning for C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ref\ShopMates.Utilities.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\bin\Debug\net6.0\ShopMates.Utilities.deps.json
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\bin\Debug\net6.0\ShopMates.Utilities.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\bin\Debug\net6.0\ShopMates.Utilities.pdb
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.csproj.AssemblyReference.cache
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.AssemblyInfoInputs.cache
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.AssemblyInfo.cs
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\refint\ShopMates.Utilities.dll
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ShopMates.Utilities.pdb
+C:\Users\TIEN-DEVOPS\OneDrive\Documents\Project C Sharp\ShopMates\ShopMates.Utilities\obj\Debug\net6.0\ref\ShopMates.Utilities.dll
