@@ -3949,23 +3949,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\": {},
+    "C:\\Users\\LamNhatTien\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Web\\ShopMates.Web.csproj",
+      "projectUniqueName": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Web\\ShopMates.Web.csproj",
       "projectName": "ShopMates.Web",
-      "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Web\\ShopMates.Web.csproj",
-      "packagesPath": "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Web\\obj\\",
+      "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Web\\ShopMates.Web.csproj",
+      "packagesPath": "C:\\Users\\LamNhatTien\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nhat Tien FullStack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LamNhatTien\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3975,21 +3975,21 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Integration\\ShopMates.Integration.csproj": {
-              "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Integration\\ShopMates.Integration.csproj"
+            "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Integration\\ShopMates.Integration.csproj": {
+              "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Integration\\ShopMates.Integration.csproj"
             },
-            "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
-              "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
+            "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+              "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
             },
-            "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
-              "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
+            "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
             }
           }
         }
@@ -4036,7 +4036,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

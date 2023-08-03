@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj": {}
+    "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj": {
+    "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
+        "projectUniqueName": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
         "projectName": "ShopMates.Application",
-        "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
-        "packagesPath": "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Application\\obj\\",
+        "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj",
+        "packagesPath": "C:\\Users\\LamNhatTien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nhat Tien FullStack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LamNhatTien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,14 +33,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
               },
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
               },
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
               }
             }
           }
@@ -91,24 +91,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj": {
+    "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj",
+        "projectUniqueName": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj",
         "projectName": "ShopMates.BEAPI",
-        "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj",
-        "packagesPath": "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.BEAPI\\obj\\",
+        "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.BEAPI\\ShopMates.BEAPI.csproj",
+        "packagesPath": "C:\\Users\\LamNhatTien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.BEAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nhat Tien FullStack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LamNhatTien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -118,24 +118,24 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Application\\ShopMates.Application.csproj"
               },
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
               },
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
               },
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj"
               }
             }
           }
@@ -194,24 +194,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
+    "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj",
+        "projectUniqueName": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj",
         "projectName": "ShopMates.Data",
-        "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj",
-        "packagesPath": "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\obj\\",
+        "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj",
+        "packagesPath": "C:\\Users\\LamNhatTien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nhat Tien FullStack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LamNhatTien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -284,24 +284,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+    "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
         "projectName": "ShopMates.Utilities",
-        "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
-        "packagesPath": "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\obj\\",
+        "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj",
+        "packagesPath": "C:\\Users\\LamNhatTien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nhat Tien FullStack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LamNhatTien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -344,24 +344,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
+    "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj",
         "projectName": "ShopMates.ViewModels",
-        "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Nhat Tien FullStack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.ViewModels\\obj\\",
+        "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\ShopMates.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\LamNhatTien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nhat Tien FullStack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LamNhatTien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -377,11 +377,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Data\\ShopMates.Data.csproj"
               },
-              "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Nhat Tien FullStack\\Documents\\Project-C-Sharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
+              "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj": {
+                "projectPath": "C:\\Users\\LamNhatTien\\Documents\\MyProjectCSharp\\ShopMates\\ShopMates.Utilities\\ShopMates.Utilities.csproj"
               }
             }
           }
@@ -429,7 +429,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

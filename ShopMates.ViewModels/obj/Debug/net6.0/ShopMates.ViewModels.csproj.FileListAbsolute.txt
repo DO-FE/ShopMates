@@ -32,3 +32,20 @@ C:\Users\Nhat Tien FullStack\Documents\Project-C-Sharp\ShopMates\ShopMates.ViewM
 C:\Users\Nhat Tien FullStack\Documents\Project-C-Sharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\refint\ShopMates.ViewModels.dll
 C:\Users\Nhat Tien FullStack\Documents\Project-C-Sharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.pdb
 C:\Users\Nhat Tien FullStack\Documents\Project-C-Sharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ref\ShopMates.ViewModels.dll
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\bin\Debug\net6.0\ShopMates.ViewModels.deps.json
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\bin\Debug\net6.0\ShopMates.ViewModels.dll
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\bin\Debug\net6.0\ShopMates.ViewModels.pdb
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\bin\Debug\net6.0\ShopMates.Data.dll
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\bin\Debug\net6.0\ShopMates.Utilities.dll
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\bin\Debug\net6.0\ShopMates.Data.pdb
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\bin\Debug\net6.0\ShopMates.Utilities.pdb
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.csproj.AssemblyReference.cache
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.AssemblyInfoInputs.cache
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.AssemblyInfo.cs
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.csproj.CopyComplete
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.dll
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\refint\ShopMates.ViewModels.dll
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ShopMates.ViewModels.pdb
+C:\Users\LamNhatTien\Documents\MyProjectCSharp\ShopMates\ShopMates.ViewModels\obj\Debug\net6.0\ref\ShopMates.ViewModels.dll

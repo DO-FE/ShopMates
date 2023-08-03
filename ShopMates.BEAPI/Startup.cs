@@ -136,6 +136,7 @@ namespace ShopMates.BEAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UsePathBase("/shopmates");
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -149,14 +150,14 @@ namespace ShopMates.BEAPI
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger ShopMate V1");
+                c.SwaggerEndpoint("/shopmates/swagger/v1/swagger.json", "Swagger ShopMate V1");
             });
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "shopmates/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
