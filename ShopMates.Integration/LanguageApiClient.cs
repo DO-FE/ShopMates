@@ -19,7 +19,7 @@ namespace ShopMates.Integration
 
         public async Task<APIResult<List<LanguageViewModel>>> GetAll()
         {
-            return await GetAsync<APIResult<List<LanguageViewModel>>>("/api/languages");
+            return await GetAsync<APIResult<List<LanguageViewModel>>>($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/languages");
         }
     }
 }

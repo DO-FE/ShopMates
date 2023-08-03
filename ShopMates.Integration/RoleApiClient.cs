@@ -11,6 +11,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using ShopMates.Utilities.Constants;
 
 namespace ShopMates.Integration
 {
@@ -30,9 +31,8 @@ namespace ShopMates.Integration
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-            var response = await client.GetAsync($"/api/roles");
+            var response = await client.GetAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/roles");
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {

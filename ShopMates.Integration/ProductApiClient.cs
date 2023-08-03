@@ -37,7 +37,6 @@ namespace ShopMates.Integration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString(SystemConstants.AppSettings.Token);
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 
             var requestContent = new MultipartFormDataContent();
@@ -67,25 +66,25 @@ namespace ShopMates.Integration
             requestContent.Add(new StringContent(request.CategoryId.ToString()), "categoryId");
             requestContent.Add(new StringContent(request.IsFeatured.ToString()), "isFeatured");
 
-            var response = await client.PostAsync($"/api/products/", requestContent);
+            var response = await client.PostAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/products/", requestContent);
             return response.IsSuccessStatusCode;
         }
 
         public async Task<bool> DeleteProduct(ProductDeleteRequest request)
         {
-            return await Delete($"/api/products/" + request.Id);
+            return await Delete($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/products/" + request.Id);
         }
 
         public async Task<ProductViewModel> GetById(int id)
         {
-            var data = await GetAsync<ProductViewModel>($"/api/products/{id}");
+            var data = await GetAsync<ProductViewModel>($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/products/{id}");
 
             return data;
         }
 
         public async Task<PagedResult<ProductViewModel>> GetProductsPagaing(GetManageProductPagingRequest request)
         {
-            var data = await GetAsync<PagedResult<ProductViewModel>>($"/api/products/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&languageId={request.LanguageId}&categoryId={request.CategoryId}");
+            var data = await GetAsync<PagedResult<ProductViewModel>>($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/products/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}&languageId={request.LanguageId}&categoryId={request.CategoryId}");
             return data;
         }
 
@@ -94,19 +93,18 @@ namespace ShopMates.Integration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString(SystemConstants.AppSettings.Token);
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 
             var requestContent = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
 
-            var response = await client.PutAsync($"/api/products/{request.Id}", requestContent);
+            var response = await client.PutAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/products/{request.Id}", requestContent);
             return response.IsSuccessStatusCode;
 
         }
 
         public async Task<ProductImageViewModel> ViewProductImages(int productID)
         {
-            var data = await GetAsync<ProductImageViewModel>($"/api/products/{productID}/images");
+            var data = await GetAsync<ProductImageViewModel>($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/products/{productID}/images");
 
             return data;
         }

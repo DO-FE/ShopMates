@@ -33,8 +33,7 @@ namespace ShopMates.Integration
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
-            var response = await client.PostAsync("/api/users/authenticate", httpContent);
+            var response = await client.PostAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/users/authenticate", httpContent);
             if (response.IsSuccessStatusCode)
             {
                 return JsonConvert.DeserializeObject<APISuccessResult<string>>(await response.Content.ReadAsStringAsync());
@@ -47,9 +46,8 @@ namespace ShopMates.Integration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
 
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-            var response = await client.DeleteAsync($"/api/Users/{id}");
+            var response = await client.DeleteAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/Users/{id}");
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {
@@ -63,9 +61,8 @@ namespace ShopMates.Integration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
 
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-            var response = await client.GetAsync($"/api/Users/{id}");
+            var response = await client.GetAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/Users/{id}");
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {
@@ -80,9 +77,8 @@ namespace ShopMates.Integration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
 
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-            var response = await client.GetAsync($"/api/Users/username/{username}");
+            var response = await client.GetAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/Users/username/{username}");
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {
@@ -96,9 +92,8 @@ namespace ShopMates.Integration
             var client = _httpClientFactory.CreateClient();
 
 			var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
-			client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-            var response = await client.GetAsync($"/api/Users/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}");
+            var response = await client.GetAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/Users/paging?pageIndex={request.PageIndex}&pageSize={request.PageSize}");
             var body = await response.Content.ReadAsStringAsync();
             var users = JsonConvert.DeserializeObject<APISuccessResult<PagedResult<UserViewModels>>>(body);
             return users;
@@ -110,8 +105,7 @@ namespace ShopMates.Integration
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
-            var response = await client.PostAsync($"/api/Users/register", httpContent);
+            var response = await client.PostAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/Users/register", httpContent);
             var result = await response.Content.ReadAsStringAsync();
             if(response.IsSuccessStatusCode)
             {
@@ -124,7 +118,6 @@ namespace ShopMates.Integration
         public async Task<APIResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
         {
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
@@ -132,7 +125,7 @@ namespace ShopMates.Integration
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await client.PutAsync($"/api/users/{id}/roles", httpContent);
+            var response = await client.PutAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/users/{id}/roles", httpContent);
             var result = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
                 return JsonConvert.DeserializeObject<APISuccessResult<bool>>(result);
@@ -147,9 +140,8 @@ namespace ShopMates.Integration
 			var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 			var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-			client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
 			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-			var response = await client.PutAsync($"/api/Users/{id}", httpContent);
+			var response = await client.PutAsync($"{_configuration[SystemConstants.AppSettings.BaseAddress]}/api/Users/{id}", httpContent);
 			var result = await response.Content.ReadAsStringAsync();
 			if (response.IsSuccessStatusCode)
 			{
